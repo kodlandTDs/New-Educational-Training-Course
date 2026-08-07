@@ -1,0 +1,314 @@
+==========================================================================
+  FINAL DST — [2060] GAMEDEV CREATOR LAB
+  10-12 · 90 min · English
+==========================================================================
+
+Nothing else on this page is typed into the form — it is guidance for you.
+
+--------------------------------------------------------------------------
+HOW TO BUILD THIS FORM BY HAND
+--------------------------------------------------------------------------
+ 1. Go to forms.google.com and start a Blank form.
+ 2. Paste the TITLE below into the form title, and the DESCRIPTION under it.
+ 3. Open Settings (gear icon):
+    - turn ON "Make this a quiz"
+    - Release grade: "Immediately after each submission"
+    - Respondent can see: tick "Missed questions", "Correct answers", "Point values"
+    - under Responses, turn ON "Collect email addresses"
+    - turn OFF "Allow response editing" and the link to submit another response
+ 4. Add the 2 identification questions from SECTION 1 (both Short answer, Required).
+    On the e-mail question use the three-dot menu > Response validation > Text > Email.
+ 5. Add a section break, title it with the SECTION 2 heading.
+ 6. For each of the 12 questions:
+    - add a Multiple choice question, Required
+    - paste the QUESTION line into the question title
+    - click Option 1, then paste all four OPTION lines at once — Forms splits them
+    - click "Answer key", select the correct option, set 1 point
+    - click "Add answer feedback" and paste FEEDBACK into both boxes, correct and incorrect
+ 7. Add a section break, title it with the SECTION 3 heading.
+ 8. Add the 3 rating questions as "Linear scale", 1 to 5, with the labels given, Required.
+ 9. Add the last question as "Paragraph", Required, with the help text given.
+10. Send > copy the link, and paste it into finalDst.url for this course.
+
+    Quiz settings: 1 point per question, 12 points total, pass mark 9/12
+
+
+==========================================================================
+TITLE  (copy this line)
+==========================================================================
+Final DST — [2060] GameDev Creator Lab
+
+==========================================================================
+DESCRIPTION  (copy this block)
+==========================================================================
+This is the final DST for the GameDev Creator Lab module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.
+
+12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 9 / 12.
+
+
+==========================================================================
+SECTION 1 — IDENTIFICATION
+==========================================================================
+
+Q1  ·  Short answer, Required
+Your full name
+
+Q2  ·  Short answer, Required  ·  Response validation: Text > Email
+Your Kodland e-mail
+
+Help text:
+The same address you use for Back Office (…@kodland.team).
+
+
+==========================================================================
+SECTION 2 — KNOWLEDGE CHECK
+==========================================================================
+Section title:
+Knowledge check
+
+Section description:
+12 questions on the first 4 lessons. 1 point each.
+
+
+--------------------------------------------------------------------------
+Q1   ·  correct answer: C
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+1. Lesson 1. What is the strict scope limit on the AI-generated character?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Any number of characters, in any view
+It must include the background scenery
+One single character, side view, transparent background
+It must be animated across at least two frames
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+One character, side view, transparent background — converted at 24×24 and named hero. AI is used once per lesson, always bounded.
+
+
+--------------------------------------------------------------------------
+Q2   ·  correct answer: A
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+2. Lesson 1. Why should students not use "Sign in" in MakeCode during the initial test?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Account access is part of the homework, not of the first test
+The account is created automatically the first time they run the project
+Signing in disables the AI Helper
+Signing in resets the template to blank
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Getting into the account is the homework. Keep the first run friction-free so the class reaches a working result.
+
+
+--------------------------------------------------------------------------
+Q3   ·  correct answer: D
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+3. Lesson 1. Which of these belongs in Lesson 1?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+A visible score
+Game Over and WIN conditions
+New enemy types
+Changing the rhythm interval from 1200 to 900 or 1500
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Only the visual remix plus the rhythm change. Score, Game Over, WIN and new enemies belong to later lessons — adding them early breaks the build order.
+
+
+--------------------------------------------------------------------------
+Q4   ·  correct answer: B
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+4. Lesson 2. A student's score keeps resetting to zero while they play. What is the most likely cause?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+The coin sprite has the wrong kind
+The set score block is inside "on game update"
+The score variable was never created
+The rhythm interval is too fast
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Score must be set to 0 at game start via Advanced → Info, never inside a loop like "on game update".
+
+
+--------------------------------------------------------------------------
+Q5   ·  correct answer: D
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+5. Lesson 2. The collectible does not add +1 on contact. What do you check first?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+The background colour
+The AI prompt used to generate the coin
+The rhythm interval
+That the kind in the create block and in the overlaps block match
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+A mismatched kind between create and overlaps is the classic cause. Always compare the two before looking anywhere else.
+
+
+--------------------------------------------------------------------------
+Q6   ·  correct answer: C
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+6. Lesson 2. What exactly does the homework require the student to submit?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+The MakeCode Share link
+A screenshot of the running game
+The Kodland Sparks link, obtained after Publish
+The exported .png of the coin sprite
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+The Sparks link after Publish — not just MakeCode's technical Share link. This is where their first beta actually lives.
+
+
+--------------------------------------------------------------------------
+Q7   ·  correct answer: B
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+7. Lesson 3. Where must the LOSE block NOT be placed?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+In the on start block
+Inside the coin-collection overlaps
+In the game update loop
+On the hero sprite
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Never inside the coin-collection overlaps. Also check the defeat block correctly replaces the original reset.
+
+
+--------------------------------------------------------------------------
+Q8   ·  correct answer: A
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+8. Lesson 3. How much real independent practice time should students get before you intervene?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+About 17 minutes
+About 5 minutes
+About 2 minutes
+None — guide them continuously
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Roughly 17 minutes. The productive struggle is the point of the lesson, not an accident in it.
+
+
+--------------------------------------------------------------------------
+Q9   ·  correct answer: A
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+9. Lesson 3. Students choose a victory condition from three options, A, B or C. What is your role?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Let each student choose their own, and in the parade show the different forms without ranking them
+Recommend the option that produces the cleanest code
+Assign options so the group covers all three evenly
+Choose one option for the whole group to keep debugging simple
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+No imposing and no comparing. Showing three different valid victories is exactly what makes the parade worth doing.
+
+
+--------------------------------------------------------------------------
+Q10  ·  correct answer: B
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+10. Lesson 4. What makes a prompt specific enough for the AI Helper?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+A short sentence describing the feeling the mechanic should create
+One single mechanic, the game context, the complete JavaScript pasted, and clear restrictions
+A list of every mechanic the student wants, so the AI can pick
+A screenshot of the game plus the mechanic name
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+One mechanic at a time, with the complete JavaScript pasted rather than fragments. Vague prompts are the main cause of a broken project in this lesson.
+
+
+--------------------------------------------------------------------------
+Q11  ·  correct answer: C
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+11. Lesson 4. How should the student republish their updated game?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Publish project again on Sparks, creating a new card
+Send only the MakeCode Share link
+Share with "Update existing share link" ticked, then My Projects → Edit → Project link
+Download the file and upload it manually
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Publish project again creates an unwanted duplicate. Update the existing share link, then edit the existing Sparks card.
+
+
+--------------------------------------------------------------------------
+Q12  ·  correct answer: D
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+12. Lesson 4. How should you close the module?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Preview the next module in detail so students stay motivated
+Assign extra mechanics as holiday homework
+Review each student's code individually with the group watching
+Celebrate the whole route — prototype → mechanic → launch — without previewing the next module's content
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Close the whole arc with a group celebration. Detailed previews of the next module belong to the next module.
+
+
+==========================================================================
+SECTION 3 — FEEDBACK ON THIS MODULE
+==========================================================================
+Section title:
+Your feedback on this module
+
+Section description:
+Not scored. This is what we use to improve the next version.
+
+
+Q13  ·  Linear scale 1-5, Required
+How clear was the GameDev Creator Lab training module?
+    1 = Confusing
+    5 = Very clear
+
+Q14  ·  Linear scale 1-5, Required
+How prepared do you feel to teach the first 4 lessons of GameDev Creator Lab?
+    1 = Not prepared at all
+    5 = Fully prepared
+
+Q15  ·  Linear scale 1-5, Required
+How useful were the lesson notes (what it is about, tutor role, technical aspects)?
+    1 = Not useful
+    5 = Extremely useful
+
+Q16  ·  Paragraph, Required
+What is still unclear about GameDev Creator Lab, or what would you add to this module?
+
+Help text:
+Name the lesson you mean — that is what makes your answer usable.
+
+
+==========================================================================
+ANSWER KEY — quick reference
+==========================================================================
+   Q1  C    Q2  A    Q3  D    Q4  B    Q5  D    Q6  C
+   Q7  B    Q8  A    Q9  A    Q10 B    Q11 C    Q12 D
+

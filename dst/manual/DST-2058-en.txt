@@ -1,0 +1,314 @@
+==========================================================================
+  FINAL DST — [2058] DIGITAL CREATIVITY LEVEL 2
+  10-12 · 60 min · English
+==========================================================================
+
+Nothing else on this page is typed into the form — it is guidance for you.
+
+--------------------------------------------------------------------------
+HOW TO BUILD THIS FORM BY HAND
+--------------------------------------------------------------------------
+ 1. Go to forms.google.com and start a Blank form.
+ 2. Paste the TITLE below into the form title, and the DESCRIPTION under it.
+ 3. Open Settings (gear icon):
+    - turn ON "Make this a quiz"
+    - Release grade: "Immediately after each submission"
+    - Respondent can see: tick "Missed questions", "Correct answers", "Point values"
+    - under Responses, turn ON "Collect email addresses"
+    - turn OFF "Allow response editing" and the link to submit another response
+ 4. Add the 2 identification questions from SECTION 1 (both Short answer, Required).
+    On the e-mail question use the three-dot menu > Response validation > Text > Email.
+ 5. Add a section break, title it with the SECTION 2 heading.
+ 6. For each of the 12 questions:
+    - add a Multiple choice question, Required
+    - paste the QUESTION line into the question title
+    - click Option 1, then paste all four OPTION lines at once — Forms splits them
+    - click "Answer key", select the correct option, set 1 point
+    - click "Add answer feedback" and paste FEEDBACK into both boxes, correct and incorrect
+ 7. Add a section break, title it with the SECTION 3 heading.
+ 8. Add the 3 rating questions as "Linear scale", 1 to 5, with the labels given, Required.
+ 9. Add the last question as "Paragraph", Required, with the help text given.
+10. Send > copy the link, and paste it into finalDst.url for this course.
+
+    Quiz settings: 1 point per question, 12 points total, pass mark 9/12
+
+
+==========================================================================
+TITLE  (copy this line)
+==========================================================================
+Final DST — [2058] Digital Creativity Level 2
+
+==========================================================================
+DESCRIPTION  (copy this block)
+==========================================================================
+This is the final DST for the Digital Creativity Level 2 module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.
+
+12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 9 / 12.
+
+
+==========================================================================
+SECTION 1 — IDENTIFICATION
+==========================================================================
+
+Q1  ·  Short answer, Required
+Your full name
+
+Q2  ·  Short answer, Required  ·  Response validation: Text > Email
+Your Kodland e-mail
+
+Help text:
+The same address you use for Back Office (…@kodland.team).
+
+
+==========================================================================
+SECTION 2 — KNOWLEDGE CHECK
+==========================================================================
+Section title:
+Knowledge check
+
+Section description:
+12 questions on the first 4 lessons. 1 point each.
+
+
+--------------------------------------------------------------------------
+Q1   ·  correct answer: A
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+1. Lesson 1. FlipAnim will not load for two of your students. What is the planned alternative?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Use BrushNinja
+Skip the animation and start Canva early
+Have them watch a classmate and copy the frames later
+Have them draw the frames on paper and photograph them
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+BrushNinja is the designated backup editor. Like FlipAnim it works without registration, so no personal data is requested.
+
+
+--------------------------------------------------------------------------
+Q2   ·  correct answer: C
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+2. Lesson 1. A student's animation runs correctly but the letters look rough, and there are eight minutes left. What do you prioritise?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Redrawing the letters so the result looks polished
+Adding a background so the GIF looks finished
+That the animation works — legible and functional comes before pretty
+Starting the Canva registration early to save time next class
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+The objective of Lesson 1 is a working, legible GIF. Prioritise that the animation functions over how the design looks; polish is not the learning goal here.
+
+
+--------------------------------------------------------------------------
+Q3   ·  correct answer: B
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+3. Lesson 1. What is the homework, and what must you never ask for?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Finish the GIF at home; never ask for the file
+Prepare an own or an adult's e-mail for the Canva registration; never ask for the password
+Create a Kodland Sparks account; never ask for the nickname
+Watch a Canva tutorial; never ask for a screenshot
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Registration is the classic Lesson 2 blocker, so remind them a few days ahead. The password is never shared with the tutor.
+
+
+--------------------------------------------------------------------------
+Q4   ·  correct answer: D
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+4. Lesson 2. What should you have prepared before the class starts?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+A finished example video for every student to copy
+The GIFs from Lesson 1 downloaded onto your own computer
+A Canva Pro licence for the group
+Backup e-mail accounts, in case registration fails
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Registration reliably creates technical difficulties. Have backup e-mail accounts ready so nobody is stranded at the very first step.
+
+
+--------------------------------------------------------------------------
+Q5   ·  correct answer: C
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+5. Lesson 2. In what format should the video project be created?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Horizontal 16:9
+Square 1:1
+Vertical
+Whatever the student prefers
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Vertical format. It is what the final video-presentation is built around across all four lessons.
+
+
+--------------------------------------------------------------------------
+Q6   ·  correct answer: A
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+6. Lesson 2. What must be configured before the submission activity?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Manual review, with a maximum score greater than zero
+Automatic review with a maximum score of zero
+Nothing — submissions are checked automatically
+A shared Canva folder for the group
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Enable manual review with a maximum score greater than zero. Otherwise the submission cannot be graded. The share flow is Share → Anyone with the link → View → Copy link.
+
+
+--------------------------------------------------------------------------
+Q7   ·  correct answer: D
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+7. Lesson 3. A student did not bring a photo for their interests scene. What do you have ready?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+A photo of yourself they can use
+Nothing — they skip the scene and catch up at home
+A stock photo from Canva Pro
+A neutral backup avatar
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Always have a neutral backup avatar. It keeps the student moving and removes any pressure to share a personal photo.
+
+
+--------------------------------------------------------------------------
+Q8   ·  correct answer: B
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+8. Lesson 3. Why should you not let students start many AI generations one after another?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+The results get worse each time
+Free AI credits are limited
+It slows down the whole classroom's connection
+The AI stops removing backgrounds correctly
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Free credits are limited. Also check the image contains no personal data and stays inside the frame.
+
+
+--------------------------------------------------------------------------
+Q9   ·  correct answer: B
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+9. Lesson 3. A student's scene has a layer problem and they ask you to fix it. What is the right move?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Take the mouse and fix the layer order, then explain what you did
+Give feedback as specific strength → question to improve → support, and let them fix it themselves
+Tell them to undo everything and start the scene again
+Ask the AI to regenerate the image with the correct layers
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Show the technical flow once, then let the student experiment. Do not correct the project in place of the student — that is where the ownership is lost.
+
+
+--------------------------------------------------------------------------
+Q10  ·  correct answer: D
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+10. Lesson 4. Ten minutes are left and no one has exported yet. What is the sanctioned simplification?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Skip publishing to Kodland Sparks
+Export without audio
+Publish only the first scene
+Music only plus one sound effect
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+The simplified version is music plus one sound effect. Publishing to Sparks is the point of the lesson — never drop that.
+
+
+--------------------------------------------------------------------------
+Q11  ·  correct answer: A
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+11. Lesson 4. Which of these will break the export?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Closing Canva before the processing finishes
+Adding more than one audio track
+Using a vertical format
+Exporting before adding the third scene
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Do not close Canva before the export finishes processing. Afterwards, verify every page downloaded and that the video actually has audio.
+
+
+--------------------------------------------------------------------------
+Q12  ·  correct answer: C
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+12. Lesson 4. How is permission to use a student's work in Kodland advertising handled?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+It is automatic once the project is public on Sparks
+The tutor decides on the student's behalf
+It must always be voluntary, never forced
+It is requested by e-mail once the course ends
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Always voluntary. A student saying no must carry no consequence for their grade or their feedback.
+
+
+==========================================================================
+SECTION 3 — FEEDBACK ON THIS MODULE
+==========================================================================
+Section title:
+Your feedback on this module
+
+Section description:
+Not scored. This is what we use to improve the next version.
+
+
+Q13  ·  Linear scale 1-5, Required
+How clear was the Digital Creativity Level 2 training module?
+    1 = Confusing
+    5 = Very clear
+
+Q14  ·  Linear scale 1-5, Required
+How prepared do you feel to teach the first 4 lessons of Digital Creativity Level 2?
+    1 = Not prepared at all
+    5 = Fully prepared
+
+Q15  ·  Linear scale 1-5, Required
+How useful were the lesson notes (what it is about, tutor role, technical aspects)?
+    1 = Not useful
+    5 = Extremely useful
+
+Q16  ·  Paragraph, Required
+What is still unclear about Digital Creativity Level 2, or what would you add to this module?
+
+Help text:
+Name the lesson you mean — that is what makes your answer usable.
+
+
+==========================================================================
+ANSWER KEY — quick reference
+==========================================================================
+   Q1  A    Q2  C    Q3  B    Q4  D    Q5  C    Q6  A
+   Q7  D    Q8  B    Q9  B    Q10 D    Q11 A    Q12 C
+

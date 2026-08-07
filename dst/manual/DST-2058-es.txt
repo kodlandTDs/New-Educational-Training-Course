@@ -1,0 +1,314 @@
+==========================================================================
+  DST FINAL — [2058] CREATIVIDAD DIGITAL NIVEL 2
+  10-12 · 60 min · Espanol
+==========================================================================
+
+Nada mas de esta pagina se escribe en el formulario — es guia para ti.
+
+--------------------------------------------------------------------------
+COMO CONSTRUIR ESTE FORMULARIO A MANO
+--------------------------------------------------------------------------
+ 1. Entra a forms.google.com y crea un formulario en blanco.
+ 2. Pega el TITULO de abajo en el titulo del formulario, y la DESCRIPCION debajo.
+ 3. Abre Configuracion (icono de engranaje):
+    - activa "Convertir en cuestionario"
+    - Publicar calificacion: "Inmediatamente despues de cada envio"
+    - El encuestado puede ver: marca "Preguntas incorrectas", "Respuestas correctas", "Puntuacion"
+    - en Respuestas, activa "Recopilar direcciones de correo electronico"
+    - desactiva "Permitir editar la respuesta" y el enlace para enviar otra respuesta
+ 4. Agrega las 2 preguntas de identificacion de la SECCION 1 (ambas Respuesta corta, Obligatoria).
+    En la del correo usa el menu de tres puntos > Validacion de respuestas > Texto > Direccion de correo.
+ 5. Agrega un salto de seccion y ponle el titulo de la SECCION 2.
+ 6. Para cada una de las 12 preguntas:
+    - agrega una pregunta de Opcion multiple, Obligatoria
+    - pega la linea PREGUNTA en el titulo de la pregunta
+    - haz clic en Opcion 1 y pega las cuatro lineas de OPCIONES de una vez — Forms las separa
+    - haz clic en "Clave de respuestas", marca la correcta y pon 1 punto
+    - haz clic en "Agregar comentarios" y pega RETROALIMENTACION en ambas cajas, correcta e incorrecta
+ 7. Agrega un salto de seccion y ponle el titulo de la SECCION 3.
+ 8. Agrega las 3 preguntas de valoracion como "Escala lineal", de 1 a 5, con las etiquetas dadas, Obligatorias.
+ 9. Agrega la ultima pregunta como "Parrafo", Obligatoria, con el texto de ayuda indicado.
+10. Enviar > copia el enlace y pegalo en finalDst.url de este curso.
+
+    Cuestionario: 1 punto por pregunta, 12 puntos en total, aprueba con 9/12
+
+
+==========================================================================
+TITULO  (copia esta linea)
+==========================================================================
+DST Final — [2058] Creatividad Digital Nivel 2
+
+==========================================================================
+DESCRIPCION  (copia este bloque)
+==========================================================================
+Este es el DST final del módulo Creatividad Digital Nivel 2 del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.
+
+12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 9 / 12.
+
+
+==========================================================================
+SECCION 1 — IDENTIFICACION
+==========================================================================
+
+Q1  ·  Respuesta corta, Obligatoria
+Tu nombre completo
+
+Q2  ·  Respuesta corta, Obligatoria  ·  Validacion de respuestas: Texto > Direccion de correo
+Tu correo de Kodland
+
+Texto de ayuda:
+El mismo correo con el que entras a Back Office (…@kodland.team).
+
+
+==========================================================================
+SECCION 2 — EVALUACION DE CONOCIMIENTO
+==========================================================================
+Titulo de la seccion:
+Evaluación de conocimiento
+
+Descripcion de la seccion:
+12 preguntas sobre las primeras 4 lecciones. 1 punto cada una.
+
+
+--------------------------------------------------------------------------
+Q1   ·  respuesta correcta: A
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+1. Lección 1. FlipAnim no carga para dos de tus estudiantes. ¿Cuál es la alternativa prevista?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Usar BrushNinja
+Saltar la animación y empezar Canva antes
+Que observen a un compañero y copien los cuadros después
+Que dibujen los cuadros en papel y los fotografíen
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+BrushNinja es el editor de respaldo designado. Igual que FlipAnim funciona sin registro, así que no se piden datos personales.
+
+
+--------------------------------------------------------------------------
+Q2   ·  respuesta correcta: C
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+2. Lección 1. La animación de un estudiante corre bien pero las letras se ven toscas, y quedan ocho minutos. ¿Qué priorizas?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Redibujar las letras para que el resultado se vea pulido
+Agregar un fondo para que el GIF se vea terminado
+Que la animación funcione — legible y funcional va antes que bonito
+Empezar el registro en Canva antes para ganar tiempo la próxima clase
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+El objetivo de la Lección 1 es un GIF funcional y legible. Prioriza que la animación funcione antes que cómo se ve el diseño; el pulido no es la meta de aprendizaje aquí.
+
+
+--------------------------------------------------------------------------
+Q3   ·  respuesta correcta: B
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+3. Lección 1. ¿Cuál es la tarea, y qué no debes pedir nunca?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Terminar el GIF en casa; nunca pedir el archivo
+Preparar un correo propio o de un adulto para el registro en Canva; nunca pedir la contraseña
+Crear una cuenta de Kodland Sparks; nunca pedir el nickname
+Ver un tutorial de Canva; nunca pedir una captura
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+El registro es el bloqueo clásico de la Lección 2, así que recuérdalo unos días antes. La contraseña nunca se comparte con el tutor.
+
+
+--------------------------------------------------------------------------
+Q4   ·  respuesta correcta: D
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+4. Lección 2. ¿Qué debes tener preparado antes de que empiece la clase?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Un video de ejemplo terminado para que cada estudiante lo copie
+Los GIF de la Lección 1 descargados en tu propia computadora
+Una licencia de Canva Pro para el grupo
+Cuentas de correo de respaldo, por si el registro falla
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+El registro genera dificultades técnicas de forma confiable. Ten cuentas de correo de respaldo listas para que nadie quede varado en el primer paso.
+
+
+--------------------------------------------------------------------------
+Q5   ·  respuesta correcta: C
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+5. Lección 2. ¿En qué formato debe crearse el proyecto de video?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Horizontal 16:9
+Cuadrado 1:1
+Vertical
+El que prefiera el estudiante
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Formato vertical. Es sobre el que se construye la video-presentación final a lo largo de las cuatro lecciones.
+
+
+--------------------------------------------------------------------------
+Q6   ·  respuesta correcta: A
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+6. Lección 2. ¿Qué debe configurarse antes de la actividad de entrega?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Revisión manual, con puntuación máxima mayor a cero
+Revisión automática con puntuación máxima de cero
+Nada — las entregas se revisan automáticamente
+Una carpeta compartida de Canva para el grupo
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Activa la revisión manual con puntuación máxima mayor a cero. Si no, la entrega no se puede calificar. El flujo para compartir es Compartir → Cualquiera con el enlace → Ver → Copiar enlace.
+
+
+--------------------------------------------------------------------------
+Q7   ·  respuesta correcta: D
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+7. Lección 3. Un estudiante no trajo foto para su escena de intereses. ¿Qué tienes listo?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Una foto tuya que pueda usar
+Nada — se salta la escena y la recupera en casa
+Una foto de stock de Canva Pro
+Un avatar neutral de respaldo
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Ten siempre un avatar neutral de respaldo. Mantiene al estudiante avanzando y elimina cualquier presión de compartir una foto personal.
+
+
+--------------------------------------------------------------------------
+Q8   ·  respuesta correcta: B
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+8. Lección 3. ¿Por qué no debes dejar que los estudiantes inicien muchas generaciones de IA seguidas?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Los resultados empeoran cada vez
+Los créditos gratuitos de IA son limitados
+Ralentiza la conexión de todo el salón
+La IA deja de quitar fondos correctamente
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Los créditos gratuitos son limitados. Además revisa que la imagen no contenga datos personales y no salga del encuadre.
+
+
+--------------------------------------------------------------------------
+Q9   ·  respuesta correcta: B
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+9. Lección 3. La escena de un estudiante tiene un problema de capas y te pide que se lo arregles. ¿Qué haces?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Tomar el mouse, arreglar el orden de capas y luego explicar qué hiciste
+Dar retroalimentación como fortaleza específica → pregunta para mejorar → apoyo, y dejar que lo arregle él
+Decirle que deshaga todo y empiece la escena de nuevo
+Pedirle a la IA que regenere la imagen con las capas correctas
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Muestra el flujo técnico una sola vez y deja que el estudiante experimente. No corrijas el proyecto en lugar del estudiante — ahí es donde se pierde la autoría.
+
+
+--------------------------------------------------------------------------
+Q10  ·  respuesta correcta: D
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+10. Lección 4. Quedan diez minutos y nadie ha exportado todavía. ¿Cuál es la simplificación permitida?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Saltar la publicación en Kodland Sparks
+Exportar sin audio
+Publicar solo la primera escena
+Solo música más un efecto de sonido
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+La versión simplificada es música más un efecto de sonido. Publicar en Sparks es el punto de la lección — eso nunca se elimina.
+
+
+--------------------------------------------------------------------------
+Q11  ·  respuesta correcta: A
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+11. Lección 4. ¿Cuál de estas cosas romperá la exportación?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Cerrar Canva antes de que termine el procesamiento
+Agregar más de una pista de audio
+Usar formato vertical
+Exportar antes de agregar la tercera escena
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+No cierres Canva antes de que termine el procesamiento de la exportación. Después, verifica que todas las páginas se descargaron y que el video efectivamente tiene audio.
+
+
+--------------------------------------------------------------------------
+Q12  ·  respuesta correcta: C
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+12. Lección 4. ¿Cómo se maneja el permiso para usar el trabajo de un estudiante en publicidad de Kodland?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Es automático una vez que el proyecto es público en Sparks
+El tutor decide en nombre del estudiante
+Debe ser siempre voluntario, nunca forzado
+Se pide por correo al terminar el curso
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Siempre voluntario. Que un estudiante diga que no no debe tener ninguna consecuencia en su nota ni en su retroalimentación.
+
+
+==========================================================================
+SECCION 3 — FEEDBACK SOBRE ESTE MODULO
+==========================================================================
+Titulo de la seccion:
+Tu feedback sobre este módulo
+
+Descripcion de la seccion:
+No se puntúa. Esto es lo que usamos para mejorar la próxima versión.
+
+
+Q13  ·  Escala lineal 1-5, Obligatoria
+¿Qué tan claro fue el módulo de entrenamiento de Creatividad Digital Nivel 2?
+    1 = Confuso
+    5 = Muy claro
+
+Q14  ·  Escala lineal 1-5, Obligatoria
+¿Qué tan preparado te sientes para dar las primeras 4 lecciones de Creatividad Digital Nivel 2?
+    1 = Nada preparado
+    5 = Totalmente preparado
+
+Q15  ·  Escala lineal 1-5, Obligatoria
+¿Qué tan útiles fueron las notas por lección (de qué trata, rol del tutor, aspectos técnicos)?
+    1 = Nada útiles
+    5 = Muy útiles
+
+Q16  ·  Parrafo, Obligatoria
+¿Qué sigue sin quedarte claro de Creatividad Digital Nivel 2, o qué agregarías a este módulo?
+
+Texto de ayuda:
+Nombra la lección a la que te refieres — eso es lo que hace tu respuesta útil.
+
+
+==========================================================================
+CLAVE DE RESPUESTAS — referencia rapida
+==========================================================================
+   Q1  A    Q2  C    Q3  B    Q4  D    Q5  C    Q6  A
+   Q7  D    Q8  B    Q9  B    Q10 D    Q11 A    Q12 C
+

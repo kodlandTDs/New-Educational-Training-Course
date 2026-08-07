@@ -1,0 +1,314 @@
+==========================================================================
+  FINAL DST — [2059] CODING LAB
+  12-17 · 90 min · English
+==========================================================================
+
+Nothing else on this page is typed into the form — it is guidance for you.
+
+--------------------------------------------------------------------------
+HOW TO BUILD THIS FORM BY HAND
+--------------------------------------------------------------------------
+ 1. Go to forms.google.com and start a Blank form.
+ 2. Paste the TITLE below into the form title, and the DESCRIPTION under it.
+ 3. Open Settings (gear icon):
+    - turn ON "Make this a quiz"
+    - Release grade: "Immediately after each submission"
+    - Respondent can see: tick "Missed questions", "Correct answers", "Point values"
+    - under Responses, turn ON "Collect email addresses"
+    - turn OFF "Allow response editing" and the link to submit another response
+ 4. Add the 2 identification questions from SECTION 1 (both Short answer, Required).
+    On the e-mail question use the three-dot menu > Response validation > Text > Email.
+ 5. Add a section break, title it with the SECTION 2 heading.
+ 6. For each of the 12 questions:
+    - add a Multiple choice question, Required
+    - paste the QUESTION line into the question title
+    - click Option 1, then paste all four OPTION lines at once — Forms splits them
+    - click "Answer key", select the correct option, set 1 point
+    - click "Add answer feedback" and paste FEEDBACK into both boxes, correct and incorrect
+ 7. Add a section break, title it with the SECTION 3 heading.
+ 8. Add the 3 rating questions as "Linear scale", 1 to 5, with the labels given, Required.
+ 9. Add the last question as "Paragraph", Required, with the help text given.
+10. Send > copy the link, and paste it into finalDst.url for this course.
+
+    Quiz settings: 1 point per question, 12 points total, pass mark 9/12
+
+
+==========================================================================
+TITLE  (copy this line)
+==========================================================================
+Final DST — [2059] Coding Lab
+
+==========================================================================
+DESCRIPTION  (copy this block)
+==========================================================================
+This is the final DST for the Coding Lab module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.
+
+12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 9 / 12.
+
+
+==========================================================================
+SECTION 1 — IDENTIFICATION
+==========================================================================
+
+Q1  ·  Short answer, Required
+Your full name
+
+Q2  ·  Short answer, Required  ·  Response validation: Text > Email
+Your Kodland e-mail
+
+Help text:
+The same address you use for Back Office (…@kodland.team).
+
+
+==========================================================================
+SECTION 2 — KNOWLEDGE CHECK
+==========================================================================
+Section title:
+Knowledge check
+
+Section description:
+12 questions on the first 4 lessons. 1 point each.
+
+
+--------------------------------------------------------------------------
+Q1   ·  correct answer: D
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+1. Lesson 1. What is the difference between the two AI agents your students will use?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+The conventional AI is faster; the AI Mentor is more accurate
+They are the same agent with two different names
+The conventional AI is for text; the AI Mentor is for images
+The conventional AI generates the initial code; the AI Mentor guides with questions and never writes the complete code
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Keeping the roles separate is what keeps the mentor trustworthy. If one agent both teaches and hands over finished code, the student stops believing the questions are genuine.
+
+
+--------------------------------------------------------------------------
+Q2   ·  correct answer: B
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+2. Lesson 1. What kind of personalisation is safe for a student to request from the AI?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Technical requirements such as framerate or a physics engine
+Theme, title, character or visual context
+Anything at all — the AI handles the consequences
+Only the title of the game
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Safe personalisation stays at the surface: theme, title, character, visual context. Technical requirements are where generations start failing.
+
+
+--------------------------------------------------------------------------
+Q3   ·  correct answer: C
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+3. Lesson 1. What is the homework after Lesson 1?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Write a new prompt and generate a second game
+Read the generated JavaScript line by line
+Change one simple value in the code, and know how to revert it if the game stops working
+Publish the prototype to Kodland Sparks
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+One value, and the ability to undo it. Reverting a change confidently is the skill the rest of the module depends on.
+
+
+--------------------------------------------------------------------------
+Q4   ·  correct answer: A
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+4. Lesson 2. After the prototype is split into three files, where does the character's speed parameter live?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+script.js
+style.css
+index.html
+In a separate config file
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+index.html holds structure and links, style.css the design, script.js the movement and logic.
+
+
+--------------------------------------------------------------------------
+Q5   ·  correct answer: B
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+5. Lesson 2. What must the standard AI NOT do when restructuring the project?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Split the file into three parts
+Change the appearance or the logic of the game, or add external dependencies
+Keep the original variable names
+Explain what it changed
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+The split is mechanical. If appearance or logic changed, the AI did more than it was asked and the student has lost the thread.
+
+
+--------------------------------------------------------------------------
+Q6   ·  correct answer: D
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+6. Lesson 2. A student asks you which speed value is the correct one. What do you say?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Give them the value the template was built with
+Tell them speed does not matter at this stage
+Tell them to ask the AI Mentor for the right number
+Let them choose by experimentation, and ask them to explain how it changes the movement
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+There is no correct value. The cycle is predict → modify → check → conclude, and the conclusion is theirs.
+
+
+--------------------------------------------------------------------------
+Q7   ·  correct answer: A
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+7. Lesson 3. The AI rewrites the whole file instead of swapping the character image. What do you do?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Compare the before/after versions, and use the backup route only after 2 genuine attempts and one diagnostic hint
+Go straight to the backup template
+Accept the rewrite and continue with the new code
+Have the student write the replacement by hand
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+An unwanted complete rewrite is the known risk of this lesson. Compare versions first — the backup route is not the first move.
+
+
+--------------------------------------------------------------------------
+Q8   ·  correct answer: C
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+8. Lesson 3. What does a complete prompt contain?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Objective and the code, nothing else
+A description of the desired result in as much detail as possible
+Objective + enough context + permitted changes + restrictions + a request for an explanation
+The error message plus the whole project
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+The request for an explanation is the part students skip — and it is what turns a generation into something they can learn from.
+
+
+--------------------------------------------------------------------------
+Q9   ·  correct answer: C
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+9. Lesson 3. A change breaks the game. What is the correct debugging move?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Ask the AI to fix everything at once
+Restart the project from the backup template
+Return to the last working version and find the first difference
+Undo every change made in the lesson
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+One testable hypothesis at a time. Fixing everything at once destroys the information you need.
+
+
+--------------------------------------------------------------------------
+Q10  ·  correct answer: A
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+10. Lesson 4. Which AI is used in this lesson?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+The AI Mentor exclusively
+Both, depending on what the student needs
+The conventional AI only
+Neither — this lesson is unplugged
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+The AI Mentor exclusively. The student formulates objective + current behaviour + a request for a hint; the Mentor never hands over the final code.
+
+
+--------------------------------------------------------------------------
+Q11  ·  correct answer: D
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+11. Lesson 4. What is the character limit on each peer feedback field?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+60 characters
+There is no limit
+500 characters
+180 characters
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+180 characters for each of the three fields: overall impression, strong point, improvement. The limit is what forces the feedback to be specific.
+
+
+--------------------------------------------------------------------------
+Q12  ·  correct answer: B
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+12. Lesson 4. A student has two half-finished mechanics with ten minutes left. What do you steer them towards?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Finishing both quickly, even if they are unstable
+One stable mechanic — it is preferable to two incomplete ones
+Publishing as is and fixing it as homework
+Reverting to the Lesson 3 version and skipping the mechanic
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+One stable mechanic beats two incomplete ones. And if the project was already unstable at the start of the class, go straight to the backup template.
+
+
+==========================================================================
+SECTION 3 — FEEDBACK ON THIS MODULE
+==========================================================================
+Section title:
+Your feedback on this module
+
+Section description:
+Not scored. This is what we use to improve the next version.
+
+
+Q13  ·  Linear scale 1-5, Required
+How clear was the Coding Lab training module?
+    1 = Confusing
+    5 = Very clear
+
+Q14  ·  Linear scale 1-5, Required
+How prepared do you feel to teach the first 4 lessons of Coding Lab?
+    1 = Not prepared at all
+    5 = Fully prepared
+
+Q15  ·  Linear scale 1-5, Required
+How useful were the lesson notes (what it is about, tutor role, technical aspects)?
+    1 = Not useful
+    5 = Extremely useful
+
+Q16  ·  Paragraph, Required
+What is still unclear about Coding Lab, or what would you add to this module?
+
+Help text:
+Name the lesson you mean — that is what makes your answer usable.
+
+
+==========================================================================
+ANSWER KEY — quick reference
+==========================================================================
+   Q1  D    Q2  B    Q3  C    Q4  A    Q5  B    Q6  D
+   Q7  A    Q8  C    Q9  C    Q10 A    Q11 D    Q12 B
+

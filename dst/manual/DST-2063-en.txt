@@ -1,0 +1,314 @@
+==========================================================================
+  FINAL DST — [2063] CREATOR LAB: GAMES, AI
+  8-9 · 60 min · English
+==========================================================================
+
+Nothing else on this page is typed into the form — it is guidance for you.
+
+--------------------------------------------------------------------------
+HOW TO BUILD THIS FORM BY HAND
+--------------------------------------------------------------------------
+ 1. Go to forms.google.com and start a Blank form.
+ 2. Paste the TITLE below into the form title, and the DESCRIPTION under it.
+ 3. Open Settings (gear icon):
+    - turn ON "Make this a quiz"
+    - Release grade: "Immediately after each submission"
+    - Respondent can see: tick "Missed questions", "Correct answers", "Point values"
+    - under Responses, turn ON "Collect email addresses"
+    - turn OFF "Allow response editing" and the link to submit another response
+ 4. Add the 2 identification questions from SECTION 1 (both Short answer, Required).
+    On the e-mail question use the three-dot menu > Response validation > Text > Email.
+ 5. Add a section break, title it with the SECTION 2 heading.
+ 6. For each of the 12 questions:
+    - add a Multiple choice question, Required
+    - paste the QUESTION line into the question title
+    - click Option 1, then paste all four OPTION lines at once — Forms splits them
+    - click "Answer key", select the correct option, set 1 point
+    - click "Add answer feedback" and paste FEEDBACK into both boxes, correct and incorrect
+ 7. Add a section break, title it with the SECTION 3 heading.
+ 8. Add the 3 rating questions as "Linear scale", 1 to 5, with the labels given, Required.
+ 9. Add the last question as "Paragraph", Required, with the help text given.
+10. Send > copy the link, and paste it into finalDst.url for this course.
+
+    Quiz settings: 1 point per question, 12 points total, pass mark 9/12
+
+
+==========================================================================
+TITLE  (copy this line)
+==========================================================================
+Final DST — [2063] Creator Lab: Games, AI
+
+==========================================================================
+DESCRIPTION  (copy this block)
+==========================================================================
+This is the final DST for the Creator Lab: Games, AI module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.
+
+12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 9 / 12.
+
+
+==========================================================================
+SECTION 1 — IDENTIFICATION
+==========================================================================
+
+Q1  ·  Short answer, Required
+Your full name
+
+Q2  ·  Short answer, Required  ·  Response validation: Text > Email
+Your Kodland e-mail
+
+Help text:
+The same address you use for Back Office (…@kodland.team).
+
+
+==========================================================================
+SECTION 2 — KNOWLEDGE CHECK
+==========================================================================
+Section title:
+Knowledge check
+
+Section description:
+12 questions on the first 4 lessons. 1 point each.
+
+
+--------------------------------------------------------------------------
+Q1   ·  correct answer: B
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+1. Lesson 1. How do your students load the .sb3 template into Creator Lab?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+By double-clicking the file
+Via the "Upload" option
+By dragging it onto the stage
+From the Scratch website
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Always via "Upload", never a double click. This is the single most common failure of Lesson 1.
+
+
+--------------------------------------------------------------------------
+Q2   ·  correct answer: D
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+2. Lesson 1. A student asks how to make a counter with a loop. What do you do?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Teach loops and variables — they are clearly ready
+Tell them it cannot be done in Scratch
+Ask AI Buddy to write the loop for them
+Keep the focus: variables, loops and complex conditions are deliberately not taught yet
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+The lesson narrows the focus on purpose. Variables arrive in Lesson 2 as the crystal counter; compound conditions come later.
+
+
+--------------------------------------------------------------------------
+Q3   ·  correct answer: A
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+3. Lesson 1. What must the AI-generated background satisfy?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+It must be free of characters and leave central space for the character
+It must include a character so the scene looks alive
+It must be black and white so the sprite stands out
+It must be generated twice so the student can choose
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+No characters, and central space left for the sprite. Remember too that publishing on Sparks and sending the link on the Kodland platform are two separate steps.
+
+
+--------------------------------------------------------------------------
+Q4   ·  correct answer: C
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+4. Lesson 2. What must the AI-generated crystal costume satisfy?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+It must include the hero in the frame
+Opaque background, size 100%
+Transparent background, size set to 25%
+It must be drawn by hand, not generated
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Transparent background and 25% size. The crystal is the one and only AI step of this lesson.
+
+
+--------------------------------------------------------------------------
+Q5   ·  correct answer: A
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+5. Lesson 2. The crystals are built across three increasing levels of autonomy. What is the correct order?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Connect ready blocks → complete what is missing → build the sequence alone
+Watch → copy → repeat
+Plan → code → test
+Prototype → debug → publish
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Connect, Complete, Build it yourself — the same scaffolding ladder used across all four courses. Let them build the third crystal unaided before you intervene.
+
+
+--------------------------------------------------------------------------
+Q6   ·  correct answer: B
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+6. Lesson 2. What must the green flag do?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Only return the hero to its starting position
+Return the hero to its position AND reset the score to zero
+Only reset the score to zero
+Reload the whole project from the template
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Both. Verify the start script contains the hero position and the score reset before you let anyone publish.
+
+
+--------------------------------------------------------------------------
+Q7   ·  correct answer: C
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+7. Lesson 3. While the portal is still hidden, what must be true?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+It must react to being touched so students can test it
+It must already show the decorated WIN screen
+It must not react to being touched — the transition to WIN is a separate step
+It must be deleted and recreated in Lesson 4
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+A hidden portal that reacts to touch is the classic bug here. The WIN transition is configured in its own step, and the WIN screen stays intentionally empty until Lesson 4.
+
+
+--------------------------------------------------------------------------
+Q8   ·  correct answer: D
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+8. Lesson 3. A student's key appears but the portal never opens. What do you check first?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Whether the crystal counter reached 3
+Whether the hero is touching the portal sprite
+Whether the backdrop was generated with AI
+Whether the message the key sends and the one the portal receives match exactly
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+The broadcast names must match exactly. That mismatch is the usual cause of a key that appears but a portal that does nothing.
+
+
+--------------------------------------------------------------------------
+Q9   ·  correct answer: D
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+9. Lesson 3. A student says their game is too hard. What are they allowed to change?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+The code of the collection mechanic
+Nothing — the difficulty is fixed by the template
+The number of crystals required, from 3 to 1
+The position of the objects, not the code
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Difficulty is balanced by moving danger or key, not by rewriting logic or adding new mechanics. Let the student make that call themselves.
+
+
+--------------------------------------------------------------------------
+Q10  ·  correct answer: C
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+10. Lesson 4. What is the rule about the say block and Text to Speech?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+Use both together for accessibility
+Use Text to Speech only, say is deprecated
+Use only one, never both
+Use say only, Text to Speech is not available
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Use one or the other, never both at once. And only one AI backdrop is allowed in this lesson.
+
+
+--------------------------------------------------------------------------
+Q11  ·  correct answer: B
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+11. Lesson 4. Where does the victory-phrase block go?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+On the Stage, before the backdrop switch
+On the Portal sprite, right after the backdrop switch to WIN
+On the hero sprite, at the start of the game
+Anywhere — the position does not matter
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+On the Portal sprite, right after the switch to WIN. Putting it on the Stage is the classic bug of this lesson.
+
+
+--------------------------------------------------------------------------
+Q12  ·  correct answer: A
+--------------------------------------------------------------------------
+
+QUESTION  (copy this line)
+12. Lesson 4. How should the "Iteration Award" be given?
+
+OPTIONS  (select all 4 lines and paste into the first option box)
+For style or a unique detail, without comparing projects to each other
+To the best project, so the group has a clear standard to aim for
+To whoever finished first
+By student vote at the end of the mini-festival
+
+FEEDBACK  (paste into both the correct and incorrect boxes)
+Never comparative. It recognises a personal decision — style or a unique detail — and closes a module the group should celebrate explicitly.
+
+
+==========================================================================
+SECTION 3 — FEEDBACK ON THIS MODULE
+==========================================================================
+Section title:
+Your feedback on this module
+
+Section description:
+Not scored. This is what we use to improve the next version.
+
+
+Q13  ·  Linear scale 1-5, Required
+How clear was the Creator Lab: Games, AI training module?
+    1 = Confusing
+    5 = Very clear
+
+Q14  ·  Linear scale 1-5, Required
+How prepared do you feel to teach the first 4 lessons of Creator Lab: Games, AI?
+    1 = Not prepared at all
+    5 = Fully prepared
+
+Q15  ·  Linear scale 1-5, Required
+How useful were the lesson notes (what it is about, tutor role, technical aspects)?
+    1 = Not useful
+    5 = Extremely useful
+
+Q16  ·  Paragraph, Required
+What is still unclear about Creator Lab: Games, AI, or what would you add to this module?
+
+Help text:
+Name the lesson you mean — that is what makes your answer usable.
+
+
+==========================================================================
+ANSWER KEY — quick reference
+==========================================================================
+   Q1  B    Q2  D    Q3  A    Q4  C    Q5  A    Q6  B
+   Q7  C    Q8  D    Q9  D    Q10 C    Q11 B    Q12 A
+

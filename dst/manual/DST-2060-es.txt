@@ -1,0 +1,314 @@
+==========================================================================
+  DST FINAL — [2060] GAMEDEV CREATOR LAB
+  10-12 · 90 min · Espanol
+==========================================================================
+
+Nada mas de esta pagina se escribe en el formulario — es guia para ti.
+
+--------------------------------------------------------------------------
+COMO CONSTRUIR ESTE FORMULARIO A MANO
+--------------------------------------------------------------------------
+ 1. Entra a forms.google.com y crea un formulario en blanco.
+ 2. Pega el TITULO de abajo en el titulo del formulario, y la DESCRIPCION debajo.
+ 3. Abre Configuracion (icono de engranaje):
+    - activa "Convertir en cuestionario"
+    - Publicar calificacion: "Inmediatamente despues de cada envio"
+    - El encuestado puede ver: marca "Preguntas incorrectas", "Respuestas correctas", "Puntuacion"
+    - en Respuestas, activa "Recopilar direcciones de correo electronico"
+    - desactiva "Permitir editar la respuesta" y el enlace para enviar otra respuesta
+ 4. Agrega las 2 preguntas de identificacion de la SECCION 1 (ambas Respuesta corta, Obligatoria).
+    En la del correo usa el menu de tres puntos > Validacion de respuestas > Texto > Direccion de correo.
+ 5. Agrega un salto de seccion y ponle el titulo de la SECCION 2.
+ 6. Para cada una de las 12 preguntas:
+    - agrega una pregunta de Opcion multiple, Obligatoria
+    - pega la linea PREGUNTA en el titulo de la pregunta
+    - haz clic en Opcion 1 y pega las cuatro lineas de OPCIONES de una vez — Forms las separa
+    - haz clic en "Clave de respuestas", marca la correcta y pon 1 punto
+    - haz clic en "Agregar comentarios" y pega RETROALIMENTACION en ambas cajas, correcta e incorrecta
+ 7. Agrega un salto de seccion y ponle el titulo de la SECCION 3.
+ 8. Agrega las 3 preguntas de valoracion como "Escala lineal", de 1 a 5, con las etiquetas dadas, Obligatorias.
+ 9. Agrega la ultima pregunta como "Parrafo", Obligatoria, con el texto de ayuda indicado.
+10. Enviar > copia el enlace y pegalo en finalDst.url de este curso.
+
+    Cuestionario: 1 punto por pregunta, 12 puntos en total, aprueba con 9/12
+
+
+==========================================================================
+TITULO  (copia esta linea)
+==========================================================================
+DST Final — [2060] GameDev Creator Lab
+
+==========================================================================
+DESCRIPCION  (copia este bloque)
+==========================================================================
+Este es el DST final del módulo GameDev Creator Lab del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.
+
+12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 9 / 12.
+
+
+==========================================================================
+SECCION 1 — IDENTIFICACION
+==========================================================================
+
+Q1  ·  Respuesta corta, Obligatoria
+Tu nombre completo
+
+Q2  ·  Respuesta corta, Obligatoria  ·  Validacion de respuestas: Texto > Direccion de correo
+Tu correo de Kodland
+
+Texto de ayuda:
+El mismo correo con el que entras a Back Office (…@kodland.team).
+
+
+==========================================================================
+SECCION 2 — EVALUACION DE CONOCIMIENTO
+==========================================================================
+Titulo de la seccion:
+Evaluación de conocimiento
+
+Descripcion de la seccion:
+12 preguntas sobre las primeras 4 lecciones. 1 punto cada una.
+
+
+--------------------------------------------------------------------------
+Q1   ·  respuesta correcta: C
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+1. Lección 1. ¿Cuál es el límite estricto de alcance del personaje generado con IA?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Cualquier cantidad de personajes, en cualquier vista
+Debe incluir el escenario de fondo
+Un solo personaje, vista lateral, fondo transparente
+Debe estar animado en al menos dos cuadros
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Un personaje, vista lateral, fondo transparente — convertido a 24×24 y llamado hero. La IA se usa una vez por lección, siempre acotada.
+
+
+--------------------------------------------------------------------------
+Q2   ·  respuesta correcta: A
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+2. Lección 1. ¿Por qué los estudiantes no deben usar "Sign in" en MakeCode durante la prueba inicial?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+El acceso a la cuenta es parte de la tarea, no de la primera prueba
+La cuenta se crea automáticamente la primera vez que ejecutan el proyecto
+Iniciar sesión desactiva el Ayudante de IA
+Iniciar sesión reinicia la plantilla y la deja en blanco
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Entrar a la cuenta es la tarea para casa. Mantén la primera ejecución sin fricción para que la clase llegue a un resultado funcional.
+
+
+--------------------------------------------------------------------------
+Q3   ·  respuesta correcta: D
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+3. Lección 1. ¿Cuál de estas cosas pertenece a la Lección 1?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Un puntaje visible
+Condiciones de Game Over y WIN
+Nuevos tipos de enemigos
+Cambiar el intervalo de ritmo de 1200 a 900 o 1500
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Solo el remix visual más el cambio de ritmo. Puntaje, Game Over, WIN y enemigos nuevos corresponden a lecciones posteriores — adelantarlos rompe el orden de construcción.
+
+
+--------------------------------------------------------------------------
+Q4   ·  respuesta correcta: B
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+4. Lección 2. El puntaje de un estudiante se reinicia constantemente mientras juega. ¿Cuál es la causa más probable?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+El sprite de la moneda tiene el kind equivocado
+El bloque set score está dentro de "on game update"
+La variable de puntaje nunca se creó
+El intervalo de ritmo es demasiado rápido
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+El puntaje debe ponerse en 0 al inicio del juego vía Advanced → Info, nunca dentro de un bucle como "on game update".
+
+
+--------------------------------------------------------------------------
+Q5   ·  respuesta correcta: D
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+5. Lección 2. El coleccionable no suma +1 al contacto. ¿Qué revisas primero?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+El color de fondo
+El prompt de IA usado para generar la moneda
+El intervalo de ritmo
+Que el kind del bloque create y el del bloque overlaps coincidan
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Un kind que no coincide entre create y overlaps es la causa clásica. Compara siempre esos dos antes de mirar cualquier otra cosa.
+
+
+--------------------------------------------------------------------------
+Q6   ·  respuesta correcta: C
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+6. Lección 2. ¿Qué debe entregar exactamente el estudiante en la tarea?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+El enlace Share de MakeCode
+Una captura del juego funcionando
+El enlace de Kodland Sparks, obtenido después de Publish
+El .png exportado del sprite de la moneda
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+El enlace de Sparks después de Publish — no solo el Share técnico de MakeCode. Ahí es donde vive realmente su primera beta.
+
+
+--------------------------------------------------------------------------
+Q7   ·  respuesta correcta: B
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+7. Lección 3. ¿Dónde NO debe colocarse el bloque LOSE?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+En el bloque on start
+Dentro del overlaps de recolección de monedas
+En el bucle game update
+En el sprite del héroe
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Nunca dentro del overlaps de recolección de monedas. Revisa además que el bloque de derrota reemplace correctamente al reset original.
+
+
+--------------------------------------------------------------------------
+Q8   ·  respuesta correcta: A
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+8. Lección 3. ¿Cuánto tiempo real de práctica independiente deben tener los estudiantes antes de que intervengas?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Unos 17 minutos
+Unos 5 minutos
+Unos 2 minutos
+Ninguno — guíalos continuamente
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Alrededor de 17 minutos. La lucha productiva es el punto de la lección, no un accidente dentro de ella.
+
+
+--------------------------------------------------------------------------
+Q9   ·  respuesta correcta: A
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+9. Lección 3. Los estudiantes eligen una condición de victoria entre tres opciones, A, B o C. ¿Cuál es tu rol?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Dejar que cada estudiante elija la suya, y en el desfile mostrar las distintas formas sin rankearlas
+Recomendar la opción que produce el código más limpio
+Asignar opciones para que el grupo cubra las tres de forma pareja
+Elegir una opción para todo el grupo y simplificar la depuración
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Sin imponer y sin comparar. Mostrar tres victorias distintas y válidas es justamente lo que hace que el desfile valga la pena.
+
+
+--------------------------------------------------------------------------
+Q10  ·  respuesta correcta: B
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+10. Lección 4. ¿Qué hace que un prompt sea lo bastante específico para el Ayudante de IA?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Una frase corta que describa la sensación que debe generar la mecánica
+Una sola mecánica, el contexto del juego, el JavaScript completo pegado, y restricciones claras
+Una lista de todas las mecánicas que quiere el estudiante, para que la IA elija
+Una captura del juego más el nombre de la mecánica
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Una mecánica a la vez, con el JavaScript completo pegado en lugar de fragmentos. Los prompts vagos son la causa principal de un proyecto roto en esta lección.
+
+
+--------------------------------------------------------------------------
+Q11  ·  respuesta correcta: C
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+11. Lección 4. ¿Cómo debe republicar el estudiante su juego actualizado?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Publish project de nuevo en Sparks, creando una tarjeta nueva
+Enviar solo el enlace Share de MakeCode
+Share con "Update existing share link" marcada, y luego My Projects → Edit → Project link
+Descargar el archivo y subirlo manualmente
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Publish project de nuevo crea un duplicado no deseado. Actualiza el enlace existente y luego edita la tarjeta que ya existe en Sparks.
+
+
+--------------------------------------------------------------------------
+Q12  ·  respuesta correcta: D
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+12. Lección 4. ¿Cómo debes cerrar el módulo?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Adelantar el próximo módulo en detalle para mantener la motivación
+Asignar mecánicas extra como tarea de vacaciones
+Revisar el código de cada estudiante individualmente con el grupo mirando
+Celebrar todo el recorrido — prototipo → mecánica → lanzamiento — sin adelantar el contenido del próximo módulo
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Cierra todo el arco con una celebración grupal. Los adelantos detallados del próximo módulo corresponden al próximo módulo.
+
+
+==========================================================================
+SECCION 3 — FEEDBACK SOBRE ESTE MODULO
+==========================================================================
+Titulo de la seccion:
+Tu feedback sobre este módulo
+
+Descripcion de la seccion:
+No se puntúa. Esto es lo que usamos para mejorar la próxima versión.
+
+
+Q13  ·  Escala lineal 1-5, Obligatoria
+¿Qué tan claro fue el módulo de entrenamiento de GameDev Creator Lab?
+    1 = Confuso
+    5 = Muy claro
+
+Q14  ·  Escala lineal 1-5, Obligatoria
+¿Qué tan preparado te sientes para dar las primeras 4 lecciones de GameDev Creator Lab?
+    1 = Nada preparado
+    5 = Totalmente preparado
+
+Q15  ·  Escala lineal 1-5, Obligatoria
+¿Qué tan útiles fueron las notas por lección (de qué trata, rol del tutor, aspectos técnicos)?
+    1 = Nada útiles
+    5 = Muy útiles
+
+Q16  ·  Parrafo, Obligatoria
+¿Qué sigue sin quedarte claro de GameDev Creator Lab, o qué agregarías a este módulo?
+
+Texto de ayuda:
+Nombra la lección a la que te refieres — eso es lo que hace tu respuesta útil.
+
+
+==========================================================================
+CLAVE DE RESPUESTAS — referencia rapida
+==========================================================================
+   Q1  C    Q2  A    Q3  D    Q4  B    Q5  D    Q6  C
+   Q7  B    Q8  A    Q9  A    Q10 B    Q11 C    Q12 D
+

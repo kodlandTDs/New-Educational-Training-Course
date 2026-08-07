@@ -1,0 +1,750 @@
+# -*- coding: utf-8 -*-
+"""
+Single source of truth for the four course DSTs.
+
+`build_dst.py` reads this file and emits:
+  dst/DST-<code>-<lang>.md     human-readable, for review or manual entry
+  tools/create-dst-forms.gs    Apps Script that builds every form in one run
+
+Question format: (text, [options], index_of_correct_answer, feedback)
+"""
+
+META = {
+    '2058': {'name_en': 'Digital Creativity Level 2', 'name_es': 'Creatividad Digital Nivel 2',
+             'age': '10-12', 'len': '60 min'},
+    '2063': {'name_en': 'Creator Lab: Games, AI', 'name_es': 'Creator Lab: Games, AI',
+             'age': '8-9', 'len': '60 min'},
+    '2060': {'name_en': 'GameDev Creator Lab', 'name_es': 'GameDev Creator Lab',
+             'age': '10-12', 'len': '90 min'},
+    '2059': {'name_en': 'Coding Lab', 'name_es': 'Coding Lab',
+             'age': '12-17', 'len': '90 min'},
+}
+
+DESC = {
+    'en': ('This is the final DST for the {name} module of the New Educational Model '
+           'tutor training. It covers the first 4 lessons you will teach.\n\n'
+           '12 scored questions (1 point each) plus a short feedback section. '
+           'You will see your score and the correct answers as soon as you submit. '
+           'Recommended pass mark: 9 / 12.'),
+    'es': ('Este es el DST final del módulo {name} del entrenamiento de tutores del Nuevo '
+           'Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.\n\n'
+           '12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. '
+           'Verás tu puntaje y las respuestas correctas apenas envíes. '
+           'Puntaje recomendado para aprobar: 9 / 12.'),
+}
+
+IDENT = {
+    'en': {'section': 'Who you are',
+           'help': 'So we can match this DST to your training record.',
+           'name': 'Your full name',
+           'email': 'Your Kodland e-mail',
+           'email_help': 'The same address you use for Back Office (…@kodland.team).'},
+    'es': {'section': 'Quién eres',
+           'help': 'Para poder vincular este DST con tu registro de entrenamiento.',
+           'name': 'Tu nombre completo',
+           'email': 'Tu correo de Kodland',
+           'email_help': 'El mismo correo con el que entras a Back Office (…@kodland.team).'},
+}
+
+SECTIONS = {
+    'en': {'quiz': 'Knowledge check',
+           'quiz_help': '12 questions on the first 4 lessons. 1 point each.',
+           'fb': 'Your feedback on this module',
+           'fb_help': 'Not scored. This is what we use to improve the next version.',
+           'confirm': 'Thank you. Your DST has been recorded — your score and the correct answers are shown above.'},
+    'es': {'quiz': 'Evaluación de conocimiento',
+           'quiz_help': '12 preguntas sobre las primeras 4 lecciones. 1 punto cada una.',
+           'fb': 'Tu feedback sobre este módulo',
+           'fb_help': 'No se puntúa. Esto es lo que usamos para mejorar la próxima versión.',
+           'confirm': 'Gracias. Tu DST quedó registrado — tu puntaje y las respuestas correctas se muestran arriba.'},
+}
+
+RATINGS = {
+    'en': [
+        ('How clear was the {name} training module?', 'Confusing', 'Very clear'),
+        ('How prepared do you feel to teach the first 4 lessons of {name}?', 'Not prepared at all', 'Fully prepared'),
+        ('How useful were the lesson notes (what it is about, tutor role, technical aspects)?', 'Not useful', 'Extremely useful'),
+    ],
+    'es': [
+        ('¿Qué tan claro fue el módulo de entrenamiento de {name}?', 'Confuso', 'Muy claro'),
+        ('¿Qué tan preparado te sientes para dar las primeras 4 lecciones de {name}?', 'Nada preparado', 'Totalmente preparado'),
+        ('¿Qué tan útiles fueron las notas por lección (de qué trata, rol del tutor, aspectos técnicos)?', 'Nada útiles', 'Muy útiles'),
+    ],
+}
+
+OPEN = {
+    'en': ('What is still unclear about {name}, or what would you add to this module?',
+           'Name the lesson you mean — that is what makes your answer usable.'),
+    'es': ('¿Qué sigue sin quedarte claro de {name}, o qué agregarías a este módulo?',
+           'Nombra la lección a la que te refieres — eso es lo que hace tu respuesta útil.'),
+}
+
+# =====================================================================
+# 2058 — Digital Creativity Level 2
+# =====================================================================
+Q2058_EN = [
+    ("Lesson 1. FlipAnim will not load for two of your students. What is the planned alternative?",
+     ["Skip the animation and start Canva early", "Use BrushNinja",
+      "Have them watch a classmate and copy the frames later",
+      "Have them draw the frames on paper and photograph them"], 1,
+     "BrushNinja is the designated backup editor. Like FlipAnim it works without registration, so no personal data is requested."),
+
+    ("Lesson 1. A student's animation runs correctly but the letters look rough, and there are eight minutes left. What do you prioritise?",
+     ["Redrawing the letters so the result looks polished",
+      "That the animation works — legible and functional comes before pretty",
+      "Adding a background so the GIF looks finished",
+      "Starting the Canva registration early to save time next class"], 1,
+     "The objective of Lesson 1 is a working, legible GIF. Prioritise that the animation functions over how the design looks; polish is not the learning goal here."),
+
+    ("Lesson 1. What is the homework, and what must you never ask for?",
+     ["Finish the GIF at home; never ask for the file",
+      "Prepare an own or an adult's e-mail for the Canva registration; never ask for the password",
+      "Create a Kodland Sparks account; never ask for the nickname",
+      "Watch a Canva tutorial; never ask for a screenshot"], 1,
+     "Registration is the classic Lesson 2 blocker, so remind them a few days ahead. The password is never shared with the tutor."),
+
+    ("Lesson 2. What should you have prepared before the class starts?",
+     ["A finished example video for every student to copy",
+      "Backup e-mail accounts, in case registration fails",
+      "A Canva Pro licence for the group",
+      "The GIFs from Lesson 1 downloaded onto your own computer"], 1,
+     "Registration reliably creates technical difficulties. Have backup e-mail accounts ready so nobody is stranded at the very first step."),
+
+    ("Lesson 2. In what format should the video project be created?",
+     ["Horizontal 16:9", "Vertical", "Square 1:1", "Whatever the student prefers"], 1,
+     "Vertical format. It is what the final video-presentation is built around across all four lessons."),
+
+    ("Lesson 2. What must be configured before the submission activity?",
+     ["Manual review, with a maximum score greater than zero",
+      "Automatic review with a maximum score of zero",
+      "Nothing — submissions are checked automatically",
+      "A shared Canva folder for the group"], 0,
+     "Enable manual review with a maximum score greater than zero. Otherwise the submission cannot be graded. The share flow is Share → Anyone with the link → View → Copy link."),
+
+    ("Lesson 3. A student did not bring a photo for their interests scene. What do you have ready?",
+     ["A photo of yourself they can use", "A neutral backup avatar",
+      "A stock photo from Canva Pro", "Nothing — they skip the scene and catch up at home"], 1,
+     "Always have a neutral backup avatar. It keeps the student moving and removes any pressure to share a personal photo."),
+
+    ("Lesson 3. Why should you not let students start many AI generations one after another?",
+     ["The results get worse each time", "Free AI credits are limited",
+      "It slows down the whole classroom's connection", "The AI stops removing backgrounds correctly"], 1,
+     "Free credits are limited. Also check the image contains no personal data and stays inside the frame."),
+
+    ("Lesson 3. A student's scene has a layer problem and they ask you to fix it. What is the right move?",
+     ["Take the mouse and fix the layer order, then explain what you did",
+      "Give feedback as specific strength → question to improve → support, and let them fix it themselves",
+      "Tell them to undo everything and start the scene again",
+      "Ask the AI to regenerate the image with the correct layers"], 1,
+     "Show the technical flow once, then let the student experiment. Do not correct the project in place of the student — that is where the ownership is lost."),
+
+    ("Lesson 4. Ten minutes are left and no one has exported yet. What is the sanctioned simplification?",
+     ["Skip publishing to Kodland Sparks", "Export without audio",
+      "Music only plus one sound effect", "Publish only the first scene"], 2,
+     "The simplified version is music plus one sound effect. Publishing to Sparks is the point of the lesson — never drop that."),
+
+    ("Lesson 4. Which of these will break the export?",
+     ["Closing Canva before the processing finishes",
+      "Adding more than one audio track", "Using a vertical format",
+      "Exporting before adding the third scene"], 0,
+     "Do not close Canva before the export finishes processing. Afterwards, verify every page downloaded and that the video actually has audio."),
+
+    ("Lesson 4. How is permission to use a student's work in Kodland advertising handled?",
+     ["It is automatic once the project is public on Sparks",
+      "The tutor decides on the student's behalf",
+      "It must always be voluntary, never forced",
+      "It is requested by e-mail once the course ends"], 2,
+     "Always voluntary. A student saying no must carry no consequence for their grade or their feedback."),
+]
+
+Q2058_ES = [
+    ("Lección 1. FlipAnim no carga para dos de tus estudiantes. ¿Cuál es la alternativa prevista?",
+     ["Saltar la animación y empezar Canva antes", "Usar BrushNinja",
+      "Que observen a un compañero y copien los cuadros después",
+      "Que dibujen los cuadros en papel y los fotografíen"], 1,
+     "BrushNinja es el editor de respaldo designado. Igual que FlipAnim funciona sin registro, así que no se piden datos personales."),
+
+    ("Lección 1. La animación de un estudiante corre bien pero las letras se ven toscas, y quedan ocho minutos. ¿Qué priorizas?",
+     ["Redibujar las letras para que el resultado se vea pulido",
+      "Que la animación funcione — legible y funcional va antes que bonito",
+      "Agregar un fondo para que el GIF se vea terminado",
+      "Empezar el registro en Canva antes para ganar tiempo la próxima clase"], 1,
+     "El objetivo de la Lección 1 es un GIF funcional y legible. Prioriza que la animación funcione antes que cómo se ve el diseño; el pulido no es la meta de aprendizaje aquí."),
+
+    ("Lección 1. ¿Cuál es la tarea, y qué no debes pedir nunca?",
+     ["Terminar el GIF en casa; nunca pedir el archivo",
+      "Preparar un correo propio o de un adulto para el registro en Canva; nunca pedir la contraseña",
+      "Crear una cuenta de Kodland Sparks; nunca pedir el nickname",
+      "Ver un tutorial de Canva; nunca pedir una captura"], 1,
+     "El registro es el bloqueo clásico de la Lección 2, así que recuérdalo unos días antes. La contraseña nunca se comparte con el tutor."),
+
+    ("Lección 2. ¿Qué debes tener preparado antes de que empiece la clase?",
+     ["Un video de ejemplo terminado para que cada estudiante lo copie",
+      "Cuentas de correo de respaldo, por si el registro falla",
+      "Una licencia de Canva Pro para el grupo",
+      "Los GIF de la Lección 1 descargados en tu propia computadora"], 1,
+     "El registro genera dificultades técnicas de forma confiable. Ten cuentas de correo de respaldo listas para que nadie quede varado en el primer paso."),
+
+    ("Lección 2. ¿En qué formato debe crearse el proyecto de video?",
+     ["Horizontal 16:9", "Vertical", "Cuadrado 1:1", "El que prefiera el estudiante"], 1,
+     "Formato vertical. Es sobre el que se construye la video-presentación final a lo largo de las cuatro lecciones."),
+
+    ("Lección 2. ¿Qué debe configurarse antes de la actividad de entrega?",
+     ["Revisión manual, con puntuación máxima mayor a cero",
+      "Revisión automática con puntuación máxima de cero",
+      "Nada — las entregas se revisan automáticamente",
+      "Una carpeta compartida de Canva para el grupo"], 0,
+     "Activa la revisión manual con puntuación máxima mayor a cero. Si no, la entrega no se puede calificar. El flujo para compartir es Compartir → Cualquiera con el enlace → Ver → Copiar enlace."),
+
+    ("Lección 3. Un estudiante no trajo foto para su escena de intereses. ¿Qué tienes listo?",
+     ["Una foto tuya que pueda usar", "Un avatar neutral de respaldo",
+      "Una foto de stock de Canva Pro", "Nada — se salta la escena y la recupera en casa"], 1,
+     "Ten siempre un avatar neutral de respaldo. Mantiene al estudiante avanzando y elimina cualquier presión de compartir una foto personal."),
+
+    ("Lección 3. ¿Por qué no debes dejar que los estudiantes inicien muchas generaciones de IA seguidas?",
+     ["Los resultados empeoran cada vez", "Los créditos gratuitos de IA son limitados",
+      "Ralentiza la conexión de todo el salón", "La IA deja de quitar fondos correctamente"], 1,
+     "Los créditos gratuitos son limitados. Además revisa que la imagen no contenga datos personales y no salga del encuadre."),
+
+    ("Lección 3. La escena de un estudiante tiene un problema de capas y te pide que se lo arregles. ¿Qué haces?",
+     ["Tomar el mouse, arreglar el orden de capas y luego explicar qué hiciste",
+      "Dar retroalimentación como fortaleza específica → pregunta para mejorar → apoyo, y dejar que lo arregle él",
+      "Decirle que deshaga todo y empiece la escena de nuevo",
+      "Pedirle a la IA que regenere la imagen con las capas correctas"], 1,
+     "Muestra el flujo técnico una sola vez y deja que el estudiante experimente. No corrijas el proyecto en lugar del estudiante — ahí es donde se pierde la autoría."),
+
+    ("Lección 4. Quedan diez minutos y nadie ha exportado todavía. ¿Cuál es la simplificación permitida?",
+     ["Saltar la publicación en Kodland Sparks", "Exportar sin audio",
+      "Solo música más un efecto de sonido", "Publicar solo la primera escena"], 2,
+     "La versión simplificada es música más un efecto de sonido. Publicar en Sparks es el punto de la lección — eso nunca se elimina."),
+
+    ("Lección 4. ¿Cuál de estas cosas romperá la exportación?",
+     ["Cerrar Canva antes de que termine el procesamiento",
+      "Agregar más de una pista de audio", "Usar formato vertical",
+      "Exportar antes de agregar la tercera escena"], 0,
+     "No cierres Canva antes de que termine el procesamiento de la exportación. Después, verifica que todas las páginas se descargaron y que el video efectivamente tiene audio."),
+
+    ("Lección 4. ¿Cómo se maneja el permiso para usar el trabajo de un estudiante en publicidad de Kodland?",
+     ["Es automático una vez que el proyecto es público en Sparks",
+      "El tutor decide en nombre del estudiante",
+      "Debe ser siempre voluntario, nunca forzado",
+      "Se pide por correo al terminar el curso"], 2,
+     "Siempre voluntario. Que un estudiante diga que no no debe tener ninguna consecuencia en su nota ni en su retroalimentación."),
+]
+
+# =====================================================================
+# 2063 — Creator Lab: Games, AI
+# =====================================================================
+Q2063_EN = [
+    ("Lesson 1. How do your students load the .sb3 template into Creator Lab?",
+     ["By double-clicking the file", "Via the \"Upload\" option",
+      "By dragging it onto the stage", "From the Scratch website"], 1,
+     "Always via \"Upload\", never a double click. This is the single most common failure of Lesson 1."),
+
+    ("Lesson 1. A student asks how to make a counter with a loop. What do you do?",
+     ["Teach loops and variables — they are clearly ready",
+      "Keep the focus: variables, loops and complex conditions are deliberately not taught yet",
+      "Ask AI Buddy to write the loop for them",
+      "Tell them it cannot be done in Scratch"], 1,
+     "The lesson narrows the focus on purpose. Variables arrive in Lesson 2 as the crystal counter; compound conditions come later."),
+
+    ("Lesson 1. What must the AI-generated background satisfy?",
+     ["It must include a character so the scene looks alive",
+      "It must be free of characters and leave central space for the character",
+      "It must be black and white so the sprite stands out",
+      "It must be generated twice so the student can choose"], 1,
+     "No characters, and central space left for the sprite. Remember too that publishing on Sparks and sending the link on the Kodland platform are two separate steps."),
+
+    ("Lesson 2. What must the AI-generated crystal costume satisfy?",
+     ["Transparent background, size set to 25%", "Opaque background, size 100%",
+      "It must include the hero in the frame", "It must be drawn by hand, not generated"], 0,
+     "Transparent background and 25% size. The crystal is the one and only AI step of this lesson."),
+
+    ("Lesson 2. The crystals are built across three increasing levels of autonomy. What is the correct order?",
+     ["Watch → copy → repeat",
+      "Connect ready blocks → complete what is missing → build the sequence alone",
+      "Plan → code → test", "Prototype → debug → publish"], 1,
+     "Connect, Complete, Build it yourself — the same scaffolding ladder used across all four courses. Let them build the third crystal unaided before you intervene."),
+
+    ("Lesson 2. What must the green flag do?",
+     ["Only return the hero to its starting position",
+      "Only reset the score to zero",
+      "Return the hero to its position AND reset the score to zero",
+      "Reload the whole project from the template"], 2,
+     "Both. Verify the start script contains the hero position and the score reset before you let anyone publish."),
+
+    ("Lesson 3. While the portal is still hidden, what must be true?",
+     ["It must react to being touched so students can test it",
+      "It must not react to being touched — the transition to WIN is a separate step",
+      "It must already show the decorated WIN screen",
+      "It must be deleted and recreated in Lesson 4"], 1,
+     "A hidden portal that reacts to touch is the classic bug here. The WIN transition is configured in its own step, and the WIN screen stays intentionally empty until Lesson 4."),
+
+    ("Lesson 3. A student's key appears but the portal never opens. What do you check first?",
+     ["Whether the crystal counter reached 3",
+      "Whether the message the key sends and the one the portal receives match exactly",
+      "Whether the backdrop was generated with AI",
+      "Whether the hero is touching the portal sprite"], 1,
+     "The broadcast names must match exactly. That mismatch is the usual cause of a key that appears but a portal that does nothing."),
+
+    ("Lesson 3. A student says their game is too hard. What are they allowed to change?",
+     ["The code of the collection mechanic",
+      "The position of the objects, not the code",
+      "The number of crystals required, from 3 to 1",
+      "Nothing — the difficulty is fixed by the template"], 1,
+     "Difficulty is balanced by moving danger or key, not by rewriting logic or adding new mechanics. Let the student make that call themselves."),
+
+    ("Lesson 4. What is the rule about the say block and Text to Speech?",
+     ["Use both together for accessibility", "Use only one, never both",
+      "Use Text to Speech only, say is deprecated", "Use say only, Text to Speech is not available"], 1,
+     "Use one or the other, never both at once. And only one AI backdrop is allowed in this lesson."),
+
+    ("Lesson 4. Where does the victory-phrase block go?",
+     ["On the Stage, before the backdrop switch",
+      "On the hero sprite, at the start of the game",
+      "On the Portal sprite, right after the backdrop switch to WIN",
+      "Anywhere — the position does not matter"], 2,
+     "On the Portal sprite, right after the switch to WIN. Putting it on the Stage is the classic bug of this lesson."),
+
+    ("Lesson 4. How should the \"Iteration Award\" be given?",
+     ["To the best project, so the group has a clear standard to aim for",
+      "For style or a unique detail, without comparing projects to each other",
+      "To whoever finished first",
+      "By student vote at the end of the mini-festival"], 1,
+     "Never comparative. It recognises a personal decision — style or a unique detail — and closes a module the group should celebrate explicitly."),
+]
+
+Q2063_ES = [
+    ("Lección 1. ¿Cómo cargan tus estudiantes la plantilla .sb3 en Creator Lab?",
+     ["Haciendo doble clic en el archivo", "Vía la opción \"Upload\"",
+      "Arrastrándola al escenario", "Desde el sitio de Scratch"], 1,
+     "Siempre vía \"Upload\", nunca doble clic. Este es el fallo más común de la Lección 1."),
+
+    ("Lección 1. Un estudiante pregunta cómo hacer un contador con un bucle. ¿Qué haces?",
+     ["Enseñar bucles y variables — claramente ya está listo",
+      "Mantener el foco: variables, bucles y condiciones complejas no se enseñan todavía a propósito",
+      "Pedirle a AI Buddy que le escriba el bucle",
+      "Decirle que no se puede hacer en Scratch"], 1,
+     "La lección estrecha el foco a propósito. Las variables llegan en la Lección 2 como el contador de cristales; las condiciones compuestas vienen después."),
+
+    ("Lección 1. ¿Qué debe cumplir el fondo generado con IA?",
+     ["Debe incluir un personaje para que la escena se vea viva",
+      "Debe estar libre de personajes y dejar espacio central para el personaje",
+      "Debe ser en blanco y negro para que resalte el sprite",
+      "Debe generarse dos veces para que el estudiante elija"], 1,
+     "Sin personajes, y con espacio central para el sprite. Recuerda además que publicar en Sparks y enviar el enlace en la plataforma de Kodland son dos pasos distintos."),
+
+    ("Lección 2. ¿Qué debe cumplir el disfraz del cristal generado con IA?",
+     ["Fondo transparente, tamaño configurado al 25%", "Fondo opaco, tamaño 100%",
+      "Debe incluir al héroe en el encuadre", "Debe dibujarse a mano, no generarse"], 0,
+     "Fondo transparente y tamaño 25%. El cristal es el único paso con IA de esta lección."),
+
+    ("Lección 2. Los cristales se arman en tres niveles crecientes de autonomía. ¿Cuál es el orden correcto?",
+     ["Mirar → copiar → repetir",
+      "Conectar bloques ya armados → completar lo que falta → armar la secuencia solo",
+      "Planear → programar → probar", "Prototipo → depurar → publicar"], 1,
+     "Conecta, Completa, Arma tú solo — la misma escalera de andamiaje de los cuatro cursos. Deja que armen el tercer cristal sin ayuda antes de intervenir."),
+
+    ("Lección 2. ¿Qué debe hacer la bandera verde?",
+     ["Solo devolver al héroe a su posición inicial",
+      "Solo reiniciar el puntaje a cero",
+      "Devolver al héroe a su posición Y reiniciar el puntaje a cero",
+      "Recargar todo el proyecto desde la plantilla"], 2,
+     "Ambas cosas. Verifica que el script de inicio contenga la posición del héroe y el reinicio del puntaje antes de dejar que alguien publique."),
+
+    ("Lección 3. Mientras el portal sigue oculto, ¿qué debe ser cierto?",
+     ["Debe reaccionar al tocarlo para que los estudiantes puedan probarlo",
+      "No debe reaccionar al tocarlo — la transición a WIN es un paso aparte",
+      "Debe mostrar ya la pantalla WIN decorada",
+      "Debe borrarse y recrearse en la Lección 4"], 1,
+     "Un portal oculto que reacciona al tocarlo es el bug clásico aquí. La transición a WIN se configura en su propio paso, y la pantalla WIN queda intencionalmente vacía hasta la Lección 4."),
+
+    ("Lección 3. La llave de un estudiante aparece pero el portal nunca se abre. ¿Qué revisas primero?",
+     ["Si el contador de cristales llegó a 3",
+      "Si el mensaje que envía la llave y el que recibe el portal coinciden exactamente",
+      "Si el fondo fue generado con IA",
+      "Si el héroe está tocando el sprite del portal"], 1,
+     "Los nombres de los mensajes deben coincidir exactamente. Esa discrepancia es la causa habitual de una llave que aparece y un portal que no hace nada."),
+
+    ("Lección 3. Un estudiante dice que su juego está muy difícil. ¿Qué se le permite cambiar?",
+     ["El código de la mecánica de recolección",
+      "La posición de los objetos, no el código",
+      "La cantidad de cristales necesarios, de 3 a 1",
+      "Nada — la dificultad la fija la plantilla"], 1,
+     "La dificultad se equilibra moviendo el peligro o la llave, no reescribiendo lógica ni agregando mecánicas nuevas. Deja que el estudiante tome esa decisión."),
+
+    ("Lección 4. ¿Cuál es la regla sobre el bloque say y Text to Speech?",
+     ["Usar ambos juntos por accesibilidad", "Usar solo uno, nunca ambos",
+      "Usar solo Text to Speech, say está obsoleto", "Usar solo say, Text to Speech no está disponible"], 1,
+     "Uno u otro, nunca los dos a la vez. Y solo se permite un backdrop con IA en esta lección."),
+
+    ("Lección 4. ¿Dónde va el bloque de frase de victoria?",
+     ["En el Stage, antes del cambio de fondo",
+      "En el sprite del héroe, al inicio del juego",
+      "En el sprite Portal, justo después del cambio de fondo a WIN",
+      "En cualquier lado — la posición da igual"], 2,
+     "En el sprite Portal, justo después del cambio a WIN. Ponerlo en el Stage es el bug clásico de esta lección."),
+
+    ("Lección 4. ¿Cómo debe entregarse el \"Iteration Award\"?",
+     ["Al mejor proyecto, para que el grupo tenga un estándar claro al que apuntar",
+      "Por estilo o un detalle único, sin comparar los proyectos entre sí",
+      "A quien haya terminado primero",
+      "Por votación de los estudiantes al final del mini-festival"], 1,
+     "Nunca comparativo. Reconoce una decisión personal — estilo o un detalle único — y cierra un módulo que el grupo debe celebrar explícitamente."),
+]
+
+# =====================================================================
+# 2060 — GameDev Creator Lab
+# =====================================================================
+Q2060_EN = [
+    ("Lesson 1. What is the strict scope limit on the AI-generated character?",
+     ["Any number of characters, in any view",
+      "One single character, side view, transparent background",
+      "It must include the background scenery",
+      "It must be animated across at least two frames"], 1,
+     "One character, side view, transparent background — converted at 24×24 and named hero. AI is used once per lesson, always bounded."),
+
+    ("Lesson 1. Why should students not use \"Sign in\" in MakeCode during the initial test?",
+     ["The account is created automatically the first time they run the project",
+      "Account access is part of the homework, not of the first test",
+      "Signing in disables the AI Helper", "Signing in resets the template to blank"], 1,
+     "Getting into the account is the homework. Keep the first run friction-free so the class reaches a working result."),
+
+    ("Lesson 1. Which of these belongs in Lesson 1?",
+     ["A visible score", "Game Over and WIN conditions",
+      "Changing the rhythm interval from 1200 to 900 or 1500", "New enemy types"], 2,
+     "Only the visual remix plus the rhythm change. Score, Game Over, WIN and new enemies belong to later lessons — adding them early breaks the build order."),
+
+    ("Lesson 2. A student's score keeps resetting to zero while they play. What is the most likely cause?",
+     ["The coin sprite has the wrong kind",
+      "The set score block is inside \"on game update\"",
+      "The score variable was never created",
+      "The rhythm interval is too fast"], 1,
+     "Score must be set to 0 at game start via Advanced → Info, never inside a loop like \"on game update\"."),
+
+    ("Lesson 2. The collectible does not add +1 on contact. What do you check first?",
+     ["The background colour", "That the kind in the create block and in the overlaps block match",
+      "The rhythm interval", "The AI prompt used to generate the coin"], 1,
+     "A mismatched kind between create and overlaps is the classic cause. Always compare the two before looking anywhere else."),
+
+    ("Lesson 2. What exactly does the homework require the student to submit?",
+     ["The MakeCode Share link", "The Kodland Sparks link, obtained after Publish",
+      "A screenshot of the running game", "The exported .png of the coin sprite"], 1,
+     "The Sparks link after Publish — not just MakeCode's technical Share link. This is where their first beta actually lives."),
+
+    ("Lesson 3. Where must the LOSE block NOT be placed?",
+     ["Inside the coin-collection overlaps", "In the on start block",
+      "In the game update loop", "On the hero sprite"], 0,
+     "Never inside the coin-collection overlaps. Also check the defeat block correctly replaces the original reset."),
+
+    ("Lesson 3. How much real independent practice time should students get before you intervene?",
+     ["About 2 minutes", "About 5 minutes", "About 17 minutes", "None — guide them continuously"], 2,
+     "Roughly 17 minutes. The productive struggle is the point of the lesson, not an accident in it."),
+
+    ("Lesson 3. Students choose a victory condition from three options, A, B or C. What is your role?",
+     ["Recommend the option that produces the cleanest code",
+      "Let each student choose their own, and in the parade show the different forms without ranking them",
+      "Assign options so the group covers all three evenly",
+      "Choose one option for the whole group to keep debugging simple"], 1,
+     "No imposing and no comparing. Showing three different valid victories is exactly what makes the parade worth doing."),
+
+    ("Lesson 4. What makes a prompt specific enough for the AI Helper?",
+     ["A short sentence describing the feeling the mechanic should create",
+      "One single mechanic, the game context, the complete JavaScript pasted, and clear restrictions",
+      "A list of every mechanic the student wants, so the AI can pick",
+      "A screenshot of the game plus the mechanic name"], 1,
+     "One mechanic at a time, with the complete JavaScript pasted rather than fragments. Vague prompts are the main cause of a broken project in this lesson."),
+
+    ("Lesson 4. How should the student republish their updated game?",
+     ["Publish project again on Sparks, creating a new card",
+      "Share with \"Update existing share link\" ticked, then My Projects → Edit → Project link",
+      "Send only the MakeCode Share link", "Download the file and upload it manually"], 1,
+     "Publish project again creates an unwanted duplicate. Update the existing share link, then edit the existing Sparks card."),
+
+    ("Lesson 4. How should you close the module?",
+     ["Preview the next module in detail so students stay motivated",
+      "Celebrate the whole route — prototype → mechanic → launch — without previewing the next module's content",
+      "Review each student's code individually with the group watching",
+      "Assign extra mechanics as holiday homework"], 1,
+     "Close the whole arc with a group celebration. Detailed previews of the next module belong to the next module."),
+]
+
+Q2060_ES = [
+    ("Lección 1. ¿Cuál es el límite estricto de alcance del personaje generado con IA?",
+     ["Cualquier cantidad de personajes, en cualquier vista",
+      "Un solo personaje, vista lateral, fondo transparente",
+      "Debe incluir el escenario de fondo",
+      "Debe estar animado en al menos dos cuadros"], 1,
+     "Un personaje, vista lateral, fondo transparente — convertido a 24×24 y llamado hero. La IA se usa una vez por lección, siempre acotada."),
+
+    ("Lección 1. ¿Por qué los estudiantes no deben usar \"Sign in\" en MakeCode durante la prueba inicial?",
+     ["La cuenta se crea automáticamente la primera vez que ejecutan el proyecto",
+      "El acceso a la cuenta es parte de la tarea, no de la primera prueba",
+      "Iniciar sesión desactiva el Ayudante de IA",
+      "Iniciar sesión reinicia la plantilla y la deja en blanco"], 1,
+     "Entrar a la cuenta es la tarea para casa. Mantén la primera ejecución sin fricción para que la clase llegue a un resultado funcional."),
+
+    ("Lección 1. ¿Cuál de estas cosas pertenece a la Lección 1?",
+     ["Un puntaje visible", "Condiciones de Game Over y WIN",
+      "Cambiar el intervalo de ritmo de 1200 a 900 o 1500", "Nuevos tipos de enemigos"], 2,
+     "Solo el remix visual más el cambio de ritmo. Puntaje, Game Over, WIN y enemigos nuevos corresponden a lecciones posteriores — adelantarlos rompe el orden de construcción."),
+
+    ("Lección 2. El puntaje de un estudiante se reinicia constantemente mientras juega. ¿Cuál es la causa más probable?",
+     ["El sprite de la moneda tiene el kind equivocado",
+      "El bloque set score está dentro de \"on game update\"",
+      "La variable de puntaje nunca se creó",
+      "El intervalo de ritmo es demasiado rápido"], 1,
+     "El puntaje debe ponerse en 0 al inicio del juego vía Advanced → Info, nunca dentro de un bucle como \"on game update\"."),
+
+    ("Lección 2. El coleccionable no suma +1 al contacto. ¿Qué revisas primero?",
+     ["El color de fondo", "Que el kind del bloque create y el del bloque overlaps coincidan",
+      "El intervalo de ritmo", "El prompt de IA usado para generar la moneda"], 1,
+     "Un kind que no coincide entre create y overlaps es la causa clásica. Compara siempre esos dos antes de mirar cualquier otra cosa."),
+
+    ("Lección 2. ¿Qué debe entregar exactamente el estudiante en la tarea?",
+     ["El enlace Share de MakeCode", "El enlace de Kodland Sparks, obtenido después de Publish",
+      "Una captura del juego funcionando", "El .png exportado del sprite de la moneda"], 1,
+     "El enlace de Sparks después de Publish — no solo el Share técnico de MakeCode. Ahí es donde vive realmente su primera beta."),
+
+    ("Lección 3. ¿Dónde NO debe colocarse el bloque LOSE?",
+     ["Dentro del overlaps de recolección de monedas", "En el bloque on start",
+      "En el bucle game update", "En el sprite del héroe"], 0,
+     "Nunca dentro del overlaps de recolección de monedas. Revisa además que el bloque de derrota reemplace correctamente al reset original."),
+
+    ("Lección 3. ¿Cuánto tiempo real de práctica independiente deben tener los estudiantes antes de que intervengas?",
+     ["Unos 2 minutos", "Unos 5 minutos", "Unos 17 minutos", "Ninguno — guíalos continuamente"], 2,
+     "Alrededor de 17 minutos. La lucha productiva es el punto de la lección, no un accidente dentro de ella."),
+
+    ("Lección 3. Los estudiantes eligen una condición de victoria entre tres opciones, A, B o C. ¿Cuál es tu rol?",
+     ["Recomendar la opción que produce el código más limpio",
+      "Dejar que cada estudiante elija la suya, y en el desfile mostrar las distintas formas sin rankearlas",
+      "Asignar opciones para que el grupo cubra las tres de forma pareja",
+      "Elegir una opción para todo el grupo y simplificar la depuración"], 1,
+     "Sin imponer y sin comparar. Mostrar tres victorias distintas y válidas es justamente lo que hace que el desfile valga la pena."),
+
+    ("Lección 4. ¿Qué hace que un prompt sea lo bastante específico para el Ayudante de IA?",
+     ["Una frase corta que describa la sensación que debe generar la mecánica",
+      "Una sola mecánica, el contexto del juego, el JavaScript completo pegado, y restricciones claras",
+      "Una lista de todas las mecánicas que quiere el estudiante, para que la IA elija",
+      "Una captura del juego más el nombre de la mecánica"], 1,
+     "Una mecánica a la vez, con el JavaScript completo pegado en lugar de fragmentos. Los prompts vagos son la causa principal de un proyecto roto en esta lección."),
+
+    ("Lección 4. ¿Cómo debe republicar el estudiante su juego actualizado?",
+     ["Publish project de nuevo en Sparks, creando una tarjeta nueva",
+      "Share con \"Update existing share link\" marcada, y luego My Projects → Edit → Project link",
+      "Enviar solo el enlace Share de MakeCode", "Descargar el archivo y subirlo manualmente"], 1,
+     "Publish project de nuevo crea un duplicado no deseado. Actualiza el enlace existente y luego edita la tarjeta que ya existe en Sparks."),
+
+    ("Lección 4. ¿Cómo debes cerrar el módulo?",
+     ["Adelantar el próximo módulo en detalle para mantener la motivación",
+      "Celebrar todo el recorrido — prototipo → mecánica → lanzamiento — sin adelantar el contenido del próximo módulo",
+      "Revisar el código de cada estudiante individualmente con el grupo mirando",
+      "Asignar mecánicas extra como tarea de vacaciones"], 1,
+     "Cierra todo el arco con una celebración grupal. Los adelantos detallados del próximo módulo corresponden al próximo módulo."),
+]
+
+# =====================================================================
+# 2059 — Coding Lab
+# =====================================================================
+Q2059_EN = [
+    ("Lesson 1. What is the difference between the two AI agents your students will use?",
+     ["The conventional AI is faster; the AI Mentor is more accurate",
+      "The conventional AI generates the initial code; the AI Mentor guides with questions and never writes the complete code",
+      "The conventional AI is for text; the AI Mentor is for images",
+      "They are the same agent with two different names"], 1,
+     "Keeping the roles separate is what keeps the mentor trustworthy. If one agent both teaches and hands over finished code, the student stops believing the questions are genuine."),
+
+    ("Lesson 1. What kind of personalisation is safe for a student to request from the AI?",
+     ["Technical requirements such as framerate or a physics engine",
+      "Theme, title, character or visual context",
+      "Anything at all — the AI handles the consequences",
+      "Only the title of the game"], 1,
+     "Safe personalisation stays at the surface: theme, title, character, visual context. Technical requirements are where generations start failing."),
+
+    ("Lesson 1. What is the homework after Lesson 1?",
+     ["Write a new prompt and generate a second game",
+      "Change one simple value in the code, and know how to revert it if the game stops working",
+      "Read the generated JavaScript line by line",
+      "Publish the prototype to Kodland Sparks"], 1,
+     "One value, and the ability to undo it. Reverting a change confidently is the skill the rest of the module depends on."),
+
+    ("Lesson 2. After the prototype is split into three files, where does the character's speed parameter live?",
+     ["index.html", "style.css", "script.js", "In a separate config file"], 2,
+     "index.html holds structure and links, style.css the design, script.js the movement and logic."),
+
+    ("Lesson 2. What must the standard AI NOT do when restructuring the project?",
+     ["Split the file into three parts",
+      "Change the appearance or the logic of the game, or add external dependencies",
+      "Keep the original variable names", "Explain what it changed"], 1,
+     "The split is mechanical. If appearance or logic changed, the AI did more than it was asked and the student has lost the thread."),
+
+    ("Lesson 2. A student asks you which speed value is the correct one. What do you say?",
+     ["Give them the value the template was built with",
+      "Let them choose by experimentation, and ask them to explain how it changes the movement",
+      "Tell them to ask the AI Mentor for the right number",
+      "Tell them speed does not matter at this stage"], 1,
+     "There is no correct value. The cycle is predict → modify → check → conclude, and the conclusion is theirs."),
+
+    ("Lesson 3. The AI rewrites the whole file instead of swapping the character image. What do you do?",
+     ["Go straight to the backup template",
+      "Compare the before/after versions, and use the backup route only after 2 genuine attempts and one diagnostic hint",
+      "Accept the rewrite and continue with the new code",
+      "Have the student write the replacement by hand"], 1,
+     "An unwanted complete rewrite is the known risk of this lesson. Compare versions first — the backup route is not the first move."),
+
+    ("Lesson 3. What does a complete prompt contain?",
+     ["Objective and the code, nothing else",
+      "Objective + enough context + permitted changes + restrictions + a request for an explanation",
+      "A description of the desired result in as much detail as possible",
+      "The error message plus the whole project"], 1,
+     "The request for an explanation is the part students skip — and it is what turns a generation into something they can learn from."),
+
+    ("Lesson 3. A change breaks the game. What is the correct debugging move?",
+     ["Ask the AI to fix everything at once",
+      "Return to the last working version and find the first difference",
+      "Restart the project from the backup template",
+      "Undo every change made in the lesson"], 1,
+     "One testable hypothesis at a time. Fixing everything at once destroys the information you need."),
+
+    ("Lesson 4. Which AI is used in this lesson?",
+     ["The conventional AI only", "Both, depending on what the student needs",
+      "The AI Mentor exclusively", "Neither — this lesson is unplugged"], 2,
+     "The AI Mentor exclusively. The student formulates objective + current behaviour + a request for a hint; the Mentor never hands over the final code."),
+
+    ("Lesson 4. What is the character limit on each peer feedback field?",
+     ["60 characters", "180 characters", "500 characters", "There is no limit"], 1,
+     "180 characters for each of the three fields: overall impression, strong point, improvement. The limit is what forces the feedback to be specific."),
+
+    ("Lesson 4. A student has two half-finished mechanics with ten minutes left. What do you steer them towards?",
+     ["Finishing both quickly, even if they are unstable",
+      "One stable mechanic — it is preferable to two incomplete ones",
+      "Publishing as is and fixing it as homework",
+      "Reverting to the Lesson 3 version and skipping the mechanic"], 1,
+     "One stable mechanic beats two incomplete ones. And if the project was already unstable at the start of the class, go straight to the backup template."),
+]
+
+Q2059_ES = [
+    ("Lección 1. ¿Cuál es la diferencia entre los dos agentes de IA que usarán tus estudiantes?",
+     ["La IA convencional es más rápida; el AI Mentor es más preciso",
+      "La IA convencional genera el código inicial; el AI Mentor orienta con preguntas y nunca escribe el código completo",
+      "La IA convencional es para texto; el AI Mentor es para imágenes",
+      "Son el mismo agente con dos nombres distintos"], 1,
+     "Mantener los roles separados es lo que hace confiable al mentor. Si un mismo agente enseña y además entrega código terminado, el estudiante deja de creer que las preguntas son genuinas."),
+
+    ("Lección 1. ¿Qué tipo de personalización es seguro que un estudiante le pida a la IA?",
+     ["Requisitos técnicos como framerate o un motor de físicas",
+      "Tema, título, personaje o contexto visual",
+      "Cualquier cosa — la IA se encarga de las consecuencias",
+      "Solo el título del juego"], 1,
+     "La personalización segura se queda en la superficie: tema, título, personaje, contexto visual. Los requisitos técnicos son donde las generaciones empiezan a fallar."),
+
+    ("Lección 1. ¿Cuál es la tarea después de la Lección 1?",
+     ["Escribir un prompt nuevo y generar un segundo juego",
+      "Cambiar un valor simple del código, y saber revertirlo si el juego deja de funcionar",
+      "Leer el JavaScript generado línea por línea",
+      "Publicar el prototipo en Kodland Sparks"], 1,
+     "Un valor, y la capacidad de deshacerlo. Revertir un cambio con confianza es la habilidad de la que depende el resto del módulo."),
+
+    ("Lección 2. Tras dividir el prototipo en tres archivos, ¿dónde vive el parámetro de velocidad del personaje?",
+     ["index.html", "style.css", "script.js", "En un archivo de configuración aparte"], 2,
+     "index.html lleva estructura y conexiones, style.css el diseño, y script.js el movimiento y la lógica."),
+
+    ("Lección 2. ¿Qué NO debe hacer la IA estándar al reestructurar el proyecto?",
+     ["Dividir el archivo en tres partes",
+      "Cambiar la apariencia o la lógica del juego, o agregar dependencias externas",
+      "Mantener los nombres originales de las variables", "Explicar qué cambió"], 1,
+     "La división es mecánica. Si cambió la apariencia o la lógica, la IA hizo más de lo que se le pidió y el estudiante perdió el hilo."),
+
+    ("Lección 2. Un estudiante te pregunta cuál es el valor correcto de velocidad. ¿Qué le dices?",
+     ["Darle el valor con el que se construyó la plantilla",
+      "Que lo elija experimentando, y pedirle que explique cómo cambia el movimiento",
+      "Decirle que le pregunte al AI Mentor cuál es el número correcto",
+      "Decirle que la velocidad no importa en esta etapa"], 1,
+     "No hay un valor correcto. El ciclo es predecir → modificar → comprobar → concluir, y la conclusión es suya."),
+
+    ("Lección 3. La IA reescribe el archivo completo en vez de cambiar la imagen del personaje. ¿Qué haces?",
+     ["Ir directo a la plantilla de respaldo",
+      "Comparar las versiones antes/después, y usar la ruta de respaldo solo tras 2 intentos genuinos y una pista de diagnóstico",
+      "Aceptar la reescritura y continuar con el código nuevo",
+      "Que el estudiante escriba el reemplazo a mano"], 1,
+     "La reescritura completa no deseada es el riesgo conocido de esta lección. Primero compara versiones — la ruta de respaldo no es el primer movimiento."),
+
+    ("Lección 3. ¿Qué contiene un prompt completo?",
+     ["Objetivo y el código, nada más",
+      "Objetivo + contexto suficiente + cambios permitidos + restricciones + petición de explicación",
+      "Una descripción del resultado deseado con el mayor detalle posible",
+      "El mensaje de error más todo el proyecto"], 1,
+     "La petición de explicación es la parte que los estudiantes se saltan — y es la que convierte una generación en algo de lo que pueden aprender."),
+
+    ("Lección 3. Un cambio rompe el juego. ¿Cuál es el movimiento correcto de depuración?",
+     ["Pedirle a la IA que arregle todo de una vez",
+      "Volver a la última versión funcional y buscar la primera diferencia",
+      "Reiniciar el proyecto desde la plantilla de respaldo",
+      "Deshacer todos los cambios hechos en la lección"], 1,
+     "Una sola hipótesis comprobable a la vez. Corregir todo de golpe destruye la información que necesitas."),
+
+    ("Lección 4. ¿Qué IA se usa en esta lección?",
+     ["Solo la IA convencional", "Ambas, según lo que necesite el estudiante",
+      "Exclusivamente el AI Mentor", "Ninguna — esta lección es sin conexión"], 2,
+     "Exclusivamente el AI Mentor. El estudiante formula objetivo + comportamiento actual + petición de una pista; el Mentor nunca entrega el código final."),
+
+    ("Lección 4. ¿Cuál es el límite de caracteres de cada campo de retroalimentación entre pares?",
+     ["60 caracteres", "180 caracteres", "500 caracteres", "No hay límite"], 1,
+     "180 caracteres para cada uno de los tres campos: impresión general, punto fuerte, mejora. El límite es justamente lo que obliga a que la retroalimentación sea específica."),
+
+    ("Lección 4. Un estudiante tiene dos mecánicas a medias y quedan diez minutos. ¿Hacia dónde lo diriges?",
+     ["A terminar ambas rápido, aunque queden inestables",
+      "A una sola mecánica estable — es preferible a dos incompletas",
+      "A publicar como está y arreglarlo de tarea",
+      "A volver a la versión de la Lección 3 y saltarse la mecánica"], 1,
+     "Una mecánica estable vale más que dos incompletas. Y si el proyecto ya venía inestable desde el inicio de la clase, pasa directamente a la plantilla de respaldo."),
+]
+
+QUESTIONS = {
+    '2058': {'en': Q2058_EN, 'es': Q2058_ES},
+    '2063': {'en': Q2063_EN, 'es': Q2063_ES},
+    '2060': {'en': Q2060_EN, 'es': Q2060_ES},
+    '2059': {'en': Q2059_EN, 'es': Q2059_ES},
+}
+
+# =====================================================================
+# Answer-key balancing
+# ---------------------------------------------------------------------
+# The questions were authored with the correct answer wherever it read
+# most naturally, which left it sitting on option B for 8-10 of the 12
+# questions in every course, and never on D. On a Google Form with a
+# fixed option order that is a pattern a tutor can pass on without
+# reading. Below, each question's correct option is swapped with the
+# option at a target position, so every form ends up with the key spread
+# 3/3/3/3 across A B C D and no run longer than two.
+#
+# Swapping (rather than shuffling) keeps the rest of the option order as
+# written. The patterns are fixed, not random, so regenerating always
+# produces the same forms.
+# =====================================================================
+
+TARGET_KEYS = {
+    '2058': [0, 2, 1, 3, 2, 0, 3, 1, 1, 3, 0, 2],
+    '2063': [1, 3, 0, 2, 0, 1, 2, 3, 3, 2, 1, 0],
+    '2060': [2, 0, 3, 1, 3, 2, 1, 0, 0, 1, 2, 3],
+    '2059': [3, 1, 2, 0, 1, 3, 0, 2, 2, 0, 3, 1],
+}
+
+
+def _balance(questions, targets):
+    out = []
+    for (q, opts, c, fb), t in zip(questions, targets):
+        opts = list(opts)
+        opts[c], opts[t] = opts[t], opts[c]
+        out.append((q, opts, t, fb))
+    return out
+
+
+for _code, _langs in QUESTIONS.items():
+    for _lang in _langs:
+        _langs[_lang] = _balance(_langs[_lang], TARGET_KEYS[_code])
+
+TITLE = {
+    'en': 'Final DST — [{code}] {name}',
+    'es': 'DST Final — [{code}] {name}',
+}

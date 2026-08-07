@@ -1,0 +1,314 @@
+==========================================================================
+  DST FINAL — [2063] CREATOR LAB: GAMES, AI
+  8-9 · 60 min · Espanol
+==========================================================================
+
+Nada mas de esta pagina se escribe en el formulario — es guia para ti.
+
+--------------------------------------------------------------------------
+COMO CONSTRUIR ESTE FORMULARIO A MANO
+--------------------------------------------------------------------------
+ 1. Entra a forms.google.com y crea un formulario en blanco.
+ 2. Pega el TITULO de abajo en el titulo del formulario, y la DESCRIPCION debajo.
+ 3. Abre Configuracion (icono de engranaje):
+    - activa "Convertir en cuestionario"
+    - Publicar calificacion: "Inmediatamente despues de cada envio"
+    - El encuestado puede ver: marca "Preguntas incorrectas", "Respuestas correctas", "Puntuacion"
+    - en Respuestas, activa "Recopilar direcciones de correo electronico"
+    - desactiva "Permitir editar la respuesta" y el enlace para enviar otra respuesta
+ 4. Agrega las 2 preguntas de identificacion de la SECCION 1 (ambas Respuesta corta, Obligatoria).
+    En la del correo usa el menu de tres puntos > Validacion de respuestas > Texto > Direccion de correo.
+ 5. Agrega un salto de seccion y ponle el titulo de la SECCION 2.
+ 6. Para cada una de las 12 preguntas:
+    - agrega una pregunta de Opcion multiple, Obligatoria
+    - pega la linea PREGUNTA en el titulo de la pregunta
+    - haz clic en Opcion 1 y pega las cuatro lineas de OPCIONES de una vez — Forms las separa
+    - haz clic en "Clave de respuestas", marca la correcta y pon 1 punto
+    - haz clic en "Agregar comentarios" y pega RETROALIMENTACION en ambas cajas, correcta e incorrecta
+ 7. Agrega un salto de seccion y ponle el titulo de la SECCION 3.
+ 8. Agrega las 3 preguntas de valoracion como "Escala lineal", de 1 a 5, con las etiquetas dadas, Obligatorias.
+ 9. Agrega la ultima pregunta como "Parrafo", Obligatoria, con el texto de ayuda indicado.
+10. Enviar > copia el enlace y pegalo en finalDst.url de este curso.
+
+    Cuestionario: 1 punto por pregunta, 12 puntos en total, aprueba con 9/12
+
+
+==========================================================================
+TITULO  (copia esta linea)
+==========================================================================
+DST Final — [2063] Creator Lab: Games, AI
+
+==========================================================================
+DESCRIPCION  (copia este bloque)
+==========================================================================
+Este es el DST final del módulo Creator Lab: Games, AI del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.
+
+12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 9 / 12.
+
+
+==========================================================================
+SECCION 1 — IDENTIFICACION
+==========================================================================
+
+Q1  ·  Respuesta corta, Obligatoria
+Tu nombre completo
+
+Q2  ·  Respuesta corta, Obligatoria  ·  Validacion de respuestas: Texto > Direccion de correo
+Tu correo de Kodland
+
+Texto de ayuda:
+El mismo correo con el que entras a Back Office (…@kodland.team).
+
+
+==========================================================================
+SECCION 2 — EVALUACION DE CONOCIMIENTO
+==========================================================================
+Titulo de la seccion:
+Evaluación de conocimiento
+
+Descripcion de la seccion:
+12 preguntas sobre las primeras 4 lecciones. 1 punto cada una.
+
+
+--------------------------------------------------------------------------
+Q1   ·  respuesta correcta: B
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+1. Lección 1. ¿Cómo cargan tus estudiantes la plantilla .sb3 en Creator Lab?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Haciendo doble clic en el archivo
+Vía la opción "Upload"
+Arrastrándola al escenario
+Desde el sitio de Scratch
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Siempre vía "Upload", nunca doble clic. Este es el fallo más común de la Lección 1.
+
+
+--------------------------------------------------------------------------
+Q2   ·  respuesta correcta: D
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+2. Lección 1. Un estudiante pregunta cómo hacer un contador con un bucle. ¿Qué haces?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Enseñar bucles y variables — claramente ya está listo
+Decirle que no se puede hacer en Scratch
+Pedirle a AI Buddy que le escriba el bucle
+Mantener el foco: variables, bucles y condiciones complejas no se enseñan todavía a propósito
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+La lección estrecha el foco a propósito. Las variables llegan en la Lección 2 como el contador de cristales; las condiciones compuestas vienen después.
+
+
+--------------------------------------------------------------------------
+Q3   ·  respuesta correcta: A
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+3. Lección 1. ¿Qué debe cumplir el fondo generado con IA?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Debe estar libre de personajes y dejar espacio central para el personaje
+Debe incluir un personaje para que la escena se vea viva
+Debe ser en blanco y negro para que resalte el sprite
+Debe generarse dos veces para que el estudiante elija
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Sin personajes, y con espacio central para el sprite. Recuerda además que publicar en Sparks y enviar el enlace en la plataforma de Kodland son dos pasos distintos.
+
+
+--------------------------------------------------------------------------
+Q4   ·  respuesta correcta: C
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+4. Lección 2. ¿Qué debe cumplir el disfraz del cristal generado con IA?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Debe incluir al héroe en el encuadre
+Fondo opaco, tamaño 100%
+Fondo transparente, tamaño configurado al 25%
+Debe dibujarse a mano, no generarse
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Fondo transparente y tamaño 25%. El cristal es el único paso con IA de esta lección.
+
+
+--------------------------------------------------------------------------
+Q5   ·  respuesta correcta: A
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+5. Lección 2. Los cristales se arman en tres niveles crecientes de autonomía. ¿Cuál es el orden correcto?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Conectar bloques ya armados → completar lo que falta → armar la secuencia solo
+Mirar → copiar → repetir
+Planear → programar → probar
+Prototipo → depurar → publicar
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Conecta, Completa, Arma tú solo — la misma escalera de andamiaje de los cuatro cursos. Deja que armen el tercer cristal sin ayuda antes de intervenir.
+
+
+--------------------------------------------------------------------------
+Q6   ·  respuesta correcta: B
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+6. Lección 2. ¿Qué debe hacer la bandera verde?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Solo devolver al héroe a su posición inicial
+Devolver al héroe a su posición Y reiniciar el puntaje a cero
+Solo reiniciar el puntaje a cero
+Recargar todo el proyecto desde la plantilla
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Ambas cosas. Verifica que el script de inicio contenga la posición del héroe y el reinicio del puntaje antes de dejar que alguien publique.
+
+
+--------------------------------------------------------------------------
+Q7   ·  respuesta correcta: C
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+7. Lección 3. Mientras el portal sigue oculto, ¿qué debe ser cierto?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Debe reaccionar al tocarlo para que los estudiantes puedan probarlo
+Debe mostrar ya la pantalla WIN decorada
+No debe reaccionar al tocarlo — la transición a WIN es un paso aparte
+Debe borrarse y recrearse en la Lección 4
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Un portal oculto que reacciona al tocarlo es el bug clásico aquí. La transición a WIN se configura en su propio paso, y la pantalla WIN queda intencionalmente vacía hasta la Lección 4.
+
+
+--------------------------------------------------------------------------
+Q8   ·  respuesta correcta: D
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+8. Lección 3. La llave de un estudiante aparece pero el portal nunca se abre. ¿Qué revisas primero?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Si el contador de cristales llegó a 3
+Si el héroe está tocando el sprite del portal
+Si el fondo fue generado con IA
+Si el mensaje que envía la llave y el que recibe el portal coinciden exactamente
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Los nombres de los mensajes deben coincidir exactamente. Esa discrepancia es la causa habitual de una llave que aparece y un portal que no hace nada.
+
+
+--------------------------------------------------------------------------
+Q9   ·  respuesta correcta: D
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+9. Lección 3. Un estudiante dice que su juego está muy difícil. ¿Qué se le permite cambiar?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+El código de la mecánica de recolección
+Nada — la dificultad la fija la plantilla
+La cantidad de cristales necesarios, de 3 a 1
+La posición de los objetos, no el código
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+La dificultad se equilibra moviendo el peligro o la llave, no reescribiendo lógica ni agregando mecánicas nuevas. Deja que el estudiante tome esa decisión.
+
+
+--------------------------------------------------------------------------
+Q10  ·  respuesta correcta: C
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+10. Lección 4. ¿Cuál es la regla sobre el bloque say y Text to Speech?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Usar ambos juntos por accesibilidad
+Usar solo Text to Speech, say está obsoleto
+Usar solo uno, nunca ambos
+Usar solo say, Text to Speech no está disponible
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Uno u otro, nunca los dos a la vez. Y solo se permite un backdrop con IA en esta lección.
+
+
+--------------------------------------------------------------------------
+Q11  ·  respuesta correcta: B
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+11. Lección 4. ¿Dónde va el bloque de frase de victoria?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+En el Stage, antes del cambio de fondo
+En el sprite Portal, justo después del cambio de fondo a WIN
+En el sprite del héroe, al inicio del juego
+En cualquier lado — la posición da igual
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+En el sprite Portal, justo después del cambio a WIN. Ponerlo en el Stage es el bug clásico de esta lección.
+
+
+--------------------------------------------------------------------------
+Q12  ·  respuesta correcta: A
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+12. Lección 4. ¿Cómo debe entregarse el "Iteration Award"?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Por estilo o un detalle único, sin comparar los proyectos entre sí
+Al mejor proyecto, para que el grupo tenga un estándar claro al que apuntar
+A quien haya terminado primero
+Por votación de los estudiantes al final del mini-festival
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Nunca comparativo. Reconoce una decisión personal — estilo o un detalle único — y cierra un módulo que el grupo debe celebrar explícitamente.
+
+
+==========================================================================
+SECCION 3 — FEEDBACK SOBRE ESTE MODULO
+==========================================================================
+Titulo de la seccion:
+Tu feedback sobre este módulo
+
+Descripcion de la seccion:
+No se puntúa. Esto es lo que usamos para mejorar la próxima versión.
+
+
+Q13  ·  Escala lineal 1-5, Obligatoria
+¿Qué tan claro fue el módulo de entrenamiento de Creator Lab: Games, AI?
+    1 = Confuso
+    5 = Muy claro
+
+Q14  ·  Escala lineal 1-5, Obligatoria
+¿Qué tan preparado te sientes para dar las primeras 4 lecciones de Creator Lab: Games, AI?
+    1 = Nada preparado
+    5 = Totalmente preparado
+
+Q15  ·  Escala lineal 1-5, Obligatoria
+¿Qué tan útiles fueron las notas por lección (de qué trata, rol del tutor, aspectos técnicos)?
+    1 = Nada útiles
+    5 = Muy útiles
+
+Q16  ·  Parrafo, Obligatoria
+¿Qué sigue sin quedarte claro de Creator Lab: Games, AI, o qué agregarías a este módulo?
+
+Texto de ayuda:
+Nombra la lección a la que te refieres — eso es lo que hace tu respuesta útil.
+
+
+==========================================================================
+CLAVE DE RESPUESTAS — referencia rapida
+==========================================================================
+   Q1  B    Q2  D    Q3  A    Q4  C    Q5  A    Q6  B
+   Q7  C    Q8  D    Q9  D    Q10 C    Q11 B    Q12 A
+

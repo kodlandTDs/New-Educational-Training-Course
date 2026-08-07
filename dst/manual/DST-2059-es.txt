@@ -1,0 +1,314 @@
+==========================================================================
+  DST FINAL — [2059] CODING LAB
+  12-17 · 90 min · Espanol
+==========================================================================
+
+Nada mas de esta pagina se escribe en el formulario — es guia para ti.
+
+--------------------------------------------------------------------------
+COMO CONSTRUIR ESTE FORMULARIO A MANO
+--------------------------------------------------------------------------
+ 1. Entra a forms.google.com y crea un formulario en blanco.
+ 2. Pega el TITULO de abajo en el titulo del formulario, y la DESCRIPCION debajo.
+ 3. Abre Configuracion (icono de engranaje):
+    - activa "Convertir en cuestionario"
+    - Publicar calificacion: "Inmediatamente despues de cada envio"
+    - El encuestado puede ver: marca "Preguntas incorrectas", "Respuestas correctas", "Puntuacion"
+    - en Respuestas, activa "Recopilar direcciones de correo electronico"
+    - desactiva "Permitir editar la respuesta" y el enlace para enviar otra respuesta
+ 4. Agrega las 2 preguntas de identificacion de la SECCION 1 (ambas Respuesta corta, Obligatoria).
+    En la del correo usa el menu de tres puntos > Validacion de respuestas > Texto > Direccion de correo.
+ 5. Agrega un salto de seccion y ponle el titulo de la SECCION 2.
+ 6. Para cada una de las 12 preguntas:
+    - agrega una pregunta de Opcion multiple, Obligatoria
+    - pega la linea PREGUNTA en el titulo de la pregunta
+    - haz clic en Opcion 1 y pega las cuatro lineas de OPCIONES de una vez — Forms las separa
+    - haz clic en "Clave de respuestas", marca la correcta y pon 1 punto
+    - haz clic en "Agregar comentarios" y pega RETROALIMENTACION en ambas cajas, correcta e incorrecta
+ 7. Agrega un salto de seccion y ponle el titulo de la SECCION 3.
+ 8. Agrega las 3 preguntas de valoracion como "Escala lineal", de 1 a 5, con las etiquetas dadas, Obligatorias.
+ 9. Agrega la ultima pregunta como "Parrafo", Obligatoria, con el texto de ayuda indicado.
+10. Enviar > copia el enlace y pegalo en finalDst.url de este curso.
+
+    Cuestionario: 1 punto por pregunta, 12 puntos en total, aprueba con 9/12
+
+
+==========================================================================
+TITULO  (copia esta linea)
+==========================================================================
+DST Final — [2059] Coding Lab
+
+==========================================================================
+DESCRIPCION  (copia este bloque)
+==========================================================================
+Este es el DST final del módulo Coding Lab del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.
+
+12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 9 / 12.
+
+
+==========================================================================
+SECCION 1 — IDENTIFICACION
+==========================================================================
+
+Q1  ·  Respuesta corta, Obligatoria
+Tu nombre completo
+
+Q2  ·  Respuesta corta, Obligatoria  ·  Validacion de respuestas: Texto > Direccion de correo
+Tu correo de Kodland
+
+Texto de ayuda:
+El mismo correo con el que entras a Back Office (…@kodland.team).
+
+
+==========================================================================
+SECCION 2 — EVALUACION DE CONOCIMIENTO
+==========================================================================
+Titulo de la seccion:
+Evaluación de conocimiento
+
+Descripcion de la seccion:
+12 preguntas sobre las primeras 4 lecciones. 1 punto cada una.
+
+
+--------------------------------------------------------------------------
+Q1   ·  respuesta correcta: D
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+1. Lección 1. ¿Cuál es la diferencia entre los dos agentes de IA que usarán tus estudiantes?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+La IA convencional es más rápida; el AI Mentor es más preciso
+Son el mismo agente con dos nombres distintos
+La IA convencional es para texto; el AI Mentor es para imágenes
+La IA convencional genera el código inicial; el AI Mentor orienta con preguntas y nunca escribe el código completo
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Mantener los roles separados es lo que hace confiable al mentor. Si un mismo agente enseña y además entrega código terminado, el estudiante deja de creer que las preguntas son genuinas.
+
+
+--------------------------------------------------------------------------
+Q2   ·  respuesta correcta: B
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+2. Lección 1. ¿Qué tipo de personalización es seguro que un estudiante le pida a la IA?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Requisitos técnicos como framerate o un motor de físicas
+Tema, título, personaje o contexto visual
+Cualquier cosa — la IA se encarga de las consecuencias
+Solo el título del juego
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+La personalización segura se queda en la superficie: tema, título, personaje, contexto visual. Los requisitos técnicos son donde las generaciones empiezan a fallar.
+
+
+--------------------------------------------------------------------------
+Q3   ·  respuesta correcta: C
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+3. Lección 1. ¿Cuál es la tarea después de la Lección 1?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Escribir un prompt nuevo y generar un segundo juego
+Leer el JavaScript generado línea por línea
+Cambiar un valor simple del código, y saber revertirlo si el juego deja de funcionar
+Publicar el prototipo en Kodland Sparks
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Un valor, y la capacidad de deshacerlo. Revertir un cambio con confianza es la habilidad de la que depende el resto del módulo.
+
+
+--------------------------------------------------------------------------
+Q4   ·  respuesta correcta: A
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+4. Lección 2. Tras dividir el prototipo en tres archivos, ¿dónde vive el parámetro de velocidad del personaje?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+script.js
+style.css
+index.html
+En un archivo de configuración aparte
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+index.html lleva estructura y conexiones, style.css el diseño, y script.js el movimiento y la lógica.
+
+
+--------------------------------------------------------------------------
+Q5   ·  respuesta correcta: B
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+5. Lección 2. ¿Qué NO debe hacer la IA estándar al reestructurar el proyecto?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Dividir el archivo en tres partes
+Cambiar la apariencia o la lógica del juego, o agregar dependencias externas
+Mantener los nombres originales de las variables
+Explicar qué cambió
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+La división es mecánica. Si cambió la apariencia o la lógica, la IA hizo más de lo que se le pidió y el estudiante perdió el hilo.
+
+
+--------------------------------------------------------------------------
+Q6   ·  respuesta correcta: D
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+6. Lección 2. Un estudiante te pregunta cuál es el valor correcto de velocidad. ¿Qué le dices?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Darle el valor con el que se construyó la plantilla
+Decirle que la velocidad no importa en esta etapa
+Decirle que le pregunte al AI Mentor cuál es el número correcto
+Que lo elija experimentando, y pedirle que explique cómo cambia el movimiento
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+No hay un valor correcto. El ciclo es predecir → modificar → comprobar → concluir, y la conclusión es suya.
+
+
+--------------------------------------------------------------------------
+Q7   ·  respuesta correcta: A
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+7. Lección 3. La IA reescribe el archivo completo en vez de cambiar la imagen del personaje. ¿Qué haces?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Comparar las versiones antes/después, y usar la ruta de respaldo solo tras 2 intentos genuinos y una pista de diagnóstico
+Ir directo a la plantilla de respaldo
+Aceptar la reescritura y continuar con el código nuevo
+Que el estudiante escriba el reemplazo a mano
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+La reescritura completa no deseada es el riesgo conocido de esta lección. Primero compara versiones — la ruta de respaldo no es el primer movimiento.
+
+
+--------------------------------------------------------------------------
+Q8   ·  respuesta correcta: C
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+8. Lección 3. ¿Qué contiene un prompt completo?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Objetivo y el código, nada más
+Una descripción del resultado deseado con el mayor detalle posible
+Objetivo + contexto suficiente + cambios permitidos + restricciones + petición de explicación
+El mensaje de error más todo el proyecto
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+La petición de explicación es la parte que los estudiantes se saltan — y es la que convierte una generación en algo de lo que pueden aprender.
+
+
+--------------------------------------------------------------------------
+Q9   ·  respuesta correcta: C
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+9. Lección 3. Un cambio rompe el juego. ¿Cuál es el movimiento correcto de depuración?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Pedirle a la IA que arregle todo de una vez
+Reiniciar el proyecto desde la plantilla de respaldo
+Volver a la última versión funcional y buscar la primera diferencia
+Deshacer todos los cambios hechos en la lección
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Una sola hipótesis comprobable a la vez. Corregir todo de golpe destruye la información que necesitas.
+
+
+--------------------------------------------------------------------------
+Q10  ·  respuesta correcta: A
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+10. Lección 4. ¿Qué IA se usa en esta lección?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+Exclusivamente el AI Mentor
+Ambas, según lo que necesite el estudiante
+Solo la IA convencional
+Ninguna — esta lección es sin conexión
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Exclusivamente el AI Mentor. El estudiante formula objetivo + comportamiento actual + petición de una pista; el Mentor nunca entrega el código final.
+
+
+--------------------------------------------------------------------------
+Q11  ·  respuesta correcta: D
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+11. Lección 4. ¿Cuál es el límite de caracteres de cada campo de retroalimentación entre pares?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+60 caracteres
+No hay límite
+500 caracteres
+180 caracteres
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+180 caracteres para cada uno de los tres campos: impresión general, punto fuerte, mejora. El límite es justamente lo que obliga a que la retroalimentación sea específica.
+
+
+--------------------------------------------------------------------------
+Q12  ·  respuesta correcta: B
+--------------------------------------------------------------------------
+
+PREGUNTA  (copia esta linea)
+12. Lección 4. Un estudiante tiene dos mecánicas a medias y quedan diez minutos. ¿Hacia dónde lo diriges?
+
+OPCIONES  (selecciona las 4 lineas y pegalas en la primera caja de opcion)
+A terminar ambas rápido, aunque queden inestables
+A una sola mecánica estable — es preferible a dos incompletas
+A publicar como está y arreglarlo de tarea
+A volver a la versión de la Lección 3 y saltarse la mecánica
+
+RETROALIMENTACION  (pegala en la caja de correcta y en la de incorrecta)
+Una mecánica estable vale más que dos incompletas. Y si el proyecto ya venía inestable desde el inicio de la clase, pasa directamente a la plantilla de respaldo.
+
+
+==========================================================================
+SECCION 3 — FEEDBACK SOBRE ESTE MODULO
+==========================================================================
+Titulo de la seccion:
+Tu feedback sobre este módulo
+
+Descripcion de la seccion:
+No se puntúa. Esto es lo que usamos para mejorar la próxima versión.
+
+
+Q13  ·  Escala lineal 1-5, Obligatoria
+¿Qué tan claro fue el módulo de entrenamiento de Coding Lab?
+    1 = Confuso
+    5 = Muy claro
+
+Q14  ·  Escala lineal 1-5, Obligatoria
+¿Qué tan preparado te sientes para dar las primeras 4 lecciones de Coding Lab?
+    1 = Nada preparado
+    5 = Totalmente preparado
+
+Q15  ·  Escala lineal 1-5, Obligatoria
+¿Qué tan útiles fueron las notas por lección (de qué trata, rol del tutor, aspectos técnicos)?
+    1 = Nada útiles
+    5 = Muy útiles
+
+Q16  ·  Parrafo, Obligatoria
+¿Qué sigue sin quedarte claro de Coding Lab, o qué agregarías a este módulo?
+
+Texto de ayuda:
+Nombra la lección a la que te refieres — eso es lo que hace tu respuesta útil.
+
+
+==========================================================================
+CLAVE DE RESPUESTAS — referencia rapida
+==========================================================================
+   Q1  D    Q2  B    Q3  C    Q4  A    Q5  B    Q6  D
+   Q7  A    Q8  C    Q9  C    Q10 A    Q11 D    Q12 B
+
