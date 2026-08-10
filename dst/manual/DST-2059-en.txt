@@ -30,7 +30,7 @@ HOW TO BUILD THIS FORM BY HAND
  9. Add the last question as "Paragraph", Required, with the help text given.
 10. Send > copy the link, and paste it into finalDst.url for this course.
 
-    Quiz settings: 1 point per question, 12 points total, pass mark 9/12
+    Quiz settings: 1 point per question, 12 points total, pass mark 10/12
 
 
 ==========================================================================
@@ -43,7 +43,7 @@ DESCRIPTION  (copy this block)
 ==========================================================================
 This is the final DST for the Coding Lab module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.
 
-12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 9 / 12.
+12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 10 / 12.
 
 
 ==========================================================================

@@ -55,7 +55,7 @@ var FORMS = [
     code: '2058',
     lang: 'en',
     title: 'Final DST — [2058] Digital Creativity Level 2',
-    description: 'This is the final DST for the Digital Creativity Level 2 module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.\n\n12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 9 / 12.',
+    description: 'This is the final DST for the Digital Creativity Level 2 module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.\n\n12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 10 / 12.',
     questions: [
       ['Lesson 1. FlipAnim will not load for two of your students. What is the planned alternative?',
        ['Use BrushNinja', 'Skip the animation and start Canva early', 'Have them watch a classmate and copy the frames later', 'Have them draw the frames on paper and photograph them'], 0,
@@ -105,7 +105,7 @@ var FORMS = [
     code: '2058',
     lang: 'es',
     title: 'DST Final — [2058] Creatividad Digital Nivel 2',
-    description: 'Este es el DST final del módulo Creatividad Digital Nivel 2 del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.\n\n12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 9 / 12.',
+    description: 'Este es el DST final del módulo Creatividad Digital Nivel 2 del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.\n\n12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 10 / 12.',
     questions: [
       ['Lección 1. FlipAnim no carga para dos de tus estudiantes. ¿Cuál es la alternativa prevista?',
        ['Usar BrushNinja', 'Saltar la animación y empezar Canva antes', 'Que observen a un compañero y copien los cuadros después', 'Que dibujen los cuadros en papel y los fotografíen'], 0,
@@ -155,7 +155,7 @@ var FORMS = [
     code: '2063',
     lang: 'en',
     title: 'Final DST — [2063] Creator Lab: Games, AI',
-    description: 'This is the final DST for the Creator Lab: Games, AI module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.\n\n12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 9 / 12.',
+    description: 'This is the final DST for the Creator Lab: Games, AI module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.\n\n12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 10 / 12.',
     questions: [
       ['Lesson 1. How do your students load the .sb3 template into Creator Lab?',
        ['By double-clicking the file', 'Via the "Upload" option', 'By dragging it onto the stage', 'From the Scratch website'], 1,
@@ -205,7 +205,7 @@ var FORMS = [
     code: '2063',
     lang: 'es',
     title: 'DST Final — [2063] Creator Lab: Games, AI',
-    description: 'Este es el DST final del módulo Creator Lab: Games, AI del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.\n\n12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 9 / 12.',
+    description: 'Este es el DST final del módulo Creator Lab: Games, AI del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.\n\n12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 10 / 12.',
     questions: [
       ['Lección 1. ¿Cómo cargan tus estudiantes la plantilla .sb3 en Creator Lab?',
        ['Haciendo doble clic en el archivo', 'Vía la opción "Upload"', 'Arrastrándola al escenario', 'Desde el sitio de Scratch'], 1,
@@ -255,7 +255,7 @@ var FORMS = [
     code: '2060',
     lang: 'en',
     title: 'Final DST — [2060] GameDev Creator Lab',
-    description: 'This is the final DST for the GameDev Creator Lab module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.\n\n12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 9 / 12.',
+    description: 'This is the final DST for the GameDev Creator Lab module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.\n\n12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 10 / 12.',
     questions: [
       ['Lesson 1. What is the strict scope limit on the AI-generated character?',
        ['Any number of characters, in any view', 'It must include the background scenery', 'One single character, side view, transparent background', 'It must be animated across at least two frames'], 2,
@@ -305,7 +305,7 @@ var FORMS = [
     code: '2060',
     lang: 'es',
     title: 'DST Final — [2060] GameDev Creator Lab',
-    description: 'Este es el DST final del módulo GameDev Creator Lab del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.\n\n12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 9 / 12.',
+    description: 'Este es el DST final del módulo GameDev Creator Lab del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.\n\n12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 10 / 12.',
     questions: [
       ['Lección 1. ¿Cuál es el límite estricto de alcance del personaje generado con IA?',
        ['Cualquier cantidad de personajes, en cualquier vista', 'Debe incluir el escenario de fondo', 'Un solo personaje, vista lateral, fondo transparente', 'Debe estar animado en al menos dos cuadros'], 2,
@@ -355,7 +355,7 @@ var FORMS = [
     code: '2059',
     lang: 'en',
     title: 'Final DST — [2059] Coding Lab',
-    description: 'This is the final DST for the Coding Lab module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.\n\n12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 9 / 12.',
+    description: 'This is the final DST for the Coding Lab module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.\n\n12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 10 / 12.',
     questions: [
       ['Lesson 1. What is the difference between the two AI agents your students will use?',
        ['The conventional AI is faster; the AI Mentor is more accurate', 'They are the same agent with two different names', 'The conventional AI is for text; the AI Mentor is for images', 'The conventional AI generates the initial code; the AI Mentor guides with questions and never writes the complete code'], 3,
@@ -405,7 +405,7 @@ var FORMS = [
     code: '2059',
     lang: 'es',
     title: 'DST Final — [2059] Coding Lab',
-    description: 'Este es el DST final del módulo Coding Lab del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.\n\n12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 9 / 12.',
+    description: 'Este es el DST final del módulo Coding Lab del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.\n\n12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 10 / 12.',
     questions: [
       ['Lección 1. ¿Cuál es la diferencia entre los dos agentes de IA que usarán tus estudiantes?',
        ['La IA convencional es más rápida; el AI Mentor es más preciso', 'Son el mismo agente con dos nombres distintos', 'La IA convencional es para texto; el AI Mentor es para imágenes', 'La IA convencional genera el código inicial; el AI Mentor orienta con preguntas y nunca escribe el código completo'], 3,

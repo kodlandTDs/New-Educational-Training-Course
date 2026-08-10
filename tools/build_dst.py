@@ -46,7 +46,7 @@ MD_LABELS = {
                    'Make it a quiz: **on**, 1 point per scored question (12 points total)',
                    'Release grade: **immediately after each submission**',
                    'Show missed questions and correct answers: **on** (this is training, not an exam)',
-                   'Pass mark: **9 / 12 (75%)** — Forms does not enforce this, so filter in the responses sheet',
+                   'Pass mark: **10 / 12 (83%)** — Forms does not enforce this, so filter in the responses sheet',
                    'Feedback questions: **0 points**, and marked required',
                ]),
     'es': dict(settings='Configuración sugerida', ident='Sección 1 — Identificación',
@@ -59,7 +59,7 @@ MD_LABELS = {
                    'Convertir en cuestionario: **activado**, 1 punto por pregunta puntuada (12 puntos en total)',
                    'Publicar calificación: **inmediatamente después de cada envío**',
                    'Mostrar preguntas falladas y respuestas correctas: **activado** (esto es entrenamiento, no un examen)',
-                   'Puntaje para aprobar: **9 / 12 (75%)** — Forms no lo aplica solo, así que filtra en la hoja de respuestas',
+                   'Puntaje para aprobar: **10 / 12 (83%)** — Forms no lo aplica solo, así que filtra en la hoja de respuestas',
                    'Preguntas de feedback: **0 puntos**, y marcadas como obligatorias',
                ]),
 }

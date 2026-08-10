@@ -25,12 +25,12 @@ DESC = {
            'tutor training. It covers the first 4 lessons you will teach.\n\n'
            '12 scored questions (1 point each) plus a short feedback section. '
            'You will see your score and the correct answers as soon as you submit. '
-           'Recommended pass mark: 9 / 12.'),
+           'Recommended pass mark: 10 / 12.'),
     'es': ('Este es el DST final del módulo {name} del entrenamiento de tutores del Nuevo '
            'Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.\n\n'
            '12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. '
            'Verás tu puntaje y las respuestas correctas apenas envíes. '
-           'Puntaje recomendado para aprobar: 9 / 12.'),
+           'Puntaje recomendado para aprobar: 10 / 12.'),
 }
 
 IDENT = {

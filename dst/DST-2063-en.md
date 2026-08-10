@@ -8,7 +8,7 @@
 
 > This is the final DST for the Creator Lab: Games, AI module of the New Educational Model tutor training. It covers the first 4 lessons you will teach.
 >
-> 12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 9 / 12.
+> 12 scored questions (1 point each) plus a short feedback section. You will see your score and the correct answers as soon as you submit. Recommended pass mark: 10 / 12.
 
 ---
 
@@ -18,7 +18,7 @@
 - Make it a quiz: **on**, 1 point per scored question (12 points total)
 - Release grade: **immediately after each submission**
 - Show missed questions and correct answers: **on** (this is training, not an exam)
-- Pass mark: **9 / 12 (75%)** — Forms does not enforce this, so filter in the responses sheet
+- Pass mark: **10 / 12 (83%)** — Forms does not enforce this, so filter in the responses sheet
 - Feedback questions: **0 points**, and marked required
 
 ---

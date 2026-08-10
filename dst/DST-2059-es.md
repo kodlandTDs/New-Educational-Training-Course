@@ -8,7 +8,7 @@
 
 > Este es el DST final del módulo Coding Lab del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.
 >
-> 12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 9 / 12.
+> 12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 10 / 12.
 
 ---
 
@@ -18,7 +18,7 @@
 - Convertir en cuestionario: **activado**, 1 punto por pregunta puntuada (12 puntos en total)
 - Publicar calificación: **inmediatamente después de cada envío**
 - Mostrar preguntas falladas y respuestas correctas: **activado** (esto es entrenamiento, no un examen)
-- Puntaje para aprobar: **9 / 12 (75%)** — Forms no lo aplica solo, así que filtra en la hoja de respuestas
+- Puntaje para aprobar: **10 / 12 (83%)** — Forms no lo aplica solo, así que filtra en la hoja de respuestas
 - Preguntas de feedback: **0 puntos**, y marcadas como obligatorias
 
 ---

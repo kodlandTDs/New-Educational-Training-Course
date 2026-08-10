@@ -632,7 +632,7 @@ courses: [
   meta: 'Termina con el DST final',
   chips: ['👦 10–12', '⏱ 60 min', '📚 40 lecciones'],
   objective: 'Estar listo para impartir las primeras 4 lecciones de Creatividad Digital Nivel 2, donde los estudiantes construyen un video de 3 escenas y publican su primera pieza de portafolio.',
-  finalDst: { url: '', desc: 'Un último paso: el DST final de Creatividad Digital Nivel 2 verifica que estás listo para dar estas lecciones con un grupo real.' },
+  finalDst: { url: 'https://docs.google.com/forms/d/e/1FAIpQLSfbpeeYIT4PuhTthSQQdxx33-fJVo-sZsAmqviKv28ORLX5UQ/viewform', desc: 'Un último paso: el DST final de Creatividad Digital Nivel 2 verifica que estás listo para dar estas lecciones con un grupo real.' },
   cards: [
     { type: 'metabar', items: [
       { ic: '👦', k: 'Edad', v: '10–12' }, { ic: '⏱', k: 'Lección', v: '60 min' },
@@ -705,7 +705,7 @@ courses: [
   meta: 'Termina con el DST final',
   chips: ['🧒 8–9', '⏱ 60 min', '📚 40 lecciones'],
   objective: 'Estar listo para impartir las primeras 4 lecciones de Creator Lab: Games, AI, donde niños de 8–9 años pasan de un prototipo funcional a su propio juego publicado.',
-  finalDst: { url: '', desc: 'Un último paso: el DST final de Creator Lab: Games, AI verifica que estás listo para dar estas lecciones con un grupo real.' },
+  finalDst: { url: 'https://docs.google.com/forms/d/e/1FAIpQLSc5iDl6GgzVRWg-Cpp4nE1hSRn9_pMD2YSmKG4kvoHTQ0NogQ/viewform', desc: 'Un último paso: el DST final de Creator Lab: Games, AI verifica que estás listo para dar estas lecciones con un grupo real.' },
   cards: [
     { type: 'metabar', items: [
       { ic: '🧒', k: 'Edad', v: '8–9' }, { ic: '⏱', k: 'Lección', v: '60 min' },
@@ -778,7 +778,7 @@ courses: [
   meta: 'Termina con el DST final',
   chips: ['👦 10–12', '⏱ 90 min', '📚 40 lecciones'],
   objective: 'Estar listo para impartir las primeras 4 lecciones de GameDev Creator Lab, donde los estudiantes remezclan una plantilla runner en MakeCode Arcade y publican una beta en Kodland Sparks.',
-  finalDst: { url: '', desc: 'Un último paso: el DST final de GameDev Creator Lab verifica que estás listo para dar estas lecciones con un grupo real.' },
+  finalDst: { url: 'https://docs.google.com/forms/d/e/1FAIpQLSdNUpFux4fn7NKFvXH1-MkxbAEZr6yoZfWmxEp3uin6l6PhXA/viewform', desc: 'Un último paso: el DST final de GameDev Creator Lab verifica que estás listo para dar estas lecciones con un grupo real.' },
   cards: [
     { type: 'metabar', items: [
       { ic: '👦', k: 'Edad', v: '10–12' }, { ic: '⏱', k: 'Lección', v: '90 min' },
@@ -851,7 +851,7 @@ courses: [
   meta: 'Termina con el DST final',
   chips: ['🧑 12–17', '⏱ 90 min', '📚 40 lecciones'],
   objective: 'Estar listo para impartir las primeras 4 lecciones de Coding Lab, donde los estudiantes actúan como directores creativos orquestando la IA para construir y refinar un juego de navegador.',
-  finalDst: { url: '', desc: 'Un último paso: el DST final de Coding Lab verifica que estás listo para dar estas lecciones con un grupo real.' },
+  finalDst: { url: 'https://docs.google.com/forms/d/e/1FAIpQLScpx4Z-zXeY9lZX_Cv0DJU4DOb16TP9tI8YQ0JTRC6wD7Aofw/viewform', desc: 'Un último paso: el DST final de Coding Lab verifica que estás listo para dar estas lecciones con un grupo real.' },
   cards: [
     { type: 'metabar', items: [
       { ic: '🧑', k: 'Edad', v: '12–17' }, { ic: '⏱', k: 'Lección', v: '90 min' },

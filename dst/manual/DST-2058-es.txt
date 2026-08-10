@@ -30,7 +30,7 @@ COMO CONSTRUIR ESTE FORMULARIO A MANO
  9. Agrega la ultima pregunta como "Parrafo", Obligatoria, con el texto de ayuda indicado.
 10. Enviar > copia el enlace y pegalo en finalDst.url de este curso.
 
-    Cuestionario: 1 punto por pregunta, 12 puntos en total, aprueba con 9/12
+    Cuestionario: 1 punto por pregunta, 12 puntos en total, aprueba con 10/12
 
 
 ==========================================================================
@@ -43,7 +43,7 @@ DESCRIPCION  (copia este bloque)
 ==========================================================================
 Este es el DST final del módulo Creatividad Digital Nivel 2 del entrenamiento de tutores del Nuevo Modelo Educativo. Cubre las primeras 4 lecciones que vas a impartir.
 
-12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 9 / 12.
+12 preguntas puntuadas (1 punto cada una) más una sección corta de feedback. Verás tu puntaje y las respuestas correctas apenas envíes. Puntaje recomendado para aprobar: 10 / 12.
 
 
 ==========================================================================

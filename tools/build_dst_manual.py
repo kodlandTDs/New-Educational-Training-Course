@@ -88,7 +88,7 @@ LBL = {
                shortq='Short answer, Required', paraq='Paragraph, Required',
                scaleq='Linear scale 1-5, Required', helptext='Help text',
                validation='Response validation: Text > Email',
-               settings='Quiz settings: 1 point per question, 12 points total, pass mark 9/12',
+               settings='Quiz settings: 1 point per question, 12 points total, pass mark 10/12',
                nothing='Nothing else on this page is typed into the form — it is guidance for you.'),
     'es': dict(howto='COMO CONSTRUIR ESTE FORMULARIO A MANO', title='TITULO  (copia esta linea)',
                desc='DESCRIPCION  (copia este bloque)', s1='SECCION 1 — IDENTIFICACION',
@@ -100,7 +100,7 @@ LBL = {
                shortq='Respuesta corta, Obligatoria', paraq='Parrafo, Obligatoria',
                scaleq='Escala lineal 1-5, Obligatoria', helptext='Texto de ayuda',
                validation='Validacion de respuestas: Texto > Direccion de correo',
-               settings='Cuestionario: 1 punto por pregunta, 12 puntos en total, aprueba con 9/12',
+               settings='Cuestionario: 1 punto por pregunta, 12 puntos en total, aprueba con 10/12',
                nothing='Nada mas de esta pagina se escribe en el formulario — es guia para ti.'),
 }
 
