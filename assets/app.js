@@ -160,9 +160,16 @@
       ? '<span class="badge bd">' + T.badgeDone + '</span>'
       : (locked ? '<span class="badge bl">' + T.badgeLocked + '</span>'
                 : '<span class="badge bs">' + T.badgeStart + '</span>');
-    var tag = done
-      ? '<span class="stag">' + T.score + ' <b>' + getScore(m.id) + '%</b></span>'
-      : '<span class="stag">' + esc(m.meta || '') + '</span>';
+    var sc = getScore(m.id);
+    var tag;
+    if (done && sc) {
+      tag = '<span class="stag">' + T.score + ' <b>' + sc + '%</b></span>';
+    } else if (done) {
+      /* course modules carry no score — they are read and confirmed, not graded */
+      tag = '<span class="stag"><b>' + T.reviewed + '</b></span>';
+    } else {
+      tag = '<span class="stag">' + esc(m.meta || '') + '</span>';
+    }
 
     var chips = '';
     if (m.chips && m.chips.length) {
@@ -229,7 +236,30 @@
       h += '</div>';
     }
     $('mgrid').innerHTML = h;
+    markOrphans();
   }
+
+  /* Measure each grid's real column count and flag the ones whose last row
+     holds a single card, so CSS can widen it. Re-runs on resize. */
+  function markOrphans() {
+    var grids = document.querySelectorAll('#mgrid .grid');
+    for (var i = 0; i < grids.length; i++) {
+      var g = grids[i];
+      var tpl = getComputedStyle(g).gridTemplateColumns;
+      /* While the screen is still display:none the browser hands back the
+         specified value ("repeat(auto-fill, minmax(...))") instead of the
+         resolved track list. Measuring then would be meaningless. */
+      if (tpl.indexOf('repeat') > -1 || tpl.indexOf('minmax') > -1) continue;
+      var cols = tpl.split(' ').filter(Boolean).length;
+      var n = g.children.length;
+      g.classList.toggle('orphan', cols > 1 && n > 1 && n % cols === 1);
+    }
+  }
+  var orphanTimer = null;
+  window.addEventListener('resize', function () {
+    clearTimeout(orphanTimer);
+    orphanTimer = setTimeout(markOrphans, 120);
+  });
 
   /* ============================================================
      CARD RENDERER
@@ -671,8 +701,11 @@
     var mine = myCourses();
     var all = GENERAL.concat(mine);
     var idx = all.indexOf(m);
-    var next = null;
-    for (var i = idx + 1; i < all.length; i++) { if (!isPassed(all[i].id)) { next = all[i]; break; } }
+    /* The next module is simply the one after this in the list, whether or not
+       it has already been passed. Skipping over passed modules used to leave
+       `next` null on a retake, which dumped the tutor onto the certificate
+       instead of moving them along. */
+    var next = (idx > -1 && idx + 1 < all.length) ? all[idx + 1] : null;
 
     var h = '<div class="remi">' + (passed ? '🎉' : '💪') + '</div>' +
       '<div class="rtitle">' + (passed ? T.passTitle : T.failTitle) + '</div>' +
@@ -684,10 +717,13 @@
     if (passed) {
       var allDone = true;
       for (var j = 0; j < all.length; j++) if (!isPassed(all[j].id)) allDone = false;
-      if (allDone) {
-        h += '<button class="bdark" onclick="showComplete()">🏆 ' + T.seeCert + '</button>';
-      } else if (next) {
+      /* Moving on comes first; the certificate is only ever an extra button,
+         never a replacement for the next module. */
+      if (next) {
         h += '<button class="bdark" onclick="openModule(\'' + next.id + '\')">' + T.nextModule + ': ' + esc(next.title) + ' →</button>';
+      }
+      if (allDone) {
+        h += '<button class="' + (next ? 'bline' : 'bdark') + '" onclick="showComplete()">🏆 ' + T.seeCert + '</button>';
       }
       h += '<button class="bline" onclick="goHome()">' + T.backModules + '</button>';
     } else {
@@ -729,6 +765,7 @@
   window.goHome = function () {
     renderHome();
     showScreen('screen-home');
+    markOrphans();          // now that the grid actually has a layout box
     window.scrollTo(0, 0);
   };
   function showScreen(id) {

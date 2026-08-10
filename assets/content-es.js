@@ -19,7 +19,7 @@ ui: {
 
   heroEyebrow: '🚀 Programa de Entrenamiento de Tutores',
   heroTitle: 'El <span class="h-pill">nuevo</span> modelo educativo',
-  heroSub: 'Tres módulos generales para todos, y después las primeras 4 lecciones de los cursos que tienes asignados. Cada módulo termina con una evaluación corta — apruébala para desbloquear el siguiente.',
+  heroSub: 'Cuatro módulos generales para todos, y después las primeras 4 lecciones de los cursos que tienes asignados. Cada módulo termina con una evaluación corta — apruébala para desbloquear el siguiente.',
   homeNote: 'El progreso se guarda solo en este navegador. Si cambias de computadora o borras los datos del navegador, empezarás de nuevo. ¿Dudas sobre el contenido? Habla con tu Course Consultant.',
   footer: 'Kodland · Tutor Development · Entrenamiento Nuevo Modelo Educativo',
 
@@ -28,17 +28,18 @@ ui: {
   allDone: '¡todo listo!',
   allDoneShort: '🏆 ¡Todo listo!',
   generalTitle: 'Entrenamiento principal',
-  generalSub: 'Todos completan estos tres, en orden — sin importar el curso que impartas.',
+  generalSub: 'Todos completan estos cuatro, en orden — sin importar el curso que impartas.',
   courseTitle: 'Entrenamiento de tus cursos',
   courseSub: 'Las primeras 4 lecciones de cada curso que tienes asignado.',
   noCourses: 'Todavía no hay cursos vinculados a tu correo. <b>Contacta a tu Course Consultant</b> para que te asigne.',
   lockPrev: 'Aprueba primero el módulo anterior',
-  lockGeneral: 'Termina primero los 3 módulos principales',
+  lockGeneral: 'Termina primero los 4 módulos principales',
 
   badgeDone: '✓ Listo',
   badgeStart: 'Empezar →',
   badgeLocked: '🔒 Bloqueado',
   score: 'Puntaje',
+  reviewed: '✓ Revisado',
   goal: 'Objetivo',
 
   qType: { mcq: 'Opción múltiple', multi: 'Selecciona todas', match: 'Relacionar', open: 'Respuesta escrita' },
@@ -136,20 +137,20 @@ general: [
 
     { type: 'divider' },
     { type: 'h', ic: '⚡', t: 'Nuevo Hub: Kodland Sparks' },
-    { type: 'text', p: '<strong>Kodland Sparks</strong> es la nueva plataforma donde los estudiantes publican sus proyectos, siguen aprendiendo entre clases y reciben feedback de compañeros y de un agente de IA. Ahí vive el portafolio que construyen a lo largo del curso.' },
+    { type: 'text', p: '<strong>Kodland Sparks</strong> es la nueva plataforma donde los estudiantes publican sus proyectos, siguen aprendiendo entre clases y reciben retroalimentación de compañeros y de un agente de IA. Ahí vive el portafolio que construyen a lo largo del curso.' },
     { type: 'link', ic: '⚡', href: 'https://portfolio.kodland.org/feed', t: 'Abrir Kodland Sparks', d: 'portfolio.kodland.org/feed — el feed público donde se publican los proyectos' },
     { type: 'iclist', h: 'Lo que necesitas saber como tutor', items: [
       { ic: '🔐', t: 'Los estudiantes entran con <strong>un solo botón desde la plataforma principal (SSO)</strong>: no necesitan registrarse aparte.' },
       { ic: '🔑', t: '<strong>Los tutores acceden con credenciales separadas</strong>, distintas a las del Back Office. Te serán entregadas una vez completes este entrenamiento.' },
       { ic: '🎨', t: 'Sparks tiene dos modos: <strong>Studio</strong> (crear desde cero — web, Python, pixel art, skin de Minecraft, música, Scratch) y <strong>Challenges</strong> (tareas estructuradas con revisión automática y recompensa).' },
       { ic: '💬', t: 'No hay likes ni comentarios clásicos. En su lugar: <strong>reacciones</strong> (emoji), <strong>reviews</strong> (tres campos: impresión general, fortalezas, qué mejorar) y <strong>suscripciones/amigos</strong>.' },
-      { ic: '🏆', t: 'La gamificación funciona con <strong>cristales → cofres → recompensas cosméticas</strong>. Las reviews de un tutor o administrador se destacan visualmente, así el estudiante reconoce el feedback oficial.' }
+      { ic: '🏆', t: 'La gamificación funciona con <strong>cristales → cofres → recompensas cosméticas</strong>. Las reviews de un tutor o administrador se destacan visualmente, así el estudiante reconoce el retroalimentación oficial.' }
     ]},
     { type: 'tip', t: 'Las reviews que dejes salen marcadas como oficiales. Usa la estructura de tres campos — impresión general, fortalezas, una cosa a mejorar — y mantén el campo "mejorar" concreto, nunca comparativo.' },
 
     { type: 'divider' },
     { type: 'h', ic: '📝', t: 'Nuevos manuales: adiós wiki' },
-    { type: 'hi', ic: '📌', h: 'El cambio más importante en tu rutina de preparación', p: 'Estos nuevos cursos <strong>no tendrán manuales en wiki ni presentaciones</strong>. Ahora <strong>toda la guía de una lección vive en la propia lección</strong>: dentro de BO podrás encontrar las <strong>notas del tutor</strong>, que te mostrarán cómo impartir cada actividad.' },
+    { type: 'hi', ic: '📌', h: 'El cambio más importante en tu rutina de preparación', p: 'Estos nuevos cursos <strong>no tendrán manuales en wiki ni presentaciones</strong>. Ahora <strong>toda la guía de una lección vive en la propia lección</strong>: dentro de BO podrás encontrar las <strong>notas del profesor</strong>, que te mostrarán cómo impartir cada actividad.' },
     { type: 'iclist', h: 'Las notas del profesor pueden contener', items: [
       { ic: '⏱', t: '<strong>Tiempo exacto</strong> en minutos (a veces un rango, ej. "5–7 minutos").' },
       { ic: '🎯', t: '<strong>Objetivo</strong> de la actividad.' },
@@ -157,7 +158,7 @@ general: [
       { ic: '👀', t: '<strong>En qué prestar atención / qué NO hacer.</strong>' },
       { ic: '✅', t: '<strong>Criterio de logro</strong> — cómo sabes que el objetivo se cumplió, de forma observable.' }
     ]},
-    { type: 'img', src: 'images/tutor-notes-1.png', alt: 'Bloque de notas del profesor en la plataforma Kodland', cap: 'Las notas del profesor aparecen como un bloque ámbar punteado dentro de la tarjeta de la lección — aquí, el resumen de la Lección 1 de Coding Lab.' },
+    { type: 'img', src: 'images/tutor-notes-1.png', alt: 'Bloque de notas del profesor en la plataforma Kodland', cap: 'Las notas del profesor aparecen como un bloque naranja punteado dentro de la tarjeta de la lección — aquí, el resumen de la Lección 1 de Coding Lab.' },
     { type: 'img', src: 'images/tutor-notes-2.png', alt: 'Notas del profesor con tiempo estimado e instrucciones', cap: 'Las notas están junto a la actividad que describen, con tiempo estimado y guía paso a paso para esa tarjeta específica.' },
 
     { type: 'h', ic: '🙈', t: 'Si la guía está dentro de la actividad, ¿los estudiantes pueden verla?' },
@@ -168,8 +169,8 @@ general: [
     { type: 'text', p: '<strong>Qué es:</strong> en Follow Mode, los estudiantes ven automáticamente <strong>la misma tarea que tú tienes abierta</strong>. No es compartir pantalla — cada estudiante tiene su propia copia abierta y puede trabajar en ella. Funciona solo dentro de la lección.' },
     { type: 'video', h: 'Follow Mode en acción', p: 'Una demostración corta de cómo activar el modo y mover al grupo por la lección.', yt: 'HDWga8ZROik' },
     { type: 'steps', items: [
-      { h: 'Abre cualquier tarea de la lección', p: 'Haz clic en ella en la lista de tareas. El interruptor solo aparece con una tarjeta abierta.' },
-      { h: 'Busca el interruptor "Lead the group"', p: 'Aparece junto a la tarea abierta.' },
+      { h: 'Abre cualquier tarea de la lección', p: 'Haz clic en ella en la lista de tareas. El interruptor solo aparece con una tarea abierta.' },
+      { h: 'Busca el interruptor "Dirigir al grupo"', p: 'Aparece junto a la tarea abierta.' },
       { h: 'Actívalo', p: 'Desde ese momento los estudiantes se mueven automáticamente a la tarea que tú abras.' }
     ]},
     { type: 'iclist', h: 'Cómo se comporta durante la clase', items: [
@@ -180,13 +181,13 @@ general: [
       { ic: '🚪', t: 'Si te <strong>ausentas</strong>, ven un aviso de "el tutor se ausentó"; al volver, el seguimiento continúa.' },
       { ic: '👥', t: 'Junto al nombre de cada estudiante ves un marcador de <strong>quién te sigue</strong> y quién trabaja independiente.' }
     ]},
-    { type: 'good', t: '<strong>El estudiante no está encerrado.</strong> Puede desengancharse con el botón <strong>"Work independently"</strong> y trabajar en lo que quiera. Mientras tanto ve un banner ("El tutor está en la actividad…") con un botón <strong>"Volver"</strong> para resincronizarse en un clic. Si cambias de tarea mientras él trabaja solo, el banner se actualiza sin interrumpirlo.' },
+    { type: 'good', t: '<strong>El estudiante no está encerrado.</strong> Puede desengancharse con el botón <strong>"Trabajar independiente"</strong> y trabajar en lo que quiera. Mientras tanto ve un banner ("El tutor está en la actividad…") con un botón <strong>"Volver"</strong> para resincronizarse en un clic. Si cambias de tarea mientras él trabaja solo, el banner se actualiza sin interrumpirlo.' },
     { type: 'tip', t: 'Con el modo apagado, todo funciona como antes: nada cambia. Apágalo cuando quieras que los estudiantes exploren libremente.' },
 
     { type: 'divider' },
-    { type: 'h', ic: '📤', t: 'No olvides el botón Submit' },
-    { type: 'warn', t: 'Muchas actividades son interactivas. <strong>Si el estudiante no hace clic en Submit, no podemos rastrear su progreso</strong>, aunque haya completado la actividad correctamente en pantalla. Recuérdaselo activamente, sobre todo en las primeras clases. Esto también permite que métricas como entrega de tareas de clase mejoren.' },
-    { type: 'img', src: 'images/submit-button.png', alt: 'El botón Submit al final de una actividad interactiva', cap: 'El botón rosa Submit al final de una tarjeta interactiva — el momento en que el trabajo del estudiante realmente queda registrado.' }
+    { type: 'h', ic: '📤', t: 'No olvides el botón Enviar' },
+    { type: 'warn', t: 'Muchas actividades son interactivas. <strong>Si el estudiante no hace clic en Enviar, no podemos rastrear su progreso</strong>, aunque haya completado la actividad correctamente en pantalla. Recuérdaselo activamente, sobre todo en las primeras clases. Esto también permite que métricas como entrega de tareas de clase mejoren.' },
+    { type: 'img', src: 'images/submit-button.png', alt: 'El botón Enviar al final de una actividad interactiva', cap: 'El botón rosa Enviar al final de una tarjeta interactiva — el momento en que el trabajo del estudiante realmente queda registrado.' }
   ],
   quiz: [
   { type: 'open',
@@ -207,7 +208,7 @@ general: [
     fb: 'Cada campo de las notas responde una pregunta práctica distinta. El "criterio de logro" es el que más fácilmente se pasa por alto: es lo que te dice que la actividad terminó, no el reloj.' },
 
   { type: 'multi',
-    ctx: 'Tienes <strong>"Lead the group"</strong> activado. A mitad de la lección, un estudiante hace clic en <strong>"Work independently"</strong> y regresa a una tarea anterior.',
+    ctx: 'Tienes <strong>"Dirigir al grupo"</strong> activado. A mitad de la lección, un estudiante hace clic en <strong>"Trabajar independiente"</strong> y regresa a una tarea anterior.',
     q: '¿Cuáles de las siguientes afirmaciones son ciertas a partir de ese momento? Selecciona todas las que apliquen.',
     opts: [
       'El estudiante sigue viendo un banner que muestra en qué tarea estás tú, con un botón "Volver"',
@@ -225,24 +226,24 @@ general: [
     q: '¿Cuál es la explicación más probable, y qué vas a cambiar?',
     opts: [
       'La actividad estaba rota; hay que reportarlo a soporte técnico y pedir que corrijan la métrica manualmente',
-      'Tus estudiantes no hicieron clic en <strong>Submit</strong>, así que nada quedó registrado — haz del recordatorio de Submit parte de tu rutina de cierre',
+      'Tus estudiantes no hicieron clic en <strong>Enviar</strong>, así que nada quedó registrado — haz del recordatorio de Enviar parte de tu rutina de cierre',
       'Follow Mode estaba activado, lo que bloquea el rastreo de progreso mientras lideras al grupo',
       'Tus estudiantes no habían iniciado sesión en Kodland Sparks, así que su trabajo se fue a una cuenta de invitado'
     ],
     c: 1,
-    fb: 'Completar la actividad en pantalla no es lo que queda registrado: el clic en <strong>Submit</strong> sí. Esta es la causa más común de un reporte "clase excelente, métricas en cero", y por eso el recordatorio de Submit pertenece a tu rutina de cierre, sobre todo en tus primeras clases.' },
+    fb: 'Completar la actividad en pantalla no es lo que queda registrado: el clic en <strong>Enviar</strong> sí. Esta es la causa más común de un reporte "clase excelente, métricas en cero", y por eso el recordatorio de Enviar pertenece a tu rutina de cierre, sobre todo en tus primeras clases.' },
 
   { type: 'mcq',
-    ctx: 'Tus estudiantes publicarán su primer proyecto en Kodland Sparks esta semana, y quieres dejarle feedback a cada uno. Antes de la lección revisas tres cosas: cómo entran tus estudiantes, cómo entras <em>tú</em>, y cómo funciona ahí el feedback.',
+    ctx: 'Tus estudiantes publicarán su primer proyecto en Kodland Sparks esta semana, y quieres dejarle retroalimentación a cada uno. Antes de la lección revisas tres cosas: cómo entran tus estudiantes, cómo entras <em>tú</em>, y cómo funciona ahí el retroalimentación.',
     q: '¿Qué conjunto de respuestas es correcto?',
     opts: [
-      'Tus estudiantes se registran solos en Sparks; tú usas tu acceso de Back Office; dejas feedback con likes y comentarios',
-      'Tus estudiantes entran con un solo botón desde la plataforma principal (SSO); tú recibes credenciales separadas al completar este entrenamiento; dejas feedback como una review de tres campos, que aparece destacada como oficial',
+      'Tus estudiantes se registran solos en Sparks; tú usas tu acceso de Back Office; dejas retroalimentación con likes y comentarios',
+      'Tus estudiantes entran con un solo botón desde la plataforma principal (SSO); tú recibes credenciales separadas al completar este entrenamiento; dejas retroalimentación como una review de tres campos, que aparece destacada como oficial',
       'Tus estudiantes entran con SSO; tú usas tu acceso de Back Office; tus reviews se ven exactamente igual que la review de un compañero',
-      'Tú y tus estudiantes se registran por separado en Sparks; el feedback lo genera solamente la IA'
+      'Tú y tus estudiantes se registran por separado en Sparks; el retroalimentación lo genera solamente la IA'
     ],
     c: 1,
-    fb: 'Tus estudiantes entran con SSO: un botón, sin registro aparte. <strong>Tú recibes credenciales separadas</strong>, distintas a las del Back Office, entregadas al completar este entrenamiento. Y no hay likes ni comentarios clásicos: reacciones más reviews estructuradas de tres campos, y las tuyas se destacan visualmente para que el estudiante reconozca el feedback oficial de la escuela.' }
+    fb: 'Tus estudiantes entran con SSO: un botón, sin registro aparte. <strong>Tú recibes credenciales separadas</strong>, distintas a las del Back Office, entregadas al completar este entrenamiento. Y no hay likes ni comentarios clásicos: reacciones más reviews estructuradas de tres campos, y las tuyas se destacan visualmente para que el estudiante reconozca el retroalimentación oficial de la escuela.' }
 ]
 },
 
@@ -274,7 +275,7 @@ general: [
       right: { ic: '🚫', h: 'Evita esto', items: ['"Otra vez no te salió."', '"Está mal, déjame arreglarlo."', '"Esto es fácil, ya deberías saberlo."'] }
     },
 
-    { type: 'text', h: 'Pilar 3 — El Kodland Learning Loop', ic: '3️⃣', p: 'Es el ciclo que se repite dentro de cada clase y entre clases. Reemplaza la vieja secuencia lineal de "explico → practican → reviso".' },
+    { type: 'text', h: 'Pilar 3 — El ciclo de aprendizaje de Kodland', ic: '3️⃣', p: 'Es el ciclo que se repite dentro de cada clase y entre clases. Reemplaza la vieja secuencia lineal de "explico → practican → reviso".' },
     { type: 'flow', steps: [
       { ic: '🎯', t: 'Objetivo' }, { ic: '⚡', t: 'Prototipo rápido' }, { ic: '🐞', t: 'Dificultad / error' },
       { ic: '🧭', t: 'Estrategia / pista' }, { ic: '📈', t: 'Mejora' }, { ic: '🎤', t: 'Demostración' }, { ic: '💭', t: 'Reflexión' }
@@ -286,13 +287,13 @@ general: [
       head: ['Curso / edad', 'Modelo de uso de IA', 'Test para validar el proyecto'],
       rows: [
         ['<strong>Creatividad Digital</strong> y <strong>Creator Lab: Games, AI</strong> (8–9)',
-         'PBL guiado, IA asistida. Herramientas cercanas a las actuales, IA mediada por el tutor + AI Buddy. <strong>El sentimiento de "yo lo hice" es el activo que hay que proteger.</strong> La IA puede aparecer tarde en el curso, como elemento lúdico y acotado.',
+         'Aprendizaje guiado basado en proyectos, IA asistida. Herramientas cercanas a las actuales, IA mediada por el tutor + AI Buddy. <strong>El sentimiento de "yo lo hice" es el activo que hay que proteger.</strong> La IA puede aparecer tarde en el curso, como elemento lúdico y acotado.',
          '<strong>Test inverso:</strong> el proyecto debe seguir siendo 100% alcanzable y significativo <em>sin</em> IA. La IA solo puede quitar fricción rutinaria — nunca reemplazar el acto creativo.'],
         ['<strong>GameDev Creator Lab</strong> (10–12)',
-         'PBL dirigido, IA como material. El estudiante es dueño y ejecutor del núcleo creativo; la IA genera material crudo (sprites, sonidos, textos) que el estudiante cura, edita y ensambla. La IA es un "compañero de sparring".',
+         'Aprendizaje basado en proyectos dirigidos, IA como material. El estudiante es dueño y ejecutor del núcleo creativo; la IA genera material crudo (sprites, sonidos, textos) que el estudiante cura, edita y ensambla. La IA es un "compañero de sparring".',
          '<strong>Test de apalancamiento:</strong> sin IA el proyecto seguiría siendo posible, pero visiblemente más pobre o pequeño dentro del tiempo de clase. La IA sube el techo de la idea del estudiante.'],
         ['<strong>Coding Lab</strong> (12–17)',
-         'PBL nativo en IA, el estudiante como director creativo. Orquesta la IA en todo el proceso (concepto → assets → lógica → construcción), incluyendo IA como componente dentro de su propio programa. Alfabetización explícita sobre medios sintéticos.',
+         'Aprendizaje basado en proyectos integrado con la IA, el estudiante como director creativo. Orquesta la IA en todo el proceso (concepto → assets → lógica → construcción), incluyendo IA como componente dentro de su propio programa. Alfabetización explícita sobre medios sintéticos.',
          '<strong>Test de ambición:</strong> el alcance/calidad pretendido no es alcanzable sin IA en el tiempo dado. Quitar la IA colapsa la forma prevista del proyecto.']
       ]},
     { type: 'quote', t: '"La IA propone, el autor decide."', src: 'La regla que debes repetir siempre, en cualquiera de los 4 cursos' },
@@ -302,14 +303,14 @@ general: [
     ], after: '<strong>Nunca dejes que la IA construya la lógica central del proyecto en lugar del estudiante.</strong>' },
 
     { type: 'divider' },
-    { type: 'h', ic: '💬', t: 'El feedback ya no es solo tutor → estudiante' },
-    { type: 'iclist', h: 'Feedback de 4 vías', items: [
+    { type: 'h', ic: '💬', t: 'El retroalimentación ya no es solo tutor → estudiante' },
+    { type: 'iclist', h: 'Retroalimentación de 4 vías', items: [
       { ic: '🧑‍🏫', t: 'El <strong>tutor</strong>.' },
-      { ic: '👥', t: 'Un <strong>compañero</strong> (feedback entre pares).' },
+      { ic: '👥', t: 'Un <strong>compañero</strong> (retroalimentación entre pares).' },
       { ic: '🪞', t: 'La <strong>autoevaluación</strong> del estudiante.' },
       { ic: '🤖', t: 'La <strong>IA</strong>.' }
     ]},
-    { type: 'text', p: 'La autoevaluación no es "¿te gustó?". Es identificar: <strong>qué problema tuve, qué estrategia usé, cuál es mi siguiente paso</strong>. El feedback entre pares durante el showcase es simple y específico ("me gustó que…") y <strong>nunca comparativo entre proyectos</strong>.' },
+    { type: 'text', p: 'La autoevaluación no es "¿te gustó?". Es identificar: <strong>qué problema tuve, qué estrategia usé, cuál es mi siguiente paso</strong>. El retroalimentación entre pares durante el showcase es simple y específico ("me gustó que…") y <strong>nunca comparativo entre proyectos</strong>.' },
 
     { type: 'h', ic: '🎭', t: 'Storytelling como motor motivacional' },
     { type: 'text', p: 'Cada uno de los 4 cursos tiene una narrativa que envuelve todo el programa: no es decorativo. El estudiante no es "un alumno haciendo un ejercicio", es un <strong>creador/desarrollador junior dentro de un estudio digital ficticio</strong>.' },
@@ -419,13 +420,13 @@ general: [
 
     { type: 'divider' },
     { type: 'h', ic: '📊', t: 'Lo que sigue siendo tuyo: las métricas' },
-    { type: 'hi', ic: '📈', h: 'Se fueron las diapositivas — la responsabilidad no', p: 'Aunque la lección ya no anuncie sus propios bloques, sigue siendo importante llevar el control de la <strong>asistencia</strong>, la <strong>tarea</strong> y la <strong>retención</strong>. Nada en el nuevo modelo quita esto de tu trabajo: simplemente la plataforma deja de recordártelo, así que tienes que integrarlo en tu propio ritmo.' },
+    { type: 'hi', ic: '📈', h: 'Se fueron las diapositivas — la estructura no', p: 'Recuerda que la estructura de la lección está estrechamente conectada con métricas importantes como la <strong>asistencia</strong>, la <strong>retención</strong> y la <strong>entrega de tareas</strong>. Recordarles la tarea a los estudiantes, explicarla y revisarla, hacer el warm-up y el cierre, explicar los objetivos de la lección y adelantar la próxima lección: todo eso contribuye al engagement, la retención y la asistencia.' },
     { type: 'iclist', h: 'Tres métricas, tres hábitos concretos', items: [
       { ic: '🗓', t: '<strong>Asistencia</strong> — márcala al inicio, durante el warm-up, mientras los estudiantes se acomodan. No la dejes para el final de la clase, cuando estás cerrando y es fácil olvidarla.' },
       { ic: '📚', t: '<strong>Tarea</strong> — como la tarea ahora es "la siguiente iteración del mismo proyecto", revísala dentro del checkpoint de la lección anterior. Si un estudiante no trae nada, esa es tu señal para ver si se atoró técnicamente, no solo para registrar un cero.' },
-      { ic: '💚', t: '<strong>Retención</strong> — un estudiante que deja de publicar en Sparks, o deja de hacer clic en Submit, suele estar desconectándose antes de dejar de asistir. Esas dos señales son tu alerta más temprana.' }
+      { ic: '💚', t: '<strong>Retención</strong> — un estudiante que deja de publicar en Sparks, o deja de hacer clic en Enviar, suele estar desconectándose antes de dejar de asistir. Esas dos señales son tu alerta más temprana.' }
     ]},
-    { type: 'warn', t: 'Recuerda: <strong>si el estudiante no hace clic en Submit, su trabajo no queda registrado</strong>. Una clase que se sintió excelente puede aparecer con cero entrega de tareas de clase. Haz del recordatorio de Submit parte de tu rutina de cierre.' },
+    { type: 'warn', t: 'Recuerda: <strong>si el estudiante no hace clic en Enviar, su trabajo no queda registrado</strong>. Una clase que se sintió excelente puede aparecer con cero entrega de tareas de clase. Haz del recordatorio de Enviar parte de tu rutina de cierre.' },
 
     { type: 'h', ic: '☑️', t: 'Antes de tu lección' },
     { type: 'check', h: 'Checklist previo a la clase', items: [
@@ -435,7 +436,7 @@ general: [
       'Sé qué único paso con IA permite esta lección, y cuál es su límite de alcance.',
       'Sé dónde está la plantilla de respaldo por si un proyecto se rompe.',
       'Tengo un plan para marcar la asistencia durante el warm-up.',
-      'Recordaré a los estudiantes hacer clic en <strong>Submit</strong> antes de cerrar.'
+      'Recordaré a los estudiantes hacer clic en <strong>Enviar</strong> antes de cerrar.'
     ]},
     { type: 'good', t: 'No necesitas memorizar la lección. Necesitas saber dónde está el resultado final, dónde está la plantilla de respaldo, y cuándo dejar de hablar. Las notas del profesor cargan con el resto.' }
   ],
@@ -459,11 +460,11 @@ general: [
       'Marcar la asistencia al final, junto con el registro de la tarea, para hacerlo todo de una vez',
       'Revisar la tarea dentro del checkpoint de la lección anterior, ya que la tarea ahora es la siguiente iteración del mismo proyecto',
       'Si un estudiante no trae tarea, registrar un cero y seguir para que la clase no se atrase',
-      'Tratar "dejó de publicar en Sparks" y "dejó de hacer clic en Submit" como alertas tempranas de desconexión',
+      'Tratar "dejó de publicar en Sparks" y "dejó de hacer clic en Enviar" como alertas tempranas de desconexión',
       'Esperar a dos faltas seguidas antes de considerar a un estudiante en riesgo de abandono'
     ],
     c: [0, 2, 4],
-    fb: 'La asistencia al final compite con el cierre de la clase y se olvida. Una tarea faltante es una señal para revisar si el estudiante se atoró técnicamente, no solo un cero. Y la desconexión aparece en la <strong>producción</strong> (sin publicaciones, sin Submit) antes que en la asistencia, por eso esperar a las faltas ya es tarde.' },
+    fb: 'La asistencia al final compite con el cierre de la clase y se olvida. Una tarea faltante es una señal para revisar si el estudiante se atoró técnicamente, no solo un cero. Y la desconexión aparece en la <strong>producción</strong> (sin publicaciones, sin Enviar) antes que en la asistencia, por eso esperar a las faltas ya es tarde.' },
 
   { type: 'mcq',
     ctx: 'Abres la lección y la actividad de revisión de la clase anterior. Los proyectos de dos estudiantes no abren. Tienes 90 minutos y la lección de hoy se construye directamente sobre ese proyecto.',
@@ -478,10 +479,10 @@ general: [
     fb: 'El checkpoint es técnico, no conceptual: <strong>¿el proyecto anterior abre y funciona?</strong> Los conceptos no se re-explican. Las plantillas de respaldo existen en cada curso precisamente para que nadie quede varado y nunca tengas que "salvar" un proyecto en pánico.' },
 
   { type: 'open',
-    ctx: 'Una estudiante de tu grupo ha asistido a todas las clases de las últimas tres semanas. Pero no ha publicado nada en Kodland Sparks desde el primer módulo, y sus últimas cuatro actividades no tienen Submit.',
+    ctx: 'Una estudiante de tu grupo ha asistido a todas las clases de las últimas tres semanas. Pero no ha publicado nada en Kodland Sparks desde el primer módulo, y sus últimas cuatro actividades no tienen Enviar.',
     q: '¿Cuál es tu lectura de esta situación, y qué harás en la próxima lección? Sé concreto sobre las acciones que tomarías.',
     min: 180,
-    model: 'Una respuesta sólida cubre: <ul><li><strong>La lectura:</strong> la asistencia se ve sana, pero las dos señales más tempranas de desconexión están encendidas. La producción se detiene antes que la asistencia — esta estudiante está en riesgo ahora, no después.</li><li>Distinguir las dos causas posibles: <em>desconexión</em> frente a un <em>bloqueo técnico</em> (puede que no sepa publicar, o que su proyecto esté roto). No asumir motivación antes de revisar la mecánica.</li><li><strong>En la próxima lección, en concreto:</strong> revisar que su proyecto abra durante el checkpoint; acompañarla personalmente por el flujo de publicación en Sparks; asegurarte de que haga clic en Submit antes de cerrar la clase.</li><li>Usar la narrativa y el showcase entre pares para reconectarla: una reacción o una review específica de un compañero sobre su trabajo.</li><li>Hacer del recordatorio de Submit parte de la rutina de cierre para todo el grupo, no solo para ella.</li></ul>',
+    model: 'Una respuesta sólida cubre: <ul><li><strong>La lectura:</strong> la asistencia se ve sana, pero las dos señales más tempranas de desconexión están encendidas. La producción se detiene antes que la asistencia — esta estudiante está en riesgo ahora, no después.</li><li>Distinguir las dos causas posibles: <em>desconexión</em> frente a un <em>bloqueo técnico</em> (puede que no sepa publicar, o que su proyecto esté roto). No asumir motivación antes de revisar la mecánica.</li><li><strong>En la próxima lección, en concreto:</strong> revisar que su proyecto abra durante el checkpoint; acompañarla personalmente por el flujo de publicación en Sparks; asegurarte de que haga clic en Enviar antes de cerrar la clase.</li><li>Usar la narrativa y el showcase entre pares para reconectarla: una reacción o una revisión específica de un compañero sobre su trabajo.</li><li>Hacer del recordatorio de Enviar parte de la rutina de cierre para todo el grupo, no solo para ella.</li></ul>',
     fb: 'Compara tu respuesta con el modelo de abajo.' },
 
   { type: 'mcq',
@@ -496,6 +497,123 @@ general: [
     c: 1,
     fb: 'La tarea continúa el <strong>mismo proyecto</strong> que tu estudiante ya publicó: la siguiente iteración, o una misión construida sobre lo que acaba de aprender. Un ejercicio suelto en una hoja rompe el hilo y el portafolio que está construyendo.' }
 ]
+},
+
+/* ---------------------------------------------------------- G4 */
+{
+  id: 'g4', kind: 'general', num: 'Módulo principal 4', emoji: '🤖', color: '#A855F7',
+  title: 'Introducción a los prompts para tutores',
+  desc: 'La única habilidad realmente nueva de estos cursos. No el lado técnico de la IA, sino cómo escribir un prompt y cómo ayudar a un estudiante a escribir el suyo.',
+  meta: '5 preguntas de formato mixto',
+  chips: ['✍️ Escribir prompts', '🐞 Depurar con IA', '🎨 Imagen y video'],
+  objective: 'Saber lo suficiente sobre prompts para guiar a tus estudiantes mientras escriben los suyos en clase. Se trata de habilidad práctica, no de teoría técnica.',
+  cards: [
+    { type: 'hi', ic: '💡', h: 'Por qué existe este módulo', p: 'Estos nuevos cursos no te exigen mucho en cuanto a conocimiento nuevo de la materia. El único área realmente nueva es la <strong>IA</strong> — y aunque hay tutores que ya se manejan bien con ella, hay otros que la usan muy poco, o la usan de formas que no le sirven al estudiante. Este módulo es la base común.' },
+
+    { type: 'h', ic: '🧠', t: 'Conocer la IA' },
+    { type: 'text', p: 'La inteligencia artificial que usamos en nuestras clases — AI Buddy y las herramientas dentro de Kodland Sparks — funciona con instrucciones escritas en lenguaje natural, llamadas <strong>prompts</strong>. Mejor prompt, mejor resultado obtiene el estudiante.' },
+    { type: 'text', p: 'Como tutor no necesitas ser un experto técnico en IA. Sí necesitas entender lo básico, para poder guiar a tus estudiantes mientras escriben sus propios prompts durante la clase.' },
+
+    { type: 'h', ic: '❓', t: '¿Qué es un prompt?' },
+    { type: 'text', p: 'Un prompt es la instrucción que le damos a una IA para que genere un resultado: texto, código, una imagen, un video. Es como darle instrucciones a alguien que no conoce nada del contexto de tu proyecto: <strong>cuanto más claras y específicas sean las instrucciones, más cerca estará el resultado de lo que realmente querías.</strong>' },
+    { type: 'ba',
+      beforeLbl: 'Un prompt malo',
+      before: 'Produce resultados genéricos o incorrectos. El estudiante termina aceptando algo que no quería, o empezando de cero otra vez.',
+      afterLbl: 'Un prompt bueno',
+      after: 'Produce resultados útiles y precisos que son <strong>fáciles de ajustar</strong>. Esa última parte es la más importante: un resultado que puedes corregir vale más que uno que tienes que reemplazar.'
+    },
+
+    { type: 'h', ic: '🧩', t: '¿Qué debe incluir un buen prompt?' },
+    { type: 'iclist', p: 'Un prompt sólido generalmente responde estas cuatro preguntas:', items: [
+      { ic: '🎬', t: '<strong>Contexto</strong> — ¿para qué es esto? ¿Quién lo va a usar?' },
+      { ic: '🎯', t: '<strong>Objetivo</strong> — ¿qué quieres lograr exactamente?' },
+      { ic: '📐', t: '<strong>Detalles específicos</strong> — estilo, formato, tono, restricciones. Por ejemplo: "en 3 oraciones", "usando Python", "estilo cartoon".' },
+      { ic: '🖼', t: '<strong>Ejemplos</strong>, cuando apliquen — mostrar un ejemplo ayuda a que la IA entienda mejor lo que se espera.' }
+    ]},
+    { type: 'twocol',
+      left:  { ic: '✅', h: 'Suficientemente específico', items: ['"Crea un juego simple en Scratch donde un gato esquiva obstáculos que caen, con un puntaje visible y 3 vidas."'] },
+      right: { ic: '❌', h: 'Demasiado vago', items: ['"Hazme un juego."'] }
+    },
+
+    { type: 'h', ic: '💻', t: 'Consejos para prompts que generan código' },
+    { type: 'iclist', items: [
+      { ic: '🏷', t: '<strong>Nombra el lenguaje o la plataforma</strong> — Python, HTML, Scratch, Roblox, etc.' },
+      { ic: '👣', t: '<strong>Describe el comportamiento esperado paso a paso</strong>, no solo el resultado final.' },
+      { ic: '💬', t: '<strong>Pide que el código venga comentado</strong>, así es más fácil de leer y de explicar en clase.' },
+      { ic: '🔧', t: 'Si algo no funciona, <strong>no reescribas todo el prompt</strong>. Pídele a la IA que corrija el error específico, mencionando qué pasó.' },
+      { ic: '🧪', t: '<strong>Anima a los estudiantes a probar y entender el código</strong>, no solo a copiarlo.' }
+    ]},
+
+    { type: 'h', ic: '🎨', t: 'Consejos para prompts que generan imagen y video' },
+    { type: 'iclist', items: [
+      { ic: '🖌', t: '<strong>Describe el sujeto principal, el estilo visual</strong> (realista, cartoon, pixel art…) <strong>y el escenario o fondo.</strong>' },
+      { ic: '🌈', t: '<strong>Menciona colores, iluminación o ambiente</strong> cuando importen para el proyecto.' },
+      { ic: '📏', t: '<strong>Sé específico con el formato</strong> — vertical, horizontal, cuadrado — si el proyecto lo requiere.' },
+      { ic: '🔁', t: 'Si el primer resultado no es lo que esperabas, <strong>ajusta una variable a la vez</strong> (solo el color, o solo el estilo) para poder ver qué cambió realmente el resultado.' }
+    ]},
+
+    { type: 'h', ic: '⚠️', t: 'Errores comunes' },
+    { type: 'iclist', items: [
+      { ic: '🌫', t: '<strong>Ser demasiado vago.</strong> "Hazlo más bonito" no le da a la IA nada con lo que trabajar.' },
+      { ic: '📚', t: '<strong>Pedir demasiado de una vez.</strong> Divide un proyecto complejo en varios prompts más pequeños.' },
+      { ic: '🔍', t: '<strong>No revisar el resultado.</strong> La IA se equivoca y puede generar contenido incorrecto: revisa siempre antes de usarlo.' },
+      { ic: '🔂', t: '<strong>No iterar.</strong> El primer resultado casi nunca es el final. Ajustar y volver a pedir es parte normal del proceso.' },
+      { ic: '🧭', t: '<strong>Olvidar el contexto del proyecto.</strong> Un prompt sin contexto produce resultados genéricos que no encajan con lo que el estudiante está construyendo.' }
+    ]},
+    { type: 'good', t: 'Fíjate cuánto de esto se parece a lo que ya haces como tutor: un cambio a la vez, describe el comportamiento que esperas, prueba antes de confiar, e itera en vez de empezar de nuevo. Escribir prompts no es una habilidad aparte: es el mismo hábito de depuración, apuntado a otra herramienta.' }
+  ],
+  quiz: [
+    { type: 'mcq',
+      ctx: 'Estás ayudando a un estudiante a convertir su idea de juego en Scratch en un prompt.',
+      q: '¿Cuál prompt tiene más probabilidad de dar un resultado usable en el primer intento?',
+      opts: [
+        '"Haz un juego de un gato con obstáculos, parecido a los juegos de endless runner, usando buenos principios de diseño de juegos."',
+        '"Crea un juego en Scratch: un sprite de gato se mueve izquierda/derecha con las flechas, los obstáculos caen desde arriba a velocidad creciente, el puntaje sube cada segundo sobrevivido, el juego termina tras 3 colisiones."',
+        '"Haz un juego divertido y entretenido para un niño de 8 años que le enseñe sobre obstáculos y supervivencia, parecido a Flappy Bird pero original."',
+        '"Crea un juego 2D en Scratch con reglas claras, un sistema de puntaje y dificultad creciente con el tiempo."'
+      ], c: 1,
+      fb: 'Solo ese tiene mecánicas concretas y sin ambigüedad: movimiento, comportamiento de aparición, disparador del puntaje, condición de fin. Los otros <em>suenan</em> específicos pero se apoyan en términos subjetivos — "buenos principios de diseño", "divertido y entretenido", "reglas claras" — que la IA tiene que interpretar por su cuenta.' },
+
+    { type: 'mcq',
+      ctx: 'El primer prompt de imagen de un estudiante produjo un personaje con la paleta de colores equivocada. Todo lo demás — pose, estilo, fondo — salió correcto.',
+      q: '¿Cuál es el mejor siguiente paso?',
+      opts: [
+        'Reescribir todo el prompt desde cero con más detalle en general, para no repetir el mismo error',
+        'Volver a ejecutar exactamente el mismo prompt, ya que la salida de la IA tiene aleatoriedad y un segundo intento suele arreglarlo',
+        'Enviar un prompt de seguimiento que cambie solo la paleta de colores, manteniendo igual el resto de la descripción',
+        'Agregar varios adjetivos extra describiendo el ambiente deseado, para que la IA tenga más contexto'
+      ], c: 2,
+      fb: 'Aislar la única variable que estuvo mal es más rápido y más confiable que empezar de nuevo, que confiar en la aleatoriedad, o que agregar detalle no relacionado que no ataca el problema real.' },
+
+    { type: 'mcq',
+      ctx: 'Estás ayudando a un estudiante de 13+ a depurar una función de Python usando IA.',
+      q: '¿Cuál prompt refleja el enfoque de diagnóstico más efectivo?',
+      opts: [
+        '"Este código no funciona, arréglalo por favor: [código]"',
+        '"Esta función debería devolver el promedio de una lista pero devuelve None cuando la lista tiene un solo elemento. Aquí está el código: [código]. ¿Qué está causando que falle este caso específico?"',
+        '"Reescribe este código con mejores prácticas y asegúrate de que funcione: [código]"',
+        '"Explica qué está mal con este código y dame una versión corregida: [código]"'
+      ], c: 1,
+      fb: 'Nombra el comportamiento esperado exacto, la falla observada exacta y el caso límite específico, así la IA puede apuntar al bug real en vez de adivinar el alcance o reescribir más de lo necesario.' },
+
+    { type: 'mcq',
+      ctx: 'Dos tutores escriben prompts para la misma tarea de generación de video. El tutor A escribe un solo prompt largo y detallado que cubre estilo, sujeto y fondo de una vez. El tutor B escribe primero un prompt más corto, revisa el resultado y después ajusta.',
+      q: '¿Cuál afirmación es la más precisa?',
+      opts: [
+        'El enfoque del tutor A siempre es mejor, porque más detalle desde el inicio reduce la cantidad de iteraciones necesarias',
+        'El enfoque del tutor B siempre es mejor, porque los prompts más cortos son intrínsecamente más fáciles de procesar para la IA',
+        'Cualquiera puede funcionar, pero el enfoque iterativo del tutor B hace más fácil identificar qué detalle específico causó un resultado no deseado',
+        'Ninguno de los dos enfoques importa, ya que la calidad final depende solo del modelo de IA que se use, no del prompt'
+      ], c: 2,
+      fb: 'El principio central de este módulo es iterar y aislar variables. El detalle por sí solo no garantiza el éxito, e iterar hace la relación causa-efecto mucho más clara que hacer todo en un solo prompt grande.' },
+
+    { type: 'open',
+      ctx: 'Un estudiante de tu grupo quiere agregar un doble salto a su juego de plataformas. Le escribe a la IA: <em>"haz que el salto sea mejor"</em>.',
+      q: 'Reescríbelo como un prompt que probablemente funcione en el primer intento. Escribe el texto real del prompt que le ayudarías a producir, y agrega una línea explicando por qué el tuyo va a funcionar mejor.',
+      min: 180,
+      model: 'Un prompt sólido hace la mayoría de esto: <ul><li><strong>Nombra la plataforma</strong> — "En Scratch…" — para que la IA no adivine el entorno.</li><li><strong>Indica el comportamiento exacto y su disparador:</strong> "cuando se presione la tecla espacio mientras el gato ya está en el aire, salta una segunda vez".</li><li><strong>Pone un límite:</strong> "solo una vez por caída", y "no cambies los bloques de movimiento existentes".</li><li><strong>Pide una explicación:</strong> "dime qué bloques agregaste y dónde".</li></ul><p style="margin-top:8px">Y la razón: aísla <strong>una</strong> mecánica, indica el comportamiento esperado con precisión, y limita qué se puede cambiar — así no queda nada que la IA tenga que inventar. "Haz que el salto sea mejor" le deja todas esas decisiones a la IA.</p>',
+      fb: 'Compara tu respuesta con el modelo de abajo.' }
+  ]
 }
 ],
 
@@ -518,7 +636,6 @@ courses: [
       { ic: '👦', k: 'Edad', v: '10–12' }, { ic: '⏱', k: 'Lección', v: '60 min' },
       { ic: '📚', k: 'Programa', v: '40 lecciones' }, { ic: '🌎', k: 'Región', v: 'LatAm' }
     ]},
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2058/?tab=2&lessonId=41764', t: 'Abrir el curso en Back Office', d: '[2058] Digital Creativity. Level 2 — ve directo a la lección y sus notas del profesor' },
     { type: 'text', h: 'Storytelling', ic: '🎭', p: 'Los estudiantes se convierten en jóvenes creadores de <strong>"Creativia Studio"</strong>, una agencia creativa digital donde cada módulo es un nuevo encargo de cliente: video personal, marca, cómic, animación, mundo 3D, tienda online. Terminan el curso con un portafolio profesional en Kodland Sparks.' },
     { type: 'ba',
       beforeLbl: 'Versión anterior',
@@ -529,7 +646,7 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '📖', t: 'Las primeras 4 lecciones' },
     { type: 'tabs', tabs: [
-      { label: '1 · FlipAnim', cards: [
+      { label: 'M1L1', cards: [
         { type: 'text', h: 'Lección 1 — Animación de tu nombre en FlipAnim', ic: '✏️', p: 'Primera clase del curso. Los estudiantes conocen al grupo y crean su primer proyecto digital: una animación GIF cuadro por cuadro con su propio nombre.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>El principio de animación cuadro por cuadro (una letra nueva = un cuadro nuevo).</li><li>Manejo básico de FlipAnim: lápiz, relleno, borrador, duplicar cuadro.</li><li><strong>BrushNinja</strong> como alternativa si FlipAnim falla.</li></ul>' },
@@ -539,17 +656,17 @@ courses: [
         ]},
         { type: 'tip', t: 'Recuérdales la tarea del correo <strong>unos días antes</strong> de la siguiente clase: es el bloqueo más común de la Lección 2.' }
       ]},
-      { label: '2 · Canva', cards: [
+      { label: 'M1L2', cards: [
         { type: 'text', h: 'Lección 2 — Registro en Canva. Primera escena "Me llamo…"', ic: '🖼', p: 'Los estudiantes conocen Canva, crean su primer proyecto de video y arman la primera escena de su futura video-presentación usando el GIF de la Lección 1.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>El proceso de registro en Canva (o cuentas de respaldo si hay problemas técnicos).</li><li>Estructura de un proyecto de video en Canva: fondo, marcos, subidas, animar, línea de tiempo.</li><li>Cómo importar el GIF de la clase anterior.</li></ul>' },
           { ic: '📌', h: 'Notas importantes', body: '<ul><li>El registro puede generar dificultades técnicas — <strong>ten cuentas de correo de respaldo listas</strong>.</li><li>No sobrecargar con herramientas complejas de Canva.</li><li>Verificar que solo se usen elementos gratuitos.</li><li>Recordar normas de seguridad de datos personales durante el registro.</li></ul>' },
           { ic: '🎯', h: 'Objetivos de aprendizaje', body: '<ul><li>El estudiante se registra e inicia sesión en Canva.</li><li>Crea un proyecto de video con una primera escena.</li><li>Agrega el GIF de su nombre y al menos 2 elementos animados adicionales.</li></ul>' },
-          { ic: '🧑‍🏫', h: 'Rol del tutor', body: '<ul><li>Mostrar el proceso de registro y creación de proyecto <strong>una sola vez</strong>.</li><li>Dar tiempo de exploración libre antes de explicar la interfaz en detalle.</li><li>Organizar una demostración final con feedback positivo y específico.</li></ul>' },
+          { ic: '🧑‍🏫', h: 'Rol del tutor', body: '<ul><li>Mostrar el proceso de registro y creación de proyecto <strong>una sola vez</strong>.</li><li>Dar tiempo de exploración libre antes de explicar la interfaz en detalle.</li><li>Organizar una demostración final con retroalimentación positivo y específico.</li></ul>' },
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>Proyecto de video en formato <strong>vertical</strong>.</li><li>Compartir → Cualquiera con el enlace → Ver → Copiar enlace.</li><li>Activar revisión manual con puntuación máxima mayor a cero antes de la actividad de entrega.</li></ul>' }
         ]}
       ]},
-      { label: '3 · Escena IA', cards: [
+      { label: 'M1L3', cards: [
         { type: 'text', h: 'Lección 3 — Escena de intereses con avatar/foto y elementos de IA', ic: '🤖', p: 'Los estudiantes crean la segunda escena del video usando una foto autorizada o un avatar, generan una versión editada con IA (quitar fondo), y animan un efecto de "apertura de cabeza" con stickers de sus intereses.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>Cómo subir una imagen (Subidos).</li><li>Cómo usar las apps de IA integradas en Canva para eliminar el fondo.</li><li>Orden correcto de capas (nube detrás del personaje pero delante del fondo).</li><li>Atajos de deshacer (Ctrl/Cmd + Z).</li></ul>' },
@@ -559,7 +676,7 @@ courses: [
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>Herramientas de recorte para separar el avatar en dos partes (apertura de cabeza).</li><li>Verificar que ambas partes conserven el mismo tamaño.</li><li>Recordar la prohibición de compartir fotos con datos personales.</li></ul>' }
         ]}
       ]},
-      { label: '4 · Publicar', cards: [
+      { label: 'M1L4', cards: [
         { type: 'text', h: 'Lección 4 — Música, exportación y publicación en Kodland Sparks', ic: '🎵', p: 'Última lección del módulo. Se agrega música/efectos de sonido al video completo, se exporta como MP4, y se publica el proyecto final como la primera pieza del portafolio en Kodland Sparks.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>Cómo agregar y ajustar una pista de audio en la línea de tiempo de Canva.</li><li>Proceso completo de exportación (Archivo → Descargar → MP4).</li><li>Flujo de publicación en Kodland Sparks (tipo "Embed", visibilidad, copiar enlace de la tarjeta publicada).</li></ul>' },
@@ -570,7 +687,11 @@ courses: [
         ]},
         { type: 'link', ic: '⚡', href: 'https://portfolio.kodland.org/feed', t: 'Feed de Kodland Sparks', d: 'Donde se publicará esta primera pieza del portafolio' }
       ]}
-    ]}
+    ]},
+    { type: 'divider' },
+    { type: 'h', ic: '🔍', t: 'Repasa las lecciones antes del DST' },
+    { type: 'text', p: 'Antes de hacer el DST, abre el curso en Back Office y recorre las cuatro lecciones a tu propio ritmo: ahí están todas las tarjetas de actividad y las notas del profesor. Nada de esto tiene tiempo límite, así que tómate el que necesites.' },
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2058/?tab=2&lessonId=41764', t: 'Abrir el curso en Back Office', d: '[2058] Digital Creativity. Level 2 — ve directo a la lección y sus notas del profesor — haz clic aquí para repasar cada lección antes de hacer el DST' }
   ]
 },
 
@@ -588,29 +709,28 @@ courses: [
       { ic: '🧒', k: 'Edad', v: '8–9' }, { ic: '⏱', k: 'Lección', v: '60 min' },
       { ic: '📚', k: 'Programa', v: '40 lecciones' }, { ic: '🌎', k: 'Región', v: 'LatAm' }
     ]},
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2063?tab=2&lessonId=41776', t: 'Abrir el curso en Back Office', d: '[2063] Creator Lab: Games, AI — ve directo a la lección y sus notas del profesor' },
     { type: 'text', h: 'Storytelling', ic: '🎭', p: 'Los estudiantes entran al laboratorio creativo secreto <strong>"Creator Lab"</strong>. Cada proyecto es una misión, y <strong>AI Buddy</strong> los acompaña con consejos rápidos, ideas creativas y checklists de autoevaluación.' },
     { type: 'ba',
       beforeLbl: 'Curso Scratch anterior',
       before: 'Inductivo: herramienta y conceptos primero, luego el proyecto. No se enseñaban habilidades de IA.',
       afterLbl: 'Esta versión',
-      after: 'Deductivo: prototipo completo pero imperfecto → exploración → mejora. <strong>AI Buddy es parte integrada, con un Kodland Learning Loop explícito.</strong>'
+      after: 'Deductivo: prototipo completo pero imperfecto → exploración → mejora. <strong>AI Buddy es parte integrada, con un ciclo de aprendizaje de Kodland explícito.</strong>'
     },
     { type: 'warn', t: 'Este es el grupo de edad <strong>más joven</strong> de los cuatro cursos. Aplica el test inverso: el proyecto debe seguir siendo 100% alcanzable y significativo <em>sin</em> IA. Protege el sentimiento de "yo lo hice".' },
     { type: 'divider' },
     { type: 'h', ic: '📖', t: 'Las primeras 4 lecciones' },
     { type: 'tabs', tabs: [
-      { label: '1 · Dance Party', cards: [
+      { label: 'M1L1', cards: [
         { type: 'text', h: 'Lección 1 — Dance Party: damos vida al escenario', ic: '💃', p: 'Primera clase del programa. Los estudiantes exploran un prototipo ya funcional en Scratch (personaje que baila con música) y lo personalizan: eligen personaje y música, generan un fondo con IA, y programan al menos 2 reacciones a distintas teclas.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>Bloques básicos de eventos, movimiento, apariencia y sonido en Scratch.</li><li>Cómo cargar un proyecto <code>.sb3</code> en Creator Lab — <strong>vía "Upload", nunca doble clic</strong>.</li><li>Uso del Sandbox de IA para generar un fondo (prompt → descargar PNG → subir a Scratch).</li></ul>' },
           { ic: '📌', h: 'Notas importantes', body: '<ul><li><strong>No se enseñan variables, bucles ni condiciones complejas todavía</strong> — la lección estrecha el foco a propósito.</li><li>Los errores (bloques mal armados, no encontrar guardar) son material normal de aprendizaje, no fracasos.</li><li>La plantilla ya trae los bloques necesarios: no hay que buscarlos en las categorías.</li></ul>' },
           { ic: '🎯', h: 'Objetivos de aprendizaje', body: '<ul><li>El estudiante comprende la relación <strong>evento → acción → resultado</strong>.</li><li>Personaliza el baile modificando valores de movimiento.</li><li>Agrega un fondo generado por IA.</li><li>Puede explicar con sus propias palabras al menos una relación evento-acción-resultado.</li></ul>' },
-          { ic: '🧑‍🏫', h: 'Rol del tutor', body: '<ul><li>Mostrar <strong>el resultado final primero</strong> (el espectáculo terminado) y guiar la exploración antes de explicar bloques.</li><li>Dar solo pistas puntuales — <strong>nunca resolver el bloque en lugar del estudiante</strong>.</li><li>Cerrar con desfile de proyectos y feedback de AI Buddy (una fortaleza + una idea de mejora).</li></ul>' },
+          { ic: '🧑‍🏫', h: 'Rol del tutor', body: '<ul><li>Mostrar <strong>el resultado final primero</strong> (el espectáculo terminado) y guiar la exploración antes de explicar bloques.</li><li>Dar solo pistas puntuales — <strong>nunca resolver el bloque en lugar del estudiante</strong>.</li><li>Cerrar con desfile de proyectos y retroalimentación de AI Buddy (una fortaleza + una idea de mejora).</li></ul>' },
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>El fondo con IA debe estar libre de personajes y con espacio central para el personaje.</li><li><strong>Publicar en Sparks y enviar el enlace en la plataforma de Kodland son pasos distintos.</strong></li><li>Recordar reglas de seguridad de datos personales.</li></ul>' }
         ]}
       ]},
-      { label: '2 · Guardián', cards: [
+      { label: 'M1L2', cards: [
         { type: 'text', h: 'Lección 2 — El Guardián del Portal: héroe y cristales', ic: '💎', p: 'Los estudiantes comienzan un proyecto nuevo (plantilla distinta a Dance Party): un héroe que recolecta 3 cristales con un puntaje visible. El peligro, la llave y el portal se dejan para la siguiente lección.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>Variables (el contador de cristales).</li><li>Condición de contacto (tocar objeto → sumar → sonido → desaparecer).</li><li>Estructura <code>if</code>.</li><li>El <strong>único</strong> uso de IA en esta lección es generar la imagen del cristal.</li></ul>' },
@@ -620,27 +740,31 @@ courses: [
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>El disfraz del cristal generado con IA debe llevar <strong>fondo transparente</strong> y tamaño configurado al <strong>25%</strong>.</li><li>Verificar que el script de inicio incluya tanto la posición del héroe como el reinicio del puntaje a 0.</li></ul>' }
         ]}
       ]},
-      { label: '3 · Portal', cards: [
+      { label: 'M1L3', cards: [
         { type: 'text', h: 'Lección 3 — Desafío del portal: peligro, llave y portal', ic: '🚪', p: 'Continúa el mismo proyecto de la Lección 2. Se agrega un peligro (Danger) con reacción al contacto, una llave que aparece solo tras recolectar los 3 cristales, y un portal que abre una pantalla de victoria (WIN) vacía.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>Mensajes entre sprites (enviar/recibir).</li><li>Condiciones compuestas (ej. <code>Crystals &gt; 2</code>).</li><li>Cambio de fondo (switch backdrop).</li><li>De nuevo, un <strong>único</strong> paso con IA (la imagen del peligro).</li></ul>' },
           { ic: '📌', h: 'Notas importantes', body: '<ul><li>Mientras el portal está oculto <strong>no debe</strong> reaccionar al tocarlo — la transición a WIN se configura en un paso aparte.</li><li>La pantalla WIN se deja <strong>vacía intencionalmente</strong> (se decora en la Lección 4).</li><li>Hay plantilla de respaldo disponible si el proyecto se pierde.</li></ul>' },
           { ic: '🎯', h: 'Objetivos de aprendizaje', body: '<ul><li>El estudiante completa el recorrido entero sin ayuda: inicio → 3 cristales → llave → portal → WIN.</li><li>Aprende a equilibrar la dificultad del juego <strong>cambiando la posición de los objetos, no el código</strong>.</li></ul>' },
-          { ic: '🧑‍🏫', h: 'Rol del tutor', body: '<ul><li>Guiar la <strong>prueba completa en voz alta</strong> del sistema antes de cerrar la clase.</li><li>Dejar que el estudiante decida dónde reubicar peligro o llave para ajustar la dificultad (sin agregar mecánicas nuevas).</li><li>Recoger feedback de pares sobre la dificultad del juego.</li></ul>' },
+          { ic: '🧑‍🏫', h: 'Rol del tutor', body: '<ul><li>Guiar la <strong>prueba completa en voz alta</strong> del sistema antes de cerrar la clase.</li><li>Dejar que el estudiante decida dónde reubicar peligro o llave para ajustar la dificultad (sin agregar mecánicas nuevas).</li><li>Recoger retroalimentación de pares sobre la dificultad del juego.</li></ul>' },
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>El mensaje que envía la llave y el que recibe el portal deben <strong>coincidir exactamente</strong>.</li><li>No diseñar aún la pantalla WIN — solo el fondo vacío.</li></ul>' }
         ]}
       ]},
-      { label: '4 · Lanzamiento', cards: [
-        { type: 'text', h: 'Lección 4 — Cierre del módulo: personalización final y publicación', ic: '🎉', p: 'Última lección del módulo. Se personaliza la pantalla WIN con un fondo generado por IA y una frase de victoria (con bloque <code>say</code> o texto a voz), se agrega un detalle único adicional, se hace un checklist final y se publica la versión definitiva con un mini-festival de cierre.' },
+      { label: 'M1L4', cards: [
+        { type: 'text', h: 'Lección 4 — Cierre del módulo: personalización final y publicación', ic: '🎉', p: 'Última lección del módulo. Se personaliza la pantalla WIN con un fondo generado por IA y una frase de victoria (con bloque <code>Decir</code> o texto a voz), se agrega un detalle único adicional, se hace un checklist final y se publica la versión definitiva con un mini-festival de cierre.' },
         { type: 'acc', items: [
-          { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>Diferencia entre el bloque <code>say</code> y <strong>Text to Speech</strong> — usar solo uno, nunca ambos.</li><li>Backdrops generados con IA.</li><li>Checklist de verificación antes de publicar (sin agregar código nuevo, solo depurar).</li></ul>' },
+          { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>Diferencia entre el bloque <code>Decir</code> y <strong>Texto a Voz</strong> — usar solo uno, nunca ambos.</li><li>Backdrops generados con IA.</li><li>Checklist de verificación antes de publicar (sin agregar código nuevo, solo depurar).</li></ul>' },
           { ic: '📌', h: 'Notas importantes', body: '<ul><li><strong>Un solo backdrop con IA</strong> en esta lección (límite de uso).</li><li>No modificar la lógica de Key ni Portal, solo agregar el detalle final.</li><li>Este es el cierre del primer ciclo completo del proyecto: <strong>vale la pena celebrarlo explícitamente con el grupo</strong>.</li></ul>' },
           { ic: '🎯', h: 'Objetivos de aprendizaje', body: '<ul><li>El estudiante puede nombrar sus <strong>3 decisiones personales</strong> del módulo completo (fondo, frase de victoria, detalle único).</li><li>Entrega un enlace final funcional con el recorrido completo hasta WIN.</li></ul>' },
           { ic: '🧑‍🏫', h: 'Rol del tutor', body: '<ul><li>Guiar el checklist sin agregar funcionalidad nueva.</li><li>Entregar un <strong>"Iteration Award"</strong> por estilo o detalle único, <strong>sin comparar proyectos</strong> entre sí.</li><li>Cerrar con una reflexión de todo el módulo, no solo de la clase de hoy.</li></ul>' },
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>El bloque de frase de victoria va en el <strong>sprite Portal</strong>, justo después del cambio de fondo a WIN — <strong>no en el Stage</strong>.</li><li>Confirmar la publicación final y el envío del enlace actualizado.</li></ul>' }
         ]}
       ]}
-    ]}
+    ]},
+    { type: 'divider' },
+    { type: 'h', ic: '🔍', t: 'Repasa las lecciones antes del DST' },
+    { type: 'text', p: 'Antes de hacer el DST, abre el curso en Back Office y recorre las cuatro lecciones a tu propio ritmo: ahí están todas las tarjetas de actividad y las notas del profesor. Nada de esto tiene tiempo límite, así que tómate el que necesites.' },
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2063?tab=2&lessonId=41776', t: 'Abrir el curso en Back Office', d: '[2063] Creator Lab: Games, AI — ve directo a la lección y sus notas del profesor — haz clic aquí para repasar cada lección antes de hacer el DST' }
   ]
 },
 
@@ -658,7 +782,6 @@ courses: [
       { ic: '👦', k: 'Edad', v: '10–12' }, { ic: '⏱', k: 'Lección', v: '90 min' },
       { ic: '📚', k: 'Programa', v: '40 lecciones' }, { ic: '🌎', k: 'Región', v: 'LatAm' }
     ]},
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2060', t: 'Abrir el curso en Back Office', d: '[2060] GameDev Creator Lab — ve directo a la lección y sus notas del profesor' },
     { type: 'text', h: 'Storytelling', ic: '🎭', p: 'Los estudiantes entran a <strong>"Creator Lab"</strong>, un estudio digital, y transforman una plantilla gris de un juego "runner" en su propio juego a lo largo de las 4 lecciones del módulo <strong>"Arcade Remix: Impulso neón"</strong>.' },
     { type: 'ba',
       beforeLbl: 'Cursos anteriores',
@@ -670,7 +793,7 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '📖', t: 'Las primeras 4 lecciones' },
     { type: 'tabs', tabs: [
-      { label: '1 · Remix', cards: [
+      { label: 'M1L1', cards: [
         { type: 'text', h: 'Lección 1 — Arcade Remix: impulso neón (remix visual)', ic: '🌈', p: 'Primera clase del módulo. Se transforma una plantilla gris de un juego runner personalizando el personaje (generado con IA), el fondo y el ritmo del juego.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>Cómo usar el convertidor de PNG a sprite (tamaño <strong>24×24</strong>, nombre <code>hero</code>).</li><li>El bloque <code>hero.setImage</code>.</li><li>Los bloques <code>set background color</code> y <code>every</code> (para el ritmo).</li><li>Acceso al Ayudante de IA vía sign-in → <strong>Sign with Kodland</strong>.</li></ul>' },
@@ -680,7 +803,7 @@ courses: [
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>Si el convertidor integrado no carga, existe una alternativa vía Railway.</li><li><strong>Tarea para casa:</strong> crear un obstáculo de 16×16 llamado <code>block</code> e insertarlo con <code>block.setImage</code>.</li></ul>' }
         ]}
       ]},
-      { label: '2 · Puntaje', cards: [
+      { label: 'M1L2', cards: [
         { type: 'text', h: 'Lección 2 — El coleccionable y el puntaje', ic: '🪙', p: 'Continúa el mismo proyecto de la Lección 1. Se agrega un objeto coleccionable (coin) y un puntaje visible en pantalla.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>Variables (<code>score</code>), bloques <code>overlap</code> y <code>destroy</code>.</li><li>Diferencia entre la <strong>IA convencional</strong> (usada aquí solo para generar ideas, no imágenes) y el <strong>Ayudante de IA</strong> como guía metodológica.</li></ul>' },
@@ -690,7 +813,7 @@ courses: [
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>El puntaje se pone en cero con <strong>Advanced → Info → set score to 0</strong> al inicio del juego, <strong>no dentro de bucles</strong>.</li><li>No agregar hoy Game Over, WIN ni vidas — eso corresponde a la siguiente lección.</li></ul>' }
         ]}
       ]},
-      { label: '3 · Victoria', cards: [
+      { label: 'M1L3', cards: [
         { type: 'text', h: 'Lección 3 — Victoria y ajuste de velocidad con IA', ic: '🏁', p: 'Se agrega una condición de derrota (game over LOSE) y una condición de victoria a elegir entre 3 opciones (A, B o C), además de ajustar la velocidad del juego con ayuda de un consejo del Ayudante de IA.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>El concepto de bucle y condición en términos simples: <em>el bucle repite, la condición decide cómo termina</em>.</li><li>Diferencia entre game over LOSE y WIN.</li><li>Cómo formular un prompt de ajuste pegando todo el <strong>JavaScript</strong> del proyecto.</li></ul>' },
@@ -700,7 +823,7 @@ courses: [
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>Revisar que el bloque de derrota reemplace correctamente al reset original.</li><li>Recordar probar en <strong>Play</strong> después de cada cambio de velocidad.</li></ul>' }
         ]}
       ]},
-      { label: '4 · Relanzamiento', cards: [
+      { label: 'M1L4', cards: [
         { type: 'text', h: 'Lección 4 — Mecánica propia con IA y relanzamiento', ic: '🚀', p: 'Cierre del módulo. Cada estudiante diseña una mecánica nueva propia (vidas, escudo, cambio de velocidad…) formulando un prompt específico al Ayudante de IA, actualiza la beta ya publicada en Sparks (no crea un proyecto nuevo), y participa en un mini-festival de lanzamiento.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>Cómo diferenciar un prompt vago de uno específico: <strong>una sola mecánica, contexto del juego, código completo pegado, restricciones claras</strong>.</li><li>Diferencia entre actualizar un proyecto existente (<strong>Edit</strong>) y publicarlo de nuevo desde cero (<strong>Publish project</strong>, que crea un duplicado no deseado).</li></ul>' },
@@ -710,7 +833,11 @@ courses: [
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>Al republicar, usar Share con la opción <strong>"Update existing share link"</strong> marcada.</li><li>En Sparks ir a <strong>My Projects → Edit → Project link</strong> — evitar el botón Publish project salvo la primera vez.</li></ul>' }
         ]}
       ]}
-    ]}
+    ]},
+    { type: 'divider' },
+    { type: 'h', ic: '🔍', t: 'Repasa las lecciones antes del DST' },
+    { type: 'text', p: 'Antes de hacer el DST, abre el curso en Back Office y recorre las cuatro lecciones a tu propio ritmo: ahí están todas las tarjetas de actividad y las notas del profesor. Nada de esto tiene tiempo límite, así que tómate el que necesites.' },
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2060', t: 'Abrir el curso en Back Office', d: '[2060] GameDev Creator Lab — ve directo a la lección y sus notas del profesor — haz clic aquí para repasar cada lección antes de hacer el DST' }
   ]
 },
 
@@ -728,7 +855,6 @@ courses: [
       { ic: '🧑', k: 'Edad', v: '12–17' }, { ic: '⏱', k: 'Lección', v: '90 min' },
       { ic: '📚', k: 'Programa', v: '40 lecciones' }, { ic: '🌎', k: 'Región', v: 'LatAm' }
     ]},
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2059', t: 'Abrir el curso en Back Office', d: '[2059] Coding Lab — ve directo a la lección y sus notas del profesor' },
     { type: 'text', h: 'Storytelling', ic: '🎭', p: 'Los estudiantes entran al estudio digital <strong>"Coding Lab"</strong> con el rol de <strong>desarrollador junior</strong>. Cada módulo es un nuevo encargo real: construir un juego, un sitio interactivo, un servicio digital.' },
     { type: 'ba',
       beforeLbl: 'Curso Python anterior',
@@ -741,7 +867,7 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '📖', t: 'Las primeras 4 lecciones' },
     { type: 'tabs', tabs: [
-      { label: '1 · Prototipo', cards: [
+      { label: 'M1L1', cards: [
         { type: 'text', h: 'Lección 1 — Primer prototipo de juego', ic: '⚡', p: 'Primera clase del programa. Los estudiantes usan una IA convencional para generar un juego funcional en el navegador a partir de un prompt preparado, y lo ejecutan dentro de Kodland Sparks.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>La diferencia entre la <strong>IA convencional</strong> (genera el código inicial) y el <strong>AI Mentor</strong> (orienta con preguntas, nunca escribe el código completo).</li><li>Estructura de un buen prompt: objetivo, funciones, límites, formato de respuesta.</li><li>Existe una plantilla de respaldo si la generación falla.</li></ul>' },
@@ -752,7 +878,7 @@ courses: [
         ]},
         { type: 'link', ic: '⚡', href: 'https://portfolio.kodland.org/feed', t: 'Kodland Sparks', d: 'Donde se ejecuta el prototipo y después se publica' }
       ]},
-      { label: '2 · Estructura', cards: [
+      { label: 'M1L2', cards: [
         { type: 'text', h: 'Lección 2 — Cómo está armado el juego', ic: '🗂', p: 'El prototipo de un solo archivo se separa en <code>index.html</code>, <code>style.css</code> y <code>script.js</code>; se localiza y ajusta el parámetro de velocidad del personaje.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>Qué contiene cada archivo: estructura, estilos, lógica.</li><li>El rol dual de la IA aquí: la <strong>IA estándar reestructura</strong> el proyecto, el <strong>AI Mentor</strong> ayuda a entender el código y ubicar el bloque correcto.</li><li>El ciclo <strong>predecir → modificar → comprobar → concluir</strong>.</li></ul>' },
@@ -762,7 +888,7 @@ courses: [
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>Verificar que CSS y JavaScript estén conectados correctamente tras la división.</li><li>Estructura esperada: <code>index.html</code> (estructura/conexiones), <code>style.css</code> (diseño), <code>script.js</code> (movimiento y lógica).</li></ul>' }
         ]}
       ]},
-      { label: '3 · Visual', cards: [
+      { label: 'M1L3', cards: [
         { type: 'text', h: 'Lección 3 — Personalización visual del juego', ic: '🎨', p: 'Se reemplazan los gráficos predeterminados (personaje, fondo) por recursos propios generados con IA, sin reescribir el código base.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>Cómo estructurar un prompt completo: <strong>objetivo + contexto suficiente + cambios permitidos + restricciones + petición de explicación</strong>.</li><li>Cómo ayudar a encontrar dónde se conecta un recurso visual en el código sin necesidad de analizarlo completo.</li></ul>' },
@@ -772,7 +898,7 @@ courses: [
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>Organizar una revisión funcional con lista de verificación antes de avanzar.</li><li>Si hay un error, regresar a la última versión funcional y buscar la <strong>primera diferencia</strong> — no corregir todo de una vez.</li></ul>' }
         ]}
       ]},
-      { label: '4 · Lógica', cards: [
+      { label: 'M1L4', cards: [
         { type: 'text', h: 'Lección 4 — Lógica del juego y retroalimentación de pares', ic: '🧠', p: 'Última lección del módulo. Se agrega una mecánica lógica propia (modelo evento → condición → reacción) con ayuda <strong>exclusiva del AI Mentor</strong>, se publica el proyecto y se da retroalimentación estructurada a compañeros.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Conocimiento que debes tener', open: true, body: '<ul><li>El modelo <strong>evento → condición → reacción</strong>.</li><li>Cómo debe el estudiante formular su consulta al AI Mentor: <strong>objetivo + comportamiento actual + petición de una pista</strong> — el Mentor no entrega el código final.</li><li>Estructura de retroalimentación en 3 campos (impresión general, punto fuerte, mejora) con límite de caracteres.</li></ul>' },
@@ -782,7 +908,11 @@ courses: [
           { ic: '⚙️', h: 'Aspectos técnicos', body: '<ul><li>En esta lección se usa <strong>exclusivamente el AI Mentor</strong>, no la IA convencional.</li><li>Los campos de retroalimentación tienen un límite de <strong>180 caracteres cada uno</strong>.</li></ul>' }
         ]}
       ]}
-    ]}
+    ]},
+    { type: 'divider' },
+    { type: 'h', ic: '🔍', t: 'Repasa las lecciones antes del DST' },
+    { type: 'text', p: 'Antes de hacer el DST, abre el curso en Back Office y recorre las cuatro lecciones a tu propio ritmo: ahí están todas las tarjetas de actividad y las notas del profesor. Nada de esto tiene tiempo límite, así que tómate el que necesites.' },
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2059', t: 'Abrir el curso en Back Office', d: '[2059] Coding Lab — ve directo a la lección y sus notas del profesor — haz clic aquí para repasar cada lección antes de hacer el DST' }
   ]
 }
 ]

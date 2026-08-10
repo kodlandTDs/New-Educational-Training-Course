@@ -54,20 +54,25 @@ is on.
 
 ## How the training is organised
 
-**Core training** — everyone completes these three, in order:
+**Core training** — everyone completes these four, in order:
 
 | # | Module | Check |
 |---|--------|-------|
 | 1 | All about the new model | 5 questions |
 | 2 | Pedagogy and tutor mindset | 5 questions |
 | 3 | Lesson structure | 5 questions |
+| 4 | Introduction to prompts for tutors | 5 questions |
 
 Each check mixes four question formats — multiple choice, select-all, matching
 and a written answer — and the questions are case-based: a real classroom
 situation, then a decision to make.
 
+Module 4 is the AI module. These courses ask little of a tutor in terms of new
+subject knowledge; prompting is the one genuinely new skill, so it gets its own
+module — practical only, no technical theory.
+
 **Course training** — only the courses linked to the tutor's e-mail appear, and
-only after all three core modules are passed:
+only after all four core modules are passed:
 
 | Code | Course | Age | Lesson | Back Office |
 |------|--------|-----|--------|-------------|
@@ -79,7 +84,12 @@ only after all three core modules are passed:
 Course modules have **no in-app quiz** — they end with a **Final DST** card, so
 there is only one assessment per course rather than two. A "I have finished
 reading this module" link marks the module complete while the DST link is still
-pending.
+pending, and those modules show `✓ Reviewed` on the dashboard instead of a score.
+
+Each course module ends with a link into Back Office, placed deliberately at the
+bottom so a tutor can re-read the four lessons at their own pace right before
+taking the DST. Lesson tabs are labelled `M1L1`–`M1L4` so the numbering matches
+the platform.
 
 Each course has its **own** DST — there is no general one, because the whole
 point is the first 4 lessons of that specific course. See `dst/`.

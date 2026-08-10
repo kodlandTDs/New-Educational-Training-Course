@@ -61,7 +61,7 @@ body{background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans',sans
 .pfill{height:100%;background:linear-gradient(90deg,var(--lime),var(--pink));border-radius:var(--rpill);transition:width .6s cubic-bezier(.34,1.56,.64,1)}
 .plbl{font-size:12px;color:var(--text-muted);font-weight:600;flex-shrink:0}
 /* GRID */
-.msec{padding:8px 32px 70px;max-width:1060px;margin:0 auto;width:100%}
+.msec{padding:8px 32px 70px;max-width:1290px;margin:0 auto;width:100%}
 .slbl{font-family:'Nunito',sans-serif;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-muted);margin-bottom:16px;margin-top:4px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}
 .mc{background:var(--surface);border:2px solid var(--border);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s;box-shadow:var(--shadow)}
@@ -475,3 +475,12 @@ footer a{color:var(--pink);font-weight:600}
 /* dev mode badge */
 #dev-badge{position:fixed;left:14px;bottom:14px;z-index:300;background:var(--pink);color:#fff;border:2px solid var(--pink-d);border-radius:var(--rpill);padding:7px 15px;font-family:'Nunito',sans-serif;font-size:12px;font-weight:900;letter-spacing:.3px;box-shadow:0 4px 16px rgba(0,0,0,.25);pointer-events:none;user-select:none}
 [data-theme="dark"] #dev-badge{background:var(--lime);color:var(--ink);border-color:var(--lime-d)}
+
+/* A lone card on the last row is stretched across two columns rather than left
+   sitting narrow beside a gap. The `orphan` class is set from app.js, which
+   measures the real column count — CSS alone cannot know it. */
+.grid.orphan > .mc:last-child{grid-column:span 2}
+@media(max-width:640px){.grid.orphan > .mc:last-child{grid-column:span 1}}
+
+/* dev badge: out of the way, and see-through enough to read what is under it */
+#dev-badge{left:auto;right:14px;bottom:14px;padding:6px 13px;font-size:11px;opacity:.9}

@@ -19,7 +19,7 @@ ui: {
 
   heroEyebrow: '🚀 Tutor Training Programme',
   heroTitle: 'The <span class="h-pill">new</span> educational model',
-  heroSub: 'Three core modules for everyone, then the first 4 lessons of the courses you are assigned to teach. Each module ends with a short check — pass it to unlock the next one.',
+  heroSub: 'Four core modules for everyone, then the first 4 lessons of the courses you are assigned to teach. Each module ends with a short check — pass it to unlock the next one.',
   homeNote: 'Progress is stored in this browser only. If you switch computer or clear your browser data, you will start again. Questions about the content? Talk to your Course Consultant.',
   footer: 'Kodland · Tutor Development · New Educational Model training',
 
@@ -28,17 +28,18 @@ ui: {
   allDone: 'all done!',
   allDoneShort: '🏆 All done!',
   generalTitle: 'Core training',
-  generalSub: 'Everyone completes these three, in order — whatever course you teach.',
+  generalSub: 'Everyone completes these four, in order — whatever course you teach.',
   courseTitle: 'Your course training',
   courseSub: 'The first 4 lessons of each course you are assigned to teach.',
   noCourses: 'No courses are linked to your e-mail yet. <b>Contact your Course Consultant</b> so they can assign you.',
   lockPrev: 'Pass the previous module first',
-  lockGeneral: 'Finish the 3 core modules first',
+  lockGeneral: 'Finish the 4 core modules first',
 
   badgeDone: '✓ Done',
   badgeStart: 'Start →',
   badgeLocked: '🔒 Locked',
   score: 'Score',
+  reviewed: '✓ Reviewed',
   goal: 'Goal',
 
   qType: { mcq: 'Multiple choice', multi: 'Select all that apply', match: 'Matching', open: 'Written answer' },
@@ -156,7 +157,7 @@ general: [
       { ic: '👀', t: '<strong>What to watch for / what NOT to do.</strong>' },
       { ic: '✅', t: '<strong>Success criterion</strong> — how you know, observably, that the objective was met.' }
     ]},
-    { type: 'img', src: 'images/tutor-notes-1.png', alt: 'Teacher notes block in the Kodland platform', cap: 'Teacher notes appear as a dotted amber block inside the lesson card — here, the lesson overview for Coding Lab Lesson 1.' },
+    { type: 'img', src: 'images/tutor-notes-1.png', alt: 'Teacher notes block in the Kodland platform', cap: 'Teacher notes appear as a dotted orange block inside the lesson card — here, the lesson overview for Coding Lab Lesson 1.' },
     { type: 'img', src: 'images/tutor-notes-2.png', alt: 'Teacher notes with estimated time and instructions', cap: 'Notes sit right next to the activity they describe, with estimated time and step-by-step guidance for that specific card.' },
 
     { type: 'h', ic: '🙈', t: 'If the guide is inside the activity, can students see it?' },
@@ -167,7 +168,7 @@ general: [
     { type: 'text', p: '<strong>What it is:</strong> in Follow Mode, students automatically see <strong>the same task you have open</strong>. It is not screen sharing — each student gets their own copy of the task open, which they can actually work in. It only works inside the lesson.' },
     { type: 'video', h: 'Follow Mode in action', p: 'A short walkthrough of turning the mode on and moving the group through a lesson.', yt: 'HDWga8ZROik' },
     { type: 'steps', items: [
-      { h: 'Open any task in the lesson', p: 'Click it in the task list. The toggle only appears when a card is open.' },
+      { h: 'Open any task in the lesson', p: 'Click it in the task list. The toggle only appears when a task is open.' },
       { h: 'Find the "Lead the group" toggle', p: 'It appears next to the open task.' },
       { h: 'Turn it on', p: 'From that moment students move automatically to whatever task you open.' }
     ]},
@@ -285,13 +286,13 @@ general: [
       head: ['Course / age', 'AI use model', 'Test to validate the project'],
       rows: [
         ['<strong>Digital Creativity</strong> &amp; <strong>Creator Lab: Games, AI</strong> (8–9)',
-         'Guided PBL, AI assisted. Tools close to today\'s, AI mediated by the tutor + AI Buddy. <strong>The feeling of "I made this" is the asset to protect.</strong> AI may appear late in the course, as a playful, bounded element.',
+         'Guided project-based learning, AI assisted. Tools close to today\'s, AI mediated by the tutor + AI Buddy. <strong>The feeling of "I made this" is the asset to protect.</strong> AI may appear late in the course, as a playful, bounded element.',
          '<strong>Inverse test:</strong> the project must still be 100% achievable and meaningful <em>without</em> AI. AI may only remove routine friction — never replace the creative act.'],
         ['<strong>GameDev Creator Lab</strong> (10–12)',
-         'Directed PBL, AI as material. The student owns and executes the creative core; AI generates raw material (sprites, sounds, texts) that the student curates, edits and assembles. AI is a "sparring partner".',
+         'Directed project-based learning, AI as material. The student owns and executes the creative core; AI generates raw material (sprites, sounds, texts) that the student curates, edits and assembles. AI is a "sparring partner".',
          '<strong>Leverage test:</strong> without AI the project would still be possible, but visibly poorer or smaller within class time. AI raises the ceiling of the student\'s idea.'],
         ['<strong>Coding Lab</strong> (12–17)',
-         'AI-native PBL, the student as creative director. They orchestrate AI across the whole process (concept → assets → logic → build), including AI as a component inside their own program. Explicit literacy about synthetic media.',
+         'Project-based learning integrated with AI, the student as creative director. They orchestrate AI across the whole process (concept → assets → logic → build), including AI as a component inside their own program. Explicit literacy about synthetic media.',
          '<strong>Ambition test:</strong> the intended scope/quality is not achievable without AI in the given time. Remove AI and the planned shape of the project collapses.']
       ]},
     { type: 'quote', t: '"AI proposes, the author decides."', src: 'The rule to repeat in all 4 courses' },
@@ -418,7 +419,7 @@ general: [
 
     { type: 'divider' },
     { type: 'h', ic: '📊', t: 'What you still own: the metrics' },
-    { type: 'hi', ic: '📈', h: 'The slides are gone — the responsibility is not', p: 'Even though the lesson no longer announces its own blocks, it is still essential to keep track of <strong>attendance</strong>, <strong>homework</strong> and <strong>retention</strong>. Nothing in the new model removes these from your job — the platform simply stops reminding you, so you have to build the habit into your own rhythm.' },
+    { type: 'hi', ic: '📈', h: 'The slides are gone — the structure is not', p: 'Remember that lesson structure is closely connected to important metrics like <strong>attendance</strong>, <strong>retention</strong> and <strong>homework submission</strong>. Reminding students about homework, explaining and reviewing it, doing a warm-up and a wrap-up, explaining the lesson objectives, and previewing the next lesson all contribute to student engagement, retention and attendance.' },
     { type: 'iclist', h: 'Three metrics, three concrete habits', items: [
       { ic: '🗓', t: '<strong>Attendance</strong> — mark it at the start, during the warm-up, while students are settling in. Do not leave it for the end of the class, when you are wrapping up and likely to forget.' },
       { ic: '📚', t: '<strong>Homework</strong> — since homework is now "the next iteration of the same project", check it inside the previous-lesson checkpoint. If a student has nothing, that is your signal to look at whether they got stuck technically, not just to record a zero.' },
@@ -495,6 +496,123 @@ general: [
     c: 1,
     fb: 'Homework continues the <strong>same project</strong> your student already published — the next iteration, or a mission built on what they just learned. A separate worksheet exercise breaks the through-line and the portfolio they are building.' }
 ]
+},
+
+/* ---------------------------------------------------------- G4 */
+{
+  id: 'g4', kind: 'general', num: 'Core module 4', emoji: '🤖', color: '#A855F7',
+  title: 'Introduction to prompts for tutors',
+  desc: 'The one genuinely new skill in these courses. Not the technical side of AI — how to write a prompt, and how to help a student write theirs.',
+  meta: '5 mixed-format questions',
+  chips: ['✍️ Writing prompts', '🐞 Debugging with AI', '🎨 Image and video'],
+  objective: 'Know enough about prompts to guide your students while they write their own in class. This is about practical skill, not technical theory.',
+  cards: [
+    { type: 'hi', ic: '💡', h: 'Why this module exists', p: 'These new courses do not ask much of you in terms of new subject knowledge. The one genuinely new area is <strong>AI</strong> — and while some tutors are already comfortable with it, others use it very little, or use it in ways that will not help a student. This module is the shared baseline.' },
+
+    { type: 'h', ic: '🧠', t: 'Learning about AI' },
+    { type: 'text', p: 'The artificial intelligence we use in our classes — AI Buddy, and the tools inside Kodland Sparks — works from instructions written in ordinary language, called <strong>prompts</strong>. The better the prompt, the better the result the student gets.' },
+    { type: 'text', p: 'As a tutor you do not need to be a technical AI expert. You do need to understand the basics, so you can guide your students while they write their own prompts during class.' },
+
+    { type: 'h', ic: '❓', t: 'What is a prompt?' },
+    { type: 'text', p: 'A prompt is the instruction we give an AI so that it generates a result — text, code, an image, a video. It is like giving instructions to someone who knows nothing about the context of your project: <strong>the clearer and more specific the instructions, the closer the result will be to what you actually wanted.</strong>' },
+    { type: 'ba',
+      beforeLbl: 'A bad prompt',
+      before: 'Produces generic or incorrect results. The student ends up either accepting something they did not want, or starting over from scratch.',
+      afterLbl: 'A good prompt',
+      after: 'Produces useful, precise results that are <strong>easy to adjust</strong>. That last part matters most — a result you can nudge is worth more than one you have to replace.'
+    },
+
+    { type: 'h', ic: '🧩', t: 'What should a good prompt include?' },
+    { type: 'iclist', p: 'A solid prompt generally answers these four questions:', items: [
+      { ic: '🎬', t: '<strong>Context</strong> — what is this for? Who will use it?' },
+      { ic: '🎯', t: '<strong>Goal</strong> — what exactly do you want to achieve?' },
+      { ic: '📐', t: '<strong>Specific details</strong> — style, format, tone, constraints. For example: "in 3 sentences", "using Python", "cartoon style".' },
+      { ic: '🖼', t: '<strong>Examples</strong>, where they apply — showing one example helps the AI understand what is expected.' }
+    ]},
+    { type: 'twocol',
+      left:  { ic: '✅', h: 'Specific enough', items: ['"Create a simple Scratch game where a cat dodges falling obstacles, with a visible score and 3 lives."'] },
+      right: { ic: '❌', h: 'Too vague', items: ['"Make me a game."'] }
+    },
+
+    { type: 'h', ic: '💻', t: 'Tips for prompts that generate code' },
+    { type: 'iclist', items: [
+      { ic: '🏷', t: '<strong>Name the language or platform</strong> — Python, HTML, Scratch, Roblox, and so on.' },
+      { ic: '👣', t: '<strong>Describe the expected behaviour step by step</strong>, not just the final result.' },
+      { ic: '💬', t: '<strong>Ask for the code to be commented</strong>, so it is easier to read and to explain in class.' },
+      { ic: '🔧', t: 'If something does not work, <strong>do not rewrite the whole prompt</strong>. Ask the AI to fix the specific error, and say what happened.' },
+      { ic: '🧪', t: '<strong>Encourage students to test and understand the code</strong>, not just copy it.' }
+    ]},
+
+    { type: 'h', ic: '🎨', t: 'Tips for prompts that generate images and video' },
+    { type: 'iclist', items: [
+      { ic: '🖌', t: '<strong>Describe the main subject, the visual style</strong> (realistic, cartoon, pixel art…) <strong>and the setting or background.</strong>' },
+      { ic: '🌈', t: '<strong>Mention colours, lighting or mood</strong> when they matter for the project.' },
+      { ic: '📏', t: '<strong>Be specific about the format</strong> — vertical, horizontal, square — if the project requires it.' },
+      { ic: '🔁', t: 'If the first result is not what you expected, <strong>adjust one variable at a time</strong> (only the colour, or only the style) so you can see what actually changed the outcome.' }
+    ]},
+
+    { type: 'h', ic: '⚠️', t: 'Common mistakes' },
+    { type: 'iclist', items: [
+      { ic: '🌫', t: '<strong>Being too vague.</strong> "Make it prettier" gives the AI nothing to work with.' },
+      { ic: '📚', t: '<strong>Asking for too much at once.</strong> Break a complex project into several smaller prompts.' },
+      { ic: '🔍', t: '<strong>Not reviewing the result.</strong> AI makes mistakes and can generate incorrect content — always review before using it.' },
+      { ic: '🔂', t: '<strong>Not iterating.</strong> The first result is almost never the final one. Adjusting and asking again is a normal part of the process.' },
+      { ic: '🧭', t: '<strong>Forgetting the project context.</strong> A prompt without context produces generic results that do not fit what the student is building.' }
+    ]},
+    { type: 'good', t: 'Notice how much of this overlaps with what you already do as a tutor: one change at a time, describe the behaviour you expect, test before you trust it, and iterate rather than restart. Prompting is not a separate skill — it is the same debugging habit, pointed at a different tool.' }
+  ],
+  quiz: [
+    { type: 'mcq',
+      ctx: 'You are helping a student turn their Scratch game idea into a prompt.',
+      q: 'Which prompt is most likely to produce a usable result on the first try?',
+      opts: [
+        '"Build a cat game with obstacles, similar to endless runner games, using good game design principles."',
+        '"Create a Scratch game: a cat sprite moves left/right with arrow keys, obstacles fall from the top at increasing speed, score increases every second survived, game ends after 3 collisions."',
+        '"Make a fun and engaging game for an 8-year-old that teaches them about obstacles and survival, similar to Flappy Bird but original."',
+        '"Create a 2D game in Scratch with clear rules, a scoring system, and increasing difficulty over time."'
+      ], c: 1,
+      fb: 'Only that one has concrete, unambiguous mechanics: movement, spawn behaviour, scoring trigger, end condition. The others <em>sound</em> specific but lean on subjective terms — "good game design principles", "fun and engaging", "clear rules" — that the AI has to interpret on its own.' },
+
+    { type: 'mcq',
+      ctx: 'A student\'s first image prompt produced a character with the wrong colour palette. Everything else — pose, style, background — came out correct.',
+      q: 'What is the best next step?',
+      opts: [
+        'Rewrite the entire prompt from scratch with more detail overall, to avoid making the same mistake twice',
+        'Re-run the exact same prompt again, since AI output has randomness and a second try often fixes it',
+        'Send a follow-up prompt that changes only the colour palette, keeping the rest of the description the same',
+        'Add several extra adjectives describing the desired mood, so the AI has more context to work with'
+      ], c: 2,
+      fb: 'Isolating the one variable that was wrong is faster and more reliable than starting over, relying on randomness, or adding unrelated detail that does not address the actual problem.' },
+
+    { type: 'mcq',
+      ctx: 'You are helping a 13+ student debug a Python function using AI.',
+      q: 'Which prompt reflects the most effective troubleshooting approach?',
+      opts: [
+        '"This code doesn\'t work, please fix it: [code]"',
+        '"This function should return the average of a list but returns None when the list has one item. Here\'s the code: [code]. What\'s causing this specific case to fail?"',
+        '"Rewrite this code using better practices and make sure it works: [code]"',
+        '"Explain what\'s wrong with this code and give me a corrected version: [code]"'
+      ], c: 1,
+      fb: 'It names the exact expected behaviour, the exact observed failure, and the specific edge case — so the AI can target the real bug instead of guessing at scope or rewriting more than necessary.' },
+
+    { type: 'mcq',
+      ctx: 'Two tutors write prompts for the same video generation task. Tutor A writes one long, detailed prompt covering style, subject and background all at once. Tutor B writes a shorter prompt first, checks the result, then adjusts.',
+      q: 'Which statement is most accurate?',
+      opts: [
+        'Tutor A\'s approach is always better, because more detail up front reduces the number of iterations needed',
+        'Tutor B\'s approach is always better, because shorter prompts are inherently easier for AI to process',
+        'Either can work, but Tutor B\'s iterative approach makes it easier to identify which specific detail caused an unwanted result',
+        'Neither approach matters, since final output quality depends only on the AI model being used, not the prompt'
+      ], c: 2,
+      fb: 'The core principle of this module is iteration and isolating variables. Detail alone does not guarantee success, and iterating makes cause and effect much clearer than doing everything in one large prompt.' },
+
+    { type: 'open',
+      ctx: 'A student in your group wants to add a double jump to their platform game. They type into the AI: <em>"make the jump better"</em>.',
+      q: 'Rewrite that into a prompt likely to work on the first try. Write the actual prompt text you would help them produce, then add one line saying why yours will work better.',
+      min: 180,
+      model: 'A strong prompt does most of these: <ul><li><strong>Names the platform</strong> — "In Scratch…" — so the AI does not guess the environment.</li><li><strong>States the exact behaviour and its trigger:</strong> "when the space key is pressed while the cat is already in the air, it jumps a second time".</li><li><strong>Sets a limit:</strong> "only once per fall", and "do not change the existing movement blocks".</li><li><strong>Asks for an explanation:</strong> "tell me which blocks you added and where".</li></ul><p style="margin-top:8px">And the reason: it isolates <strong>one</strong> mechanic, states the expected behaviour precisely, and constrains what may change — so there is nothing left for the AI to invent. "Make the jump better" leaves every one of those decisions to the AI.</p>',
+      fb: 'Compare your answer with the model below.' }
+  ]
 }
 ],
 
@@ -517,7 +635,6 @@ courses: [
       { ic: '👦', k: 'Age', v: '10–12' }, { ic: '⏱', k: 'Lesson', v: '60 min' },
       { ic: '📚', k: 'Programme', v: '40 lessons' }, { ic: '🌎', k: 'Region', v: 'LatAm' }
     ]},
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2058/?tab=2&lessonId=41764', t: 'Open the course in Back Office', d: '[2058] Digital Creativity. Level 2 — go straight to the lesson and its teacher notes' },
     { type: 'text', h: 'Storytelling', ic: '🎭', p: 'Students become young creators at <strong>"Creativia Studio"</strong>, a digital creative agency where each module is a new client brief: personal video, brand, comic, animation, 3D world, online shop. They finish the course with a professional portfolio on Kodland Sparks.' },
     { type: 'ba',
       beforeLbl: 'Previous version',
@@ -528,7 +645,7 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '📖', t: 'The first 4 lessons' },
     { type: 'tabs', tabs: [
-      { label: '1 · FlipAnim', cards: [
+      { label: 'M1L1', cards: [
         { type: 'text', h: 'Lesson 1 — Animating your name in FlipAnim', ic: '✏️', p: 'First class of the course. Students meet the group and create their first digital project: a frame-by-frame GIF animation with their own name.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>The frame-by-frame animation principle (a new letter = a new frame).</li><li>Basic FlipAnim handling: pencil, fill, eraser, duplicate frame.</li><li><strong>BrushNinja</strong> as the alternative if FlipAnim fails.</li></ul>' },
@@ -538,7 +655,7 @@ courses: [
         ]},
         { type: 'tip', t: 'Remind them about the e-mail homework <strong>a few days before</strong> the next class — it is the single most common blocker in Lesson 2.' }
       ]},
-      { label: '2 · Canva', cards: [
+      { label: 'M1L2', cards: [
         { type: 'text', h: 'Lesson 2 — Canva registration. First scene "My name is…"', ic: '🖼', p: 'Students meet Canva, create their first video project and build the first scene of their future video-presentation using the GIF from Lesson 1.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>The Canva registration process (and backup accounts if there are technical problems).</li><li>Structure of a Canva video project: background, frames, uploads, animate, timeline.</li><li>How to import the GIF from the previous class.</li></ul>' },
@@ -548,7 +665,7 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>Video project in <strong>vertical</strong> format.</li><li>Share → Anyone with the link → View → Copy link.</li><li>Enable manual review with maximum score greater than zero before the submission activity.</li></ul>' }
         ]}
       ]},
-      { label: '3 · AI scene', cards: [
+      { label: 'M1L3', cards: [
         { type: 'text', h: 'Lesson 3 — Interests scene with avatar/photo and AI elements', ic: '🤖', p: 'Students create the second scene of the video using an authorised photo or an avatar, generate an AI-edited version (background removal), and animate a "head opening" effect with stickers of their interests.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>How to upload an image (Uploads).</li><li>How to use the AI apps built into Canva to remove a background.</li><li>Correct layer order (cloud behind the character but in front of the background).</li><li>Undo shortcuts (Ctrl/Cmd + Z).</li></ul>' },
@@ -558,7 +675,7 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>Cropping tools to split the avatar into two parts (head opening).</li><li>Verify both parts keep the same size.</li><li>Reinforce the ban on sharing photos containing personal data.</li></ul>' }
         ]}
       ]},
-      { label: '4 · Publish', cards: [
+      { label: 'M1L4', cards: [
         { type: 'text', h: 'Lesson 4 — Music, export and publishing on Kodland Sparks', ic: '🎵', p: 'Last lesson of the module. Music/sound effects are added to the full video, it is exported as MP4, and the final project is published as the first piece of the portfolio on Kodland Sparks.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>How to add and adjust an audio track on the Canva timeline.</li><li>The complete export process (File → Download → MP4).</li><li>The Kodland Sparks publishing flow ("Embed" type, visibility, copying the published card link).</li></ul>' },
@@ -569,7 +686,11 @@ courses: [
         ]},
         { type: 'link', ic: '⚡', href: 'https://portfolio.kodland.org/feed', t: 'Kodland Sparks feed', d: 'Where this first portfolio piece will be published' }
       ]}
-    ]}
+    ]},
+    { type: 'divider' },
+    { type: 'h', ic: '🔍', t: 'Review the lessons before the DST' },
+    { type: 'text', p: 'Before you take the DST, open the course in Back Office and read through the four lessons at your own pace — the activity cards and the teacher notes are all there. Nothing here is timed, so take as long as you need.' },
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2058/?tab=2&lessonId=41764', t: 'Open the course in Back Office', d: '[2058] Digital Creativity. Level 2 — go straight to the lesson and its teacher notes — click here to review each lesson before taking the DST' }
   ]
 },
 
@@ -587,7 +708,6 @@ courses: [
       { ic: '🧒', k: 'Age', v: '8–9' }, { ic: '⏱', k: 'Lesson', v: '60 min' },
       { ic: '📚', k: 'Programme', v: '40 lessons' }, { ic: '🌎', k: 'Region', v: 'LatAm' }
     ]},
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2063?tab=2&lessonId=41776', t: 'Open the course in Back Office', d: '[2063] Creator Lab: Games, AI — go straight to the lesson and its teacher notes' },
     { type: 'text', h: 'Storytelling', ic: '🎭', p: 'Students enter the secret creative laboratory <strong>"Creator Lab"</strong>. Every project is a mission, and <strong>AI Buddy</strong> accompanies them with quick tips, creative ideas and self-assessment checklists.' },
     { type: 'ba',
       beforeLbl: 'Previous Scratch course',
@@ -599,7 +719,7 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '📖', t: 'The first 4 lessons' },
     { type: 'tabs', tabs: [
-      { label: '1 · Dance Party', cards: [
+      { label: 'M1L1', cards: [
         { type: 'text', h: 'Lesson 1 — Dance Party: bringing the stage to life', ic: '💃', p: 'First class of the programme. Students explore an already working Scratch prototype (a character dancing to music) and personalise it: they choose the character and the music, generate a background with AI, and program at least 2 reactions to different keys.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>Basic Scratch blocks: events, motion, looks and sound.</li><li>How to load an <code>.sb3</code> project in Creator Lab — <strong>via "Upload", never a double click</strong>.</li><li>Using the AI Sandbox to generate a background (prompt → download PNG → upload to Scratch).</li></ul>' },
@@ -609,7 +729,7 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>The AI background must be free of characters and leave central space for the character.</li><li><strong>Publishing on Sparks and sending the link on the Kodland platform are two different steps.</strong></li><li>Reinforce personal-data safety rules.</li></ul>' }
         ]}
       ]},
-      { label: '2 · Guardian', cards: [
+      { label: 'M1L2', cards: [
         { type: 'text', h: 'Lesson 2 — The Portal Guardian: hero and crystals', ic: '💎', p: 'Students start a new project (a different template from Dance Party): a hero who collects 3 crystals with a visible score. The danger, the key and the portal are left for the next lesson.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>Variables (the crystal counter).</li><li>Contact condition (touch object → add → sound → disappear).</li><li><code>if</code> structure.</li><li>The <strong>only</strong> AI use in this lesson is generating the crystal image.</li></ul>' },
@@ -619,7 +739,7 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>The AI-generated crystal costume must have a <strong>transparent background</strong> and size set to <strong>25%</strong>.</li><li>Verify the start script includes both the hero position and the score reset to 0.</li></ul>' }
         ]}
       ]},
-      { label: '3 · Portal', cards: [
+      { label: 'M1L3', cards: [
         { type: 'text', h: 'Lesson 3 — Portal challenge: danger, key and portal', ic: '🚪', p: 'Continues the same project from Lesson 2. A Danger with a contact reaction is added, a key that appears only after collecting the 3 crystals, and a portal that opens an empty WIN screen.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>Messages between sprites (broadcast/receive).</li><li>Compound conditions (e.g. <code>Crystals &gt; 2</code>).</li><li>Switch backdrop.</li><li>Again, a <strong>single</strong> AI step (the danger image).</li></ul>' },
@@ -629,7 +749,7 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>The message the key sends and the one the portal receives must <strong>match exactly</strong>.</li><li>Do not design the WIN screen yet — only the empty backdrop.</li></ul>' }
         ]}
       ]},
-      { label: '4 · Launch', cards: [
+      { label: 'M1L4', cards: [
         { type: 'text', h: 'Lesson 4 — Module close: final personalisation and publishing', ic: '🎉', p: 'Last lesson of the module. The WIN screen is personalised with an AI-generated background and a victory phrase (with a <code>say</code> block or text-to-speech), one unique detail is added, a final checklist is run, and the definitive version is published with a closing mini-festival.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>The difference between the <code>say</code> block and <strong>Text to Speech</strong> — use only one, never both.</li><li>AI-generated backdrops.</li><li>A verification checklist before publishing (no new code, only debugging).</li></ul>' },
@@ -639,7 +759,11 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>The victory-phrase block goes on the <strong>Portal sprite</strong>, right after the backdrop switch to WIN — <strong>not on the Stage</strong>.</li><li>Confirm the final publication and the sending of the updated link.</li></ul>' }
         ]}
       ]}
-    ]}
+    ]},
+    { type: 'divider' },
+    { type: 'h', ic: '🔍', t: 'Review the lessons before the DST' },
+    { type: 'text', p: 'Before you take the DST, open the course in Back Office and read through the four lessons at your own pace — the activity cards and the teacher notes are all there. Nothing here is timed, so take as long as you need.' },
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2063?tab=2&lessonId=41776', t: 'Open the course in Back Office', d: '[2063] Creator Lab: Games, AI — go straight to the lesson and its teacher notes — click here to review each lesson before taking the DST' }
   ]
 },
 
@@ -657,7 +781,6 @@ courses: [
       { ic: '👦', k: 'Age', v: '10–12' }, { ic: '⏱', k: 'Lesson', v: '90 min' },
       { ic: '📚', k: 'Programme', v: '40 lessons' }, { ic: '🌎', k: 'Region', v: 'LatAm' }
     ]},
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2060', t: 'Open the course in Back Office', d: '[2060] GameDev Creator Lab — go straight to the lesson and its teacher notes' },
     { type: 'text', h: 'Storytelling', ic: '🎭', p: 'Students enter <strong>"Creator Lab"</strong>, a digital studio, and transform a grey "runner" game template into their own game across the 4 lessons of the module <strong>"Arcade Remix: Neon Impulse"</strong>.' },
     { type: 'ba',
       beforeLbl: 'Previous courses',
@@ -669,7 +792,7 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '📖', t: 'The first 4 lessons' },
     { type: 'tabs', tabs: [
-      { label: '1 · Remix', cards: [
+      { label: 'M1L1', cards: [
         { type: 'text', h: 'Lesson 1 — Arcade Remix: neon impulse (visual remix)', ic: '🌈', p: 'First class of the module. A grey runner template is transformed by personalising the character (AI generated), the background and the rhythm of the game.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>How to use the PNG-to-sprite converter (size <strong>24×24</strong>, name <code>hero</code>).</li><li>The <code>hero.setImage</code> block.</li><li>The <code>set background color</code> and <code>every</code> blocks (for the rhythm).</li><li>Access to the AI Helper via sign-in → <strong>Sign with Kodland</strong>.</li></ul>' },
@@ -679,7 +802,7 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>If the built-in converter does not load, there is an alternative via Railway.</li><li><strong>Homework:</strong> create a 16×16 obstacle called <code>block</code> and insert it with <code>block.setImage</code>.</li></ul>' }
         ]}
       ]},
-      { label: '2 · Score', cards: [
+      { label: 'M1L2', cards: [
         { type: 'text', h: 'Lesson 2 — The collectible and the score', ic: '🪙', p: 'Continues the same project from Lesson 1. A collectible object (coin) and a visible on-screen score are added.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>Variables (<code>score</code>), <code>overlap</code> and <code>destroy</code> blocks.</li><li>The difference between <strong>conventional AI</strong> (used here only to generate ideas, not images) and the <strong>AI Helper</strong> as a methodological guide.</li></ul>' },
@@ -689,7 +812,7 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>Score is set to zero with <strong>Advanced → Info → set score to 0</strong> at game start, <strong>not inside loops</strong>.</li><li>Do not add Game Over, WIN or lives today — that is the next lesson.</li></ul>' }
         ]}
       ]},
-      { label: '3 · Win/Lose', cards: [
+      { label: 'M1L3', cards: [
         { type: 'text', h: 'Lesson 3 — Victory and speed tuning with AI', ic: '🏁', p: 'A defeat condition (game over LOSE) is added and a victory condition chosen from 3 options (A, B or C), plus the game speed is tuned with help from an AI Helper tip.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>The concept of loop and condition in simple terms: <em>the loop repeats, the condition decides how it ends</em>.</li><li>The difference between game over LOSE and WIN.</li><li>How to formulate a tuning prompt by pasting the project\'s <strong>entire JavaScript</strong>.</li></ul>' },
@@ -699,7 +822,7 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>Check the defeat block correctly replaces the original reset.</li><li>Remember to test in <strong>Play</strong> after every speed change.</li></ul>' }
         ]}
       ]},
-      { label: '4 · Relaunch', cards: [
+      { label: 'M1L4', cards: [
         { type: 'text', h: 'Lesson 4 — Own mechanic with AI and relaunch', ic: '🚀', p: 'Module close. Each student designs a new mechanic of their own (lives, shield, speed change…) by writing a specific prompt to the AI Helper, updates the beta already published on Sparks (they do not create a new project), and takes part in a launch mini-festival.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>How to tell a vague prompt from a specific one: <strong>one single mechanic, game context, complete code pasted, clear restrictions</strong>.</li><li>The difference between updating an existing project (<strong>Edit</strong>) and publishing it again from scratch (<strong>Publish project</strong>, which creates an unwanted duplicate).</li></ul>' },
@@ -709,7 +832,11 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>When republishing, use Share with the <strong>"Update existing share link"</strong> option ticked.</li><li>On Sparks go to <strong>My Projects → Edit → Project link</strong> — avoid the Publish project button except the very first time.</li></ul>' }
         ]}
       ]}
-    ]}
+    ]},
+    { type: 'divider' },
+    { type: 'h', ic: '🔍', t: 'Review the lessons before the DST' },
+    { type: 'text', p: 'Before you take the DST, open the course in Back Office and read through the four lessons at your own pace — the activity cards and the teacher notes are all there. Nothing here is timed, so take as long as you need.' },
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2060', t: 'Open the course in Back Office', d: '[2060] GameDev Creator Lab — go straight to the lesson and its teacher notes — click here to review each lesson before taking the DST' }
   ]
 },
 
@@ -727,7 +854,6 @@ courses: [
       { ic: '🧑', k: 'Age', v: '12–17' }, { ic: '⏱', k: 'Lesson', v: '90 min' },
       { ic: '📚', k: 'Programme', v: '40 lessons' }, { ic: '🌎', k: 'Region', v: 'LatAm' }
     ]},
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2059', t: 'Open the course in Back Office', d: '[2059] Coding Lab — go straight to the lesson and its teacher notes' },
     { type: 'text', h: 'Storytelling', ic: '🎭', p: 'Students enter the digital studio <strong>"Coding Lab"</strong> in the role of <strong>junior developer</strong>. Each module is a new real brief: build a game, an interactive site, a digital service.' },
     { type: 'ba',
       beforeLbl: 'Previous Python course',
@@ -740,7 +866,7 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '📖', t: 'The first 4 lessons' },
     { type: 'tabs', tabs: [
-      { label: '1 · Prototype', cards: [
+      { label: 'M1L1', cards: [
         { type: 'text', h: 'Lesson 1 — First game prototype', ic: '⚡', p: 'First class of the programme. Students use a conventional AI to generate a working browser game from a prepared prompt, and run it inside Kodland Sparks.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>The difference between <strong>conventional AI</strong> (generates the initial code) and the <strong>AI Mentor</strong> (guides with questions, never writes the complete code).</li><li>The structure of a good prompt: objective, functions, limits, response format.</li><li>A backup template exists if generation fails.</li></ul>' },
@@ -751,7 +877,7 @@ courses: [
         ]},
         { type: 'link', ic: '⚡', href: 'https://portfolio.kodland.org/feed', t: 'Kodland Sparks', d: 'Where the prototype is run and later published' }
       ]},
-      { label: '2 · Structure', cards: [
+      { label: 'M1L2', cards: [
         { type: 'text', h: 'Lesson 2 — How the game is put together', ic: '🗂', p: 'The single-file prototype is split into <code>index.html</code>, <code>style.css</code> and <code>script.js</code>; the character\'s speed parameter is located and tuned.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>What each file contains: structure, styles, logic.</li><li>The dual role of AI here: the <strong>standard AI restructures</strong> the project, the <strong>AI Mentor</strong> helps understand the code and locate the right block.</li><li>The cycle <strong>predict → modify → check → conclude</strong>.</li></ul>' },
@@ -761,7 +887,7 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>Check CSS and JavaScript are correctly linked after the split.</li><li>Expected structure: <code>index.html</code> (structure/links), <code>style.css</code> (design), <code>script.js</code> (movement and logic).</li></ul>' }
         ]}
       ]},
-      { label: '3 · Visuals', cards: [
+      { label: 'M1L3', cards: [
         { type: 'text', h: 'Lesson 3 — Visual customisation of the game', ic: '🎨', p: 'The default graphics (character, background) are replaced by the student\'s own AI-generated resources, without rewriting the base code.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>How to structure a complete prompt: <strong>objective + enough context + permitted changes + restrictions + a request for explanation</strong>.</li><li>How to help locate where a visual resource connects in the code without analysing the whole file.</li></ul>' },
@@ -771,7 +897,7 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>Organise a functional review with a verification list before moving on.</li><li>On an error, return to the last working version and find the <strong>first difference</strong> — do not fix everything at once.</li></ul>' }
         ]}
       ]},
-      { label: '4 · Logic', cards: [
+      { label: 'M1L4', cards: [
         { type: 'text', h: 'Lesson 4 — Game logic and peer feedback', ic: '🧠', p: 'Last lesson of the module. A logic mechanic of the student\'s own (event → condition → reaction) is added with the help of the <strong>AI Mentor exclusively</strong>, the project is published, and structured feedback is given to peers.' },
         { type: 'acc', items: [
           { ic: '📚', h: 'Knowledge you need', open: true, body: '<ul><li>The <strong>event → condition → reaction</strong> model.</li><li>How the student should formulate their query to the AI Mentor: <strong>objective + current behaviour + a request for a hint</strong> — the Mentor does not hand over the final code.</li><li>The 3-field feedback structure (overall impression, strong point, improvement) with a character limit.</li></ul>' },
@@ -781,7 +907,11 @@ courses: [
           { ic: '⚙️', h: 'Technical aspects', body: '<ul><li>This lesson uses the <strong>AI Mentor exclusively</strong>, not the conventional AI.</li><li>Feedback fields have a limit of <strong>180 characters each</strong>.</li></ul>' }
         ]}
       ]}
-    ]}
+    ]},
+    { type: 'divider' },
+    { type: 'h', ic: '🔍', t: 'Review the lessons before the DST' },
+    { type: 'text', p: 'Before you take the DST, open the course in Back Office and read through the four lessons at your own pace — the activity cards and the teacher notes are all there. Nothing here is timed, so take as long as you need.' },
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2059', t: 'Open the course in Back Office', d: '[2059] Coding Lab — go straight to the lesson and its teacher notes — click here to review each lesson before taking the DST' }
   ]
 }
 ]
