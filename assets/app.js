@@ -10,7 +10,7 @@
   var T = C.ui;
   var LANG = C.lang;
   var NS = 'kl-pb-' + LANG;
-  var PROG_KEY = NS + '-progress';
+  var LEGACY_PROG_KEY = NS + '-progress';   // pre-2026-08 shared key, cleaned up on load
   var AUTH_KEY = 'kl-pb-user';
   var PASS_MARK = 70;
 
@@ -47,13 +47,30 @@
     setIcons(nxt);
   };
 
-  /* ---------- progress ---------- */
+  /* ---------- progress ----------
+     Progress is stored per e-mail as well as per language. It used to live under
+     one shared key per language, which meant signing in as a second tutor in the
+     same browser showed the first tutor's progress — confusing when someone is
+     testing with several accounts. */
+  function progKey() {
+    return NS + '-p-' + (session ? hash(session.email) : 'anon');
+  }
   function getProgress() {
-    try { return JSON.parse(localStorage.getItem(PROG_KEY)) || {}; } catch (e) { return {}; }
+    try { return JSON.parse(localStorage.getItem(progKey())) || {}; } catch (e) { return {}; }
   }
   function saveProgress(p) {
-    try { localStorage.setItem(PROG_KEY, JSON.stringify(p)); } catch (e) {}
+    try { localStorage.setItem(progKey(), JSON.stringify(p)); } catch (e) {}
   }
+  function clearProgress() {
+    try { localStorage.removeItem(progKey()); } catch (e) {}
+  }
+
+  /* Anyone can wipe their own progress and start the training again. */
+  window.resetProgress = function () {
+    if (!confirm(T.resetConfirm)) return;
+    clearProgress();
+    goHome();
+  };
   function isPassed(id) { var p = getProgress(); return !!(p[id] && p[id].passed); }
   function getScore(id) { var p = getProgress(); return (p[id] && p[id].score) || 0; }
   function setResult(id, pct, passed) {
@@ -234,6 +251,10 @@
         h += moduleCard(mine[i], lk, lk ? T.lockGeneral : '');
       }
       h += '</div>';
+    }
+    if (done) {
+      h += '<div class="reset-row"><button class="reset-btn" onclick="resetProgress()">' +
+        T.resetProgress + '</button></div>';
     }
     $('mgrid').innerHTML = h;
     markOrphans();
@@ -811,7 +832,8 @@
   function toggleDevMode() {
     var on = localStorage.getItem(DEV_KEY) === '1';
     if (on) {
-      try { localStorage.removeItem(DEV_KEY); localStorage.removeItem(PROG_KEY); localStorage.removeItem(AUTH_KEY); } catch (e) {}
+      clearProgress();
+      try { localStorage.removeItem(DEV_KEY); localStorage.removeItem(AUTH_KEY); } catch (e) {}
       session = null;
       devBadge(false);
       showScreen('screen-login');
@@ -859,6 +881,9 @@
     if (inp) {
       inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') window.tryLogin(); });
     }
+
+    /* one-time cleanup of the old shared progress key */
+    try { localStorage.removeItem(LEGACY_PROG_KEY); } catch (e) {}
 
     var dev = false;
     try { dev = localStorage.getItem(DEV_KEY) === '1'; } catch (e) {}

@@ -40,6 +40,8 @@ ui: {
   badgeLocked: '🔒 Bloqueado',
   score: 'Puntaje',
   reviewed: '✓ Revisado',
+  resetProgress: 'Reiniciar mi progreso y empezar de nuevo',
+  resetConfirm: '¿Reiniciar tu progreso en este idioma? Todos los módulos vuelven a quedar bloqueados y se borran tus puntajes. Esto no se puede deshacer.',
   goal: 'Objetivo',
 
   qType: { mcq: 'Opción múltiple', multi: 'Selecciona todas', match: 'Relacionar', open: 'Respuesta escrita' },

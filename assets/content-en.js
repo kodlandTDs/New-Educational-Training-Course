@@ -40,6 +40,8 @@ ui: {
   badgeLocked: '🔒 Locked',
   score: 'Score',
   reviewed: '✓ Reviewed',
+  resetProgress: 'Reset my progress and start again',
+  resetConfirm: 'Reset your progress for this language? Every module goes back to locked and your scores are cleared. This cannot be undone.',
   goal: 'Goal',
 
   qType: { mcq: 'Multiple choice', multi: 'Select all that apply', match: 'Matching', open: 'Written answer' },

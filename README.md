@@ -94,8 +94,25 @@ the platform.
 Each course has its **own** DST — there is no general one, because the whole
 point is the first 4 lessons of that specific course. See `dst/`.
 
-Pass mark for the core-module checks is **70%**. Progress is stored in `localStorage` under
-`kl-pb-<lang>-progress`, and is sticky — a score never goes down.
+Pass mark for the core-module checks is **70%**.
+
+## How progress is stored
+
+In `localStorage`, in the tutor's own browser, under
+`kl-pb-<lang>-p-<hash-of-email>`. Three consequences worth knowing:
+
+- **There is no server record.** Nothing about a tutor's progress exists anywhere
+  except the browser they used. You cannot reset someone's progress for them, and
+  they cannot pick up where they left off on a different computer.
+- **Progress is per e-mail and per language.** Signing in as a different tutor in
+  the same browser gives a clean slate; switching language starts that language
+  fresh.
+- **Scores are sticky** — a retake can raise a score but never lower it.
+
+Anyone with progress sees a **"Reset my progress and start again"** link under the
+module grid, which clears their own record for that language after a confirm.
+Dev mode keeps its progress under its own key, so turning it on never touches a
+real account.
 
 ---
 
