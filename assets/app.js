@@ -14,6 +14,46 @@
   var AUTH_KEY = 'kl-pb-user';
   var PASS_MARK = 70;
 
+  /* ---------- server sync (progress backup, e-mail-based) ----------
+     PROGRESS_API is the Apps Script Web App URL. Progress still lives
+     primarily in localStorage (fast, offline-friendly) — this just
+     backs it up so a tutor who changes browser/device or clears the
+     cache doesn't lose anything. All calls are best-effort: if the
+     network fails, the tutor keeps working from localStorage exactly
+     as before. Nothing here is required for the app to function. */
+  var PROGRESS_API = 'https://script.google.com/macros/s/AKfycbyAlP2Dhlael51Sg7OChYKBATpp-Prh_vdu243i_KD3mBBsED6ER3emCik8NinO4b1WzA/exec';
+
+  function fetchServerProgress_(email, cb) {
+    if (!PROGRESS_API || PROGRESS_API.indexOf('PASTE_') === 0) { cb(null); return; }
+    var url = PROGRESS_API + '?email=' + encodeURIComponent(email);
+    fetch(url).then(function (r) { return r.json(); })
+      .then(function (data) { cb(data && data.progress ? data.progress : null); })
+      .catch(function () { cb(null); });
+  }
+
+  function pushServerProgress_(email, progress) {
+    if (!PROGRESS_API || PROGRESS_API.indexOf('PASTE_') === 0) return;
+    fetch(PROGRESS_API, {
+      method: 'POST',
+      body: JSON.stringify({ email: email, progress: progress })
+    }).catch(function () { /* best-effort — local copy is safe regardless */ });
+  }
+
+  /* combine two progress objects, never letting a pass/score go backwards */
+  function mergeProgressObjects_(a, b) {
+    var out = {}, k;
+    for (k in a) out[k] = a[k];
+    for (k in b) {
+      var pa = out[k] || {};
+      var pb = b[k] || {};
+      out[k] = {
+        passed: pa.passed === true || pb.passed === true,
+        score: Math.max(pa.score || 0, pb.score || 0) || null
+      };
+    }
+    return out;
+  }
+
   /* ---------- tiny helpers ---------- */
   function $(id) { return document.getElementById(id); }
   function esc(s) {
@@ -78,6 +118,7 @@
     var prev = p[id] || {};
     p[id] = { passed: prev.passed === true || passed, score: Math.max(pct, prev.score || 0) };
     saveProgress(p);
+    if (session) pushServerProgress_(session.email, p);
   }
 
   /* ---------- session ---------- */
@@ -152,7 +193,19 @@
     session = { email: email, mask: mask };
     saveSession(session);
     inp.value = '';
-    goHome();
+
+    /* Pull any server-side progress (from another browser, a previous
+       device, or the DST backfill) and merge it into what's stored
+       locally before painting the dashboard. Local progress is never
+       lost — this can only add to it. */
+    fetchServerProgress_(email, function (serverProgress) {
+      if (serverProgress) {
+        var merged = mergeProgressObjects_(getProgress(), serverProgress);
+        saveProgress(merged);
+        pushServerProgress_(email, merged); // sync back so both sides agree
+      }
+      goHome();
+    });
   };
 
   /* ============================================================
@@ -890,6 +943,18 @@
     if (dev) devBadge(true);
 
     session = loadSession();
-    if (session) goHome(); else showScreen('screen-login');
+    if (session) {
+      goHome(); // paint immediately from local data, don't make the tutor wait
+      fetchServerProgress_(session.email, function (serverProgress) {
+        if (serverProgress) {
+          var merged = mergeProgressObjects_(getProgress(), serverProgress);
+          saveProgress(merged);
+          pushServerProgress_(session.email, merged);
+          renderHome(); // re-paint in case the server had newer info
+        }
+      });
+    } else {
+      showScreen('screen-login');
+    }
   });
 })();
