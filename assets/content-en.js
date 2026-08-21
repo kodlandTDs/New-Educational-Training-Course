@@ -130,9 +130,9 @@ general: [
     { type: 'h', ic: '🎓', t: 'Which courses use this methodology?' },
     { type: 'table', head: ['Course', 'Age', 'Lesson', 'Programme'], rows: [
       ['<strong>[2058]</strong> Digital Creativity Level 2', '10–12', '60 min', '40 lessons'],
-      ['<strong>[2063]</strong> Creator Lab: Games, AI', '8–9', '60 min', '40 lessons'],
-      ['<strong>[2060]</strong> GameDev Creator Lab', '10–12', '90 min', '40 lessons'],
-      ['<strong>[2059]</strong> Coding Lab', '12–17', '90 min', '40 lessons']
+      ['<strong>[2063]</strong> Digital Creation: Beginner', '8–9', '60 min', '40 lessons'],
+      ['<strong>[2060]</strong> Digital Creation: Intermediate', '10–12', '90 min', '40 lessons'],
+      ['<strong>[2059]</strong> Digital Creation: Advanced', '12–17', '90 min', '40 lessons']
     ]},
     { type: 'good', t: '<strong>Is this a definitive replacement for how Kodland teaches?</strong> No. Existing groups keep their course exactly as it is. This is an <strong>additional</strong> methodology that lives alongside the current one.' },
 
@@ -159,7 +159,7 @@ general: [
       { ic: '👀', t: '<strong>What to watch for / what NOT to do.</strong>' },
       { ic: '✅', t: '<strong>Success criterion</strong> — how you know, observably, that the objective was met.' }
     ]},
-    { type: 'img', src: 'images/tutor-notes-1.png', alt: 'Teacher notes block in the Kodland platform', cap: 'Teacher notes appear as a dotted orange block inside the lesson card — here, the lesson overview for Coding Lab Lesson 1.' },
+    { type: 'img', src: 'images/tutor-notes-1.png', alt: 'Teacher notes block in the Kodland platform', cap: 'Teacher notes appear as a dotted orange block inside the lesson card — here, the lesson overview for Digital Creation: Advanced Lesson 1.' },
     { type: 'img', src: 'images/tutor-notes-2.png', alt: 'Teacher notes with estimated time and instructions', cap: 'Notes sit right next to the activity they describe, with estimated time and step-by-step guidance for that specific card.' },
 
     { type: 'h', ic: '🙈', t: 'If the guide is inside the activity, can students see it?' },
@@ -287,13 +287,13 @@ general: [
     { type: 'table', h: 'How AI is used per course', ic: '🤖',
       head: ['Course / age', 'AI use model', 'Test to validate the project'],
       rows: [
-        ['<strong>Digital Creativity</strong> &amp; <strong>Creator Lab: Games, AI</strong> (8–9)',
+        ['<strong>Digital Creativity</strong> &amp; <strong>Digital Creation: Beginner</strong> (8–9)',
          'Guided project-based learning, AI assisted. Tools close to today\'s, AI mediated by the tutor + AI Buddy. <strong>The feeling of "I made this" is the asset to protect.</strong> AI may appear late in the course, as a playful, bounded element.',
          '<strong>Inverse test:</strong> the project must still be 100% achievable and meaningful <em>without</em> AI. AI may only remove routine friction — never replace the creative act.'],
-        ['<strong>GameDev Creator Lab</strong> (10–12)',
+        ['<strong>Digital Creation: Intermediate</strong> (10–12)',
          'Directed project-based learning, AI as material. The student owns and executes the creative core; AI generates raw material (sprites, sounds, texts) that the student curates, edits and assembles. AI is a "sparring partner".',
          '<strong>Leverage test:</strong> without AI the project would still be possible, but visibly poorer or smaller within class time. AI raises the ceiling of the student\'s idea.'],
-        ['<strong>Coding Lab</strong> (12–17)',
+        ['<strong>Digital Creation: Advanced</strong> (12–17)',
          'Project-based learning integrated with AI, the student as creative director. They orchestrate AI across the whole process (concept → assets → logic → build), including AI as a component inside their own program. Explicit literacy about synthetic media.',
          '<strong>Ambition test:</strong> the intended scope/quality is not achievable without AI in the given time. Remove AI and the planned shape of the project collapses.']
       ]},
@@ -317,9 +317,9 @@ general: [
     { type: 'text', p: 'Each of the 4 courses has a narrative that wraps the whole programme — it is not decoration. The student is not "a pupil doing an exercise", they are a <strong>junior creator/developer inside a fictional digital studio</strong>.' },
     { type: 'iclist', items: [
       { ic: '🎨', t: '<strong>Digital Creativity:</strong> "Creativia Studio", a digital creative agency.' },
-      { ic: '🔬', t: '<strong>Creator Lab: Games, AI:</strong> "Creator Lab", a creation laboratory.' },
-      { ic: '🎮', t: '<strong>GameDev Creator Lab:</strong> "Creator Lab" — each module is a "mission".' },
-      { ic: '💻', t: '<strong>Coding Lab:</strong> "Coding Lab", a development studio; the student is a "Junior Developer".' }
+      { ic: '🔬', t: '<strong>Digital Creation: Beginner:</strong> "Creator Lab", a creation laboratory.' },
+      { ic: '🎮', t: '<strong>Digital Creation: Intermediate:</strong> "Creator Lab" — each module is a "mission".' },
+      { ic: '💻', t: '<strong>Digital Creation: Advanced:</strong> "Digital Creation: Advanced", a development studio; the student is a "Junior Developer".' }
     ], after: 'As a tutor, holding this narrative — even with a single sentence — helps the student feel they have a professional role, not that they are "in class".' },
 
     { type: 'h', ic: '🪜', t: 'Project ownership' },
@@ -337,21 +337,21 @@ general: [
   { type: 'match',
     q: 'Match each course to the test that validates whether AI is being used at the right level for that age.',
     pairs: [
-      { l: 'Creator Lab: Games, AI (8–9)', r: 'Inverse test — the project must stay 100% achievable without AI' },
-      { l: 'GameDev Creator Lab (10–12)', r: 'Leverage test — without AI it would still be possible, but visibly poorer' },
-      { l: 'Coding Lab (12–17)', r: 'Ambition test — the intended scope is not achievable without AI in the time given' },
+      { l: 'Digital Creation: Beginner (8–9)', r: 'Inverse test — the project must stay 100% achievable without AI' },
+      { l: 'Digital Creation: Intermediate (10–12)', r: 'Leverage test — without AI it would still be possible, but visibly poorer' },
+      { l: 'Digital Creation: Advanced (12–17)', r: 'Ambition test — the intended scope is not achievable without AI in the time given' },
       { l: 'Digital Creativity Level 2 (10–12)', r: 'Inverse test — AI may only remove routine friction, never the creative act' }
     ],
-    fb: 'Digital Creativity and Creator Lab: Games, AI share the <strong>inverse test</strong> — at those ages the feeling of "I made this" is the asset to protect. GameDev uses the <strong>leverage test</strong> (AI raises the ceiling). Coding Lab uses the <strong>ambition test</strong> (remove AI and the planned shape collapses).' },
+    fb: 'Digital Creativity and Digital Creation: Beginner share the <strong>inverse test</strong> — at those ages the feeling of "I made this" is the asset to protect. GameDev uses the <strong>leverage test</strong> (AI raises the ceiling). Digital Creation: Advanced uses the <strong>ambition test</strong> (remove AI and the planned shape collapses).' },
 
   { type: 'mcq',
-    ctx: 'In your GameDev Creator Lab group, a student pastes their whole project into the AI and asks: <em>"Design a better game mechanic for me and write the code."</em> The AI returns a working mechanic. The student is delighted.',
+    ctx: 'In your Digital Creation: Intermediate group, a student pastes their whole project into the AI and asks: <em>"Design a better game mechanic for me and write the code."</em> The AI returns a working mechanic. The student is delighted.',
     q: 'What is the correct read of this situation?',
     opts: [
       'This is fine — GameDev uses the leverage test, and the AI clearly raised the ceiling of the project',
       'This is fine as long as the student can explain what the code does afterwards',
       'This crosses the line: AI generates raw material, but the student owns and executes the creative core — the mechanic is the student\'s decision, not the AI\'s',
-      'This is only a problem in Coding Lab, where prompt engineering is an explicit learning outcome'
+      'This is only a problem in Digital Creation: Advanced, where prompt engineering is an explicit learning outcome'
     ],
     c: 2,
     fb: 'In GameDev, AI is a <strong>sparring partner</strong>: it generates raw material (sprites, sounds, texts) that the student curates and assembles. It never decides the mechanic. The rule holds in all four courses — <strong>"AI proposes, the author decides"</strong> — and being able to explain the code afterwards does not restore authorship.' },
@@ -371,7 +371,7 @@ general: [
     fb: 'Growth-mindset language names the error as normal and hands the next step back to the student. Fixing it for them removes the learning; "this is easy" adds shame to a stuck moment. Note that "let\'s find the first difference" is both supportive <em>and</em> a real debugging strategy.' },
 
   { type: 'open',
-    ctx: 'You are 15 minutes into a Coding Lab lesson. A student\'s game has stopped running after their last change. They turn to you and say: <em>"It\'s broken. Can you look at it?"</em>',
+    ctx: 'You are 15 minutes into a Digital Creation: Advanced lesson. A student\'s game has stopped running after their last change. They turn to you and say: <em>"It\'s broken. Can you look at it?"</em>',
     q: 'Write what you would actually say and do next — in the words you would use with the student. Your answer should show the shift from directing the solution to accompanying the decision.',
     min: 180,
     model: 'A strong answer does most of these: <ul><li>Names the error as normal: <em>"Good — something changed and now it doesn\'t run. That is exactly the situation we practise for."</em></li><li>Puts the student back in the driver\'s seat with a question, not an answer: <em>"What was the last thing you changed?"</em></li><li>Applies the cycle <strong>change → run → compare → diagnose → correct</strong>: go back to the last version that worked and find the <strong>first difference</strong>, rather than fixing everything at once.</li><li>Guides toward <strong>one testable hypothesis at a time</strong>.</li><li>Does not open the AI request and rewrite it for them — asks one pointed question about what is missing from it.</li><li>Keeps the backup template in reserve, used without drama, only after genuine attempts.</li></ul>',
@@ -692,19 +692,19 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '🔍', t: 'Review the lessons before the DST' },
     { type: 'text', p: 'Before you take the DST, open the course in Back Office and read through the four lessons at your own pace — the activity cards and the teacher notes are all there. Nothing here is timed, so take as long as you need.' },
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2058/?tab=2&lessonId=41764', t: 'Open the course in Back Office', d: '[2058] Digital Creativity. Level 2 — go straight to the lesson and its teacher notes — click here to review each lesson before taking the DST' }
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2058/?tab=2&lessonId=41764', t: 'Open the course in Back Office', d: '[2058] Digital Creativity Level 2 — go straight to the lesson and its teacher notes — click here to review each lesson before taking the DST' }
   ]
 },
 
 /* ---------------------------------------------------------- 2063 */
 {
   id: 'c2063', kind: 'course', bit: 8, num: 'Course · [2063]', emoji: '🧪', color: '#8B5CF6',
-  title: 'Creator Lab: Games, AI',
+  title: 'Digital Creation: Beginner',
   desc: 'The secret creative lab — first 4 lessons in Scratch: Dance Party, the Portal Guardian and the module launch festival.',
   meta: 'Ends with the final DST',
   chips: ['🧒 8–9', '⏱ 60 min', '📚 40 lessons'],
-  objective: 'Be ready to teach the first 4 lessons of Creator Lab: Games, AI, where 8–9 year olds go from a working prototype to their own published game.',
-  finalDst: { url: 'https://forms.gle/G4NfCZrJEHyFabSP8', desc: 'One last step: the final DST for Creator Lab: Games, AI checks that you are ready to run these lessons with a live group.' },
+  objective: 'Be ready to teach the first 4 lessons of Digital Creation: Beginner, where 8–9 year olds go from a working prototype to their own published game.',
+  finalDst: { url: 'https://forms.gle/G4NfCZrJEHyFabSP8', desc: 'One last step: the final DST for Digital Creation: Beginner checks that you are ready to run these lessons with a live group.' },
   cards: [
     { type: 'metabar', items: [
       { ic: '🧒', k: 'Age', v: '8–9' }, { ic: '⏱', k: 'Lesson', v: '60 min' },
@@ -765,19 +765,19 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '🔍', t: 'Review the lessons before the DST' },
     { type: 'text', p: 'Before you take the DST, open the course in Back Office and read through the four lessons at your own pace — the activity cards and the teacher notes are all there. Nothing here is timed, so take as long as you need.' },
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2063?tab=2&lessonId=41776', t: 'Open the course in Back Office', d: '[2063] Creator Lab: Games, AI — go straight to the lesson and its teacher notes — click here to review each lesson before taking the DST' }
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2063?tab=2&lessonId=41776', t: 'Open the course in Back Office', d: '[2063] Digital Creation: Beginner — go straight to the lesson and its teacher notes — click here to review each lesson before taking the DST' }
   ]
 },
 
 /* ---------------------------------------------------------- 2060 */
 {
   id: 'c2060', kind: 'course', bit: 4, num: 'Course · [2060]', emoji: '🎮', color: '#F97316',
-  title: 'GameDev Creator Lab',
+  title: 'Digital Creation: Intermediate',
   desc: 'Arcade Remix: Neon Impulse — first 4 lessons turning a grey runner template into the student\'s own published game.',
   meta: 'Ends with the final DST',
   chips: ['👦 10–12', '⏱ 90 min', '📚 40 lessons'],
-  objective: 'Be ready to teach the first 4 lessons of GameDev Creator Lab, where students remix a runner template in MakeCode Arcade and publish a beta on Kodland Sparks.',
-  finalDst: { url: 'https://forms.gle/grNFLALqXCDchNt39', desc: 'One last step: the final DST for GameDev Creator Lab checks that you are ready to run these lessons with a live group.' },
+  objective: 'Be ready to teach the first 4 lessons of Digital Creation: Intermediate, where students remix a runner template in MakeCode Arcade and publish a beta on Kodland Sparks.',
+  finalDst: { url: 'https://forms.gle/grNFLALqXCDchNt39', desc: 'One last step: the final DST for Digital Creation: Intermediate checks that you are ready to run these lessons with a live group.' },
   cards: [
     { type: 'metabar', items: [
       { ic: '👦', k: 'Age', v: '10–12' }, { ic: '⏱', k: 'Lesson', v: '90 min' },
@@ -838,25 +838,25 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '🔍', t: 'Review the lessons before the DST' },
     { type: 'text', p: 'Before you take the DST, open the course in Back Office and read through the four lessons at your own pace — the activity cards and the teacher notes are all there. Nothing here is timed, so take as long as you need.' },
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2060', t: 'Open the course in Back Office', d: '[2060] GameDev Creator Lab — go straight to the lesson and its teacher notes — click here to review each lesson before taking the DST' }
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2060', t: 'Open the course in Back Office', d: '[2060] Digital Creation: Intermediate — go straight to the lesson and its teacher notes — click here to review each lesson before taking the DST' }
   ]
 },
 
 /* ---------------------------------------------------------- 2059 */
 {
   id: 'c2059', kind: 'course', bit: 2, num: 'Course · [2059]', emoji: '💻', color: '#2563EB',
-  title: 'Coding Lab',
+  title: 'Digital Creation: Advanced',
   desc: 'The digital studio — first 4 lessons: AI-generated prototype, file structure, visual customisation and game logic.',
   meta: 'Ends with the final DST',
   chips: ['🧑 12–17', '⏱ 90 min', '📚 40 lessons'],
-  objective: 'Be ready to teach the first 4 lessons of Coding Lab, where students act as creative directors orchestrating AI to build and refine a browser game.',
-  finalDst: { url: 'https://forms.gle/BaouXh5GbfWj2j719', desc: 'One last step: the final DST for Coding Lab checks that you are ready to run these lessons with a live group.' },
+  objective: 'Be ready to teach the first 4 lessons of Digital Creation: Advanced, where students act as creative directors orchestrating AI to build and refine a browser game.',
+  finalDst: { url: 'https://forms.gle/BaouXh5GbfWj2j719', desc: 'One last step: the final DST for Digital Creation: Advanced checks that you are ready to run these lessons with a live group.' },
   cards: [
     { type: 'metabar', items: [
       { ic: '🧑', k: 'Age', v: '12–17' }, { ic: '⏱', k: 'Lesson', v: '90 min' },
       { ic: '📚', k: 'Programme', v: '40 lessons' }, { ic: '🌎', k: 'Region', v: 'LatAm' }
     ]},
-    { type: 'text', h: 'Storytelling', ic: '🎭', p: 'Students enter the digital studio <strong>"Coding Lab"</strong> in the role of <strong>junior developer</strong>. Each module is a new real brief: build a game, an interactive site, a digital service.' },
+    { type: 'text', h: 'Storytelling', ic: '🎭', p: 'Students enter the digital studio <strong>"Digital Creation: Advanced"</strong> in the role of <strong>junior developer</strong>. Each module is a new real brief: build a game, an interactive site, a digital service.' },
     { type: 'ba',
       beforeLbl: 'Previous Python course',
       before: 'Inductive: syntax and theory → project from zero. AI was mentioned only sporadically.',
@@ -913,7 +913,7 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '🔍', t: 'Review the lessons before the DST' },
     { type: 'text', p: 'Before you take the DST, open the course in Back Office and read through the four lessons at your own pace — the activity cards and the teacher notes are all there. Nothing here is timed, so take as long as you need.' },
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2059', t: 'Open the course in Back Office', d: '[2059] Coding Lab — go straight to the lesson and its teacher notes — click here to review each lesson before taking the DST' }
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2059', t: 'Open the course in Back Office', d: '[2059] Digital Creation: Advanced — go straight to the lesson and its teacher notes — click here to review each lesson before taking the DST' }
   ]
 }
 ]

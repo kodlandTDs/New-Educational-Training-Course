@@ -131,9 +131,9 @@ general: [
     { type: 'h', ic: '🎓', t: '¿Cuáles son los cursos con esta nueva metodología?' },
     { type: 'table', head: ['Curso', 'Edad', 'Lección', 'Programa'], rows: [
       ['<strong>[2058]</strong> Creatividad Digital Nivel 2', '10–12', '60 min', '40 lecciones'],
-      ['<strong>[2063]</strong> Creator Lab: Games, AI', '8–9', '60 min', '40 lecciones'],
-      ['<strong>[2060]</strong> GameDev Creator Lab', '10–12', '90 min', '40 lecciones'],
-      ['<strong>[2059]</strong> Coding Lab', '12–17', '90 min', '40 lecciones']
+      ['<strong>[2063]</strong> Creación digital: Nivel principiante', '8–9', '60 min', '40 lecciones'],
+      ['<strong>[2060]</strong> Creación digital: Nivel intermedio', '10–12', '90 min', '40 lecciones'],
+      ['<strong>[2059]</strong> Creación digital: Nivel avanzado', '12–17', '90 min', '40 lecciones']
     ]},
     { type: 'good', t: '<strong>¿Son un reemplazo definitivo de cómo se enseña en Kodland?</strong> No. Los grupos actuales mantienen su curso tal como está. Es una metodología <strong>adicional</strong>, que convive con la actual.' },
 
@@ -160,7 +160,7 @@ general: [
       { ic: '👀', t: '<strong>En qué prestar atención / qué NO hacer.</strong>' },
       { ic: '✅', t: '<strong>Criterio de logro</strong> — cómo sabes que el objetivo se cumplió, de forma observable.' }
     ]},
-    { type: 'img', src: 'images/tutor-notes-1.png', alt: 'Bloque de notas del profesor en la plataforma Kodland', cap: 'Las notas del profesor aparecen como un bloque naranja punteado dentro de la tarjeta de la lección — aquí, el resumen de la Lección 1 de Coding Lab.' },
+    { type: 'img', src: 'images/tutor-notes-1.png', alt: 'Bloque de notas del profesor en la plataforma Kodland', cap: 'Las notas del profesor aparecen como un bloque naranja punteado dentro de la tarjeta de la lección — aquí, el resumen de la Lección 1 de Creación digital: Nivel avanzado.' },
     { type: 'img', src: 'images/tutor-notes-2.png', alt: 'Notas del profesor con tiempo estimado e instrucciones', cap: 'Las notas están junto a la actividad que describen, con tiempo estimado y guía paso a paso para esa tarjeta específica.' },
 
     { type: 'h', ic: '🙈', t: 'Si la guía está dentro de la actividad, ¿los estudiantes pueden verla?' },
@@ -288,13 +288,13 @@ general: [
     { type: 'table', h: 'Cómo se usa la IA en cada curso', ic: '🤖',
       head: ['Curso / edad', 'Modelo de uso de IA', 'Test para validar el proyecto'],
       rows: [
-        ['<strong>Creatividad Digital</strong> y <strong>Creator Lab: Games, AI</strong> (8–9)',
+        ['<strong>Creatividad Digital</strong> y <strong>Creación digital: Nivel principiante</strong> (8–9)',
          'Aprendizaje guiado basado en proyectos, IA asistida. Herramientas cercanas a las actuales, IA mediada por el tutor + AI Buddy. <strong>El sentimiento de "yo lo hice" es el activo que hay que proteger.</strong> La IA puede aparecer tarde en el curso, como elemento lúdico y acotado.',
          '<strong>Test inverso:</strong> el proyecto debe seguir siendo 100% alcanzable y significativo <em>sin</em> IA. La IA solo puede quitar fricción rutinaria — nunca reemplazar el acto creativo.'],
-        ['<strong>GameDev Creator Lab</strong> (10–12)',
+        ['<strong>Creación digital: Nivel intermedio</strong> (10–12)',
          'Aprendizaje basado en proyectos dirigidos, IA como material. El estudiante es dueño y ejecutor del núcleo creativo; la IA genera material crudo (sprites, sonidos, textos) que el estudiante cura, edita y ensambla. La IA es un "compañero de sparring".',
          '<strong>Test de apalancamiento:</strong> sin IA el proyecto seguiría siendo posible, pero visiblemente más pobre o pequeño dentro del tiempo de clase. La IA sube el techo de la idea del estudiante.'],
-        ['<strong>Coding Lab</strong> (12–17)',
+        ['<strong>Creación digital: Nivel avanzado</strong> (12–17)',
          'Aprendizaje basado en proyectos integrado con la IA, el estudiante como director creativo. Orquesta la IA en todo el proceso (concepto → assets → lógica → construcción), incluyendo IA como componente dentro de su propio programa. Alfabetización explícita sobre medios sintéticos.',
          '<strong>Test de ambición:</strong> el alcance/calidad pretendido no es alcanzable sin IA en el tiempo dado. Quitar la IA colapsa la forma prevista del proyecto.']
       ]},
@@ -318,9 +318,9 @@ general: [
     { type: 'text', p: 'Cada uno de los 4 cursos tiene una narrativa que envuelve todo el programa: no es decorativo. El estudiante no es "un alumno haciendo un ejercicio", es un <strong>creador/desarrollador junior dentro de un estudio digital ficticio</strong>.' },
     { type: 'iclist', items: [
       { ic: '🎨', t: '<strong>Creatividad Digital:</strong> "Creativia Studio", agencia creativa digital.' },
-      { ic: '🔬', t: '<strong>Creator Lab: Games, AI:</strong> "Creator Lab", laboratorio de creación.' },
-      { ic: '🎮', t: '<strong>GameDev Creator Lab:</strong> "Creator Lab" — cada módulo es una "misión".' },
-      { ic: '💻', t: '<strong>Coding Lab:</strong> "Coding Lab", estudio de desarrollo; el estudiante es "Junior Developer".' }
+      { ic: '🔬', t: '<strong>Creación digital: Nivel principiante:</strong> "Creator Lab", laboratorio de creación.' },
+      { ic: '🎮', t: '<strong>Creación digital: Nivel intermedio:</strong> "Creator Lab" — cada módulo es una "misión".' },
+      { ic: '💻', t: '<strong>Creación digital: Nivel avanzado:</strong> "Creación digital: Nivel avanzado", estudio de desarrollo; el estudiante es "Junior Developer".' }
     ], after: 'Como tutor, sostener esta narrativa — aunque sea con una frase — ayuda a que el estudiante sienta que tiene un rol profesional, no que "está en clase".' },
 
     { type: 'h', ic: '🪜', t: 'Propiedad del proyecto' },
@@ -338,21 +338,21 @@ general: [
   { type: 'match',
     q: 'Relaciona cada curso con el test que valida si la IA se está usando en el nivel correcto para esa edad.',
     pairs: [
-      { l: 'Creator Lab: Games, AI (8–9)', r: 'Test inverso — el proyecto debe seguir siendo 100% alcanzable sin IA' },
-      { l: 'GameDev Creator Lab (10–12)', r: 'Test de apalancamiento — sin IA seguiría siendo posible, pero visiblemente más pobre' },
-      { l: 'Coding Lab (12–17)', r: 'Test de ambición — el alcance pretendido no es alcanzable sin IA en el tiempo dado' },
+      { l: 'Creación digital: Nivel principiante (8–9)', r: 'Test inverso — el proyecto debe seguir siendo 100% alcanzable sin IA' },
+      { l: 'Creación digital: Nivel intermedio (10–12)', r: 'Test de apalancamiento — sin IA seguiría siendo posible, pero visiblemente más pobre' },
+      { l: 'Creación digital: Nivel avanzado (12–17)', r: 'Test de ambición — el alcance pretendido no es alcanzable sin IA en el tiempo dado' },
       { l: 'Creatividad Digital Nivel 2 (10–12)', r: 'Test inverso — la IA solo puede quitar fricción rutinaria, nunca el acto creativo' }
     ],
-    fb: 'Creatividad Digital y Creator Lab: Games, AI comparten el <strong>test inverso</strong>: a esas edades el sentimiento de "yo lo hice" es el activo que hay que proteger. GameDev usa el <strong>test de apalancamiento</strong> (la IA sube el techo). Coding Lab usa el <strong>test de ambición</strong> (quita la IA y la forma prevista colapsa).' },
+    fb: 'Creatividad Digital y Creación digital: Nivel principiante comparten el <strong>test inverso</strong>: a esas edades el sentimiento de "yo lo hice" es el activo que hay que proteger. GameDev usa el <strong>test de apalancamiento</strong> (la IA sube el techo). Creación digital: Nivel avanzado usa el <strong>test de ambición</strong> (quita la IA y la forma prevista colapsa).' },
 
   { type: 'mcq',
-    ctx: 'En tu grupo de GameDev Creator Lab, un estudiante pega todo su proyecto en la IA y le pide: <em>"Diséñame una mejor mecánica de juego y escribe el código."</em> La IA devuelve una mecánica que funciona. El estudiante está encantado.',
+    ctx: 'En tu grupo de Creación digital: Nivel intermedio, un estudiante pega todo su proyecto en la IA y le pide: <em>"Diséñame una mejor mecánica de juego y escribe el código."</em> La IA devuelve una mecánica que funciona. El estudiante está encantado.',
     q: '¿Cuál es la lectura correcta de esta situación?',
     opts: [
       'Está bien — GameDev usa el test de apalancamiento, y la IA claramente subió el techo del proyecto',
       'Está bien mientras el estudiante pueda explicar después qué hace el código',
       'Cruza la línea: la IA genera material crudo, pero el estudiante es dueño y ejecutor del núcleo creativo — la mecánica es decisión del estudiante, no de la IA',
-      'Solo es un problema en Coding Lab, donde el prompt engineering es un resultado educativo explícito'
+      'Solo es un problema en Creación digital: Nivel avanzado, donde el prompt engineering es un resultado educativo explícito'
     ],
     c: 2,
     fb: 'En GameDev la IA es un <strong>compañero de sparring</strong>: genera material crudo (sprites, sonidos, textos) que el estudiante cura y ensambla. Nunca decide la mecánica. La regla vale en los cuatro cursos — <strong>"la IA propone, el autor decide"</strong> — y poder explicar el código después no devuelve la autoría.' },
@@ -372,7 +372,7 @@ general: [
     fb: 'El lenguaje de mentalidad de crecimiento nombra el error como algo normal y devuelve el siguiente paso al estudiante. Arreglárselo elimina el aprendizaje; "esto es fácil" agrega vergüenza a un momento de bloqueo. Nota que "busquemos la primera diferencia" es a la vez apoyo <em>y</em> una estrategia real de depuración.' },
 
   { type: 'open',
-    ctx: 'Llevas 15 minutos de una lección de Coding Lab. El juego de un estudiante dejó de ejecutarse después de su último cambio. Se voltea y te dice: <em>"Se rompió. ¿Lo puedes revisar?"</em>',
+    ctx: 'Llevas 15 minutos de una lección de Creación digital: Nivel avanzado. El juego de un estudiante dejó de ejecutarse después de su último cambio. Se voltea y te dice: <em>"Se rompió. ¿Lo puedes revisar?"</em>',
     q: 'Escribe lo que realmente dirías y harías a continuación, con las palabras que usarías con el estudiante. Tu respuesta debe mostrar el paso de dirigir la solución a acompañar la decisión.',
     min: 180,
     model: 'Una respuesta sólida cubre la mayoría de esto: <ul><li>Nombra el error como normal: <em>"Bien, algo cambió y ahora no corre. Esa es exactamente la situación para la que practicamos."</em></li><li>Devuelve el volante al estudiante con una pregunta, no con una respuesta: <em>"¿Qué fue lo último que cambiaste?"</em></li><li>Aplica el ciclo <strong>cambio → ejecución → comparación → diagnóstico → corrección</strong>: volver a la última versión que funcionaba y buscar la <strong>primera diferencia</strong>, en vez de corregir todo de una vez.</li><li>Guía hacia <strong>una sola hipótesis comprobable a la vez</strong>.</li><li>No abre la solicitud a la IA y se la reescribe: hace una pregunta puntual sobre lo que le falta.</li><li>Mantiene la plantilla de respaldo en reserva, usada sin dramatizar y solo después de intentos genuinos.</li></ul>',
@@ -693,19 +693,19 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '🔍', t: 'Repasa las lecciones antes del DST' },
     { type: 'text', p: 'Antes de hacer el DST, abre el curso en Back Office y recorre las cuatro lecciones a tu propio ritmo: ahí están todas las tarjetas de actividad y las notas del profesor. Nada de esto tiene tiempo límite, así que tómate el que necesites.' },
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2058/?tab=2&lessonId=41764', t: 'Abrir el curso en Back Office', d: '[2058] Digital Creativity. Level 2 — ve directo a la lección y sus notas del profesor — haz clic aquí para repasar cada lección antes de hacer el DST' }
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2058/?tab=2&lessonId=41764', t: 'Abrir el curso en Back Office', d: '[2058] Creatividad Digital Nivel 2 — ve directo a la lección y sus notas del profesor — haz clic aquí para repasar cada lección antes de hacer el DST' }
   ]
 },
 
 /* ---------------------------------------------------------- 2063 */
 {
   id: 'c2063', kind: 'course', bit: 8, num: 'Curso · [2063]', emoji: '🧪', color: '#8B5CF6',
-  title: 'Creator Lab: Games, AI',
+  title: 'Creación digital: Nivel principiante',
   desc: 'El laboratorio creativo secreto — primeras 4 lecciones en Scratch: Dance Party, el Guardián del Portal y el festival de lanzamiento.',
   meta: 'Termina con el DST final',
   chips: ['🧒 8–9', '⏱ 60 min', '📚 40 lecciones'],
-  objective: 'Estar listo para impartir las primeras 4 lecciones de Creator Lab: Games, AI, donde niños de 8–9 años pasan de un prototipo funcional a su propio juego publicado.',
-  finalDst: { url: 'https://docs.google.com/forms/d/e/1FAIpQLSc5iDl6GgzVRWg-Cpp4nE1hSRn9_pMD2YSmKG4kvoHTQ0NogQ/viewform', desc: 'Un último paso: el DST final de Creator Lab: Games, AI verifica que estás listo para dar estas lecciones con un grupo real.' },
+  objective: 'Estar listo para impartir las primeras 4 lecciones de Creación digital: Nivel principiante, donde niños de 8–9 años pasan de un prototipo funcional a su propio juego publicado.',
+  finalDst: { url: 'https://docs.google.com/forms/d/e/1FAIpQLSc5iDl6GgzVRWg-Cpp4nE1hSRn9_pMD2YSmKG4kvoHTQ0NogQ/viewform', desc: 'Un último paso: el DST final de Creación digital: Nivel principiante verifica que estás listo para dar estas lecciones con un grupo real.' },
   cards: [
     { type: 'metabar', items: [
       { ic: '🧒', k: 'Edad', v: '8–9' }, { ic: '⏱', k: 'Lección', v: '60 min' },
@@ -766,19 +766,19 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '🔍', t: 'Repasa las lecciones antes del DST' },
     { type: 'text', p: 'Antes de hacer el DST, abre el curso en Back Office y recorre las cuatro lecciones a tu propio ritmo: ahí están todas las tarjetas de actividad y las notas del profesor. Nada de esto tiene tiempo límite, así que tómate el que necesites.' },
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2063?tab=2&lessonId=41776', t: 'Abrir el curso en Back Office', d: '[2063] Creator Lab: Games, AI — ve directo a la lección y sus notas del profesor — haz clic aquí para repasar cada lección antes de hacer el DST' }
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2063?tab=2&lessonId=41776', t: 'Abrir el curso en Back Office', d: '[2063] Creación digital: Nivel principiante — ve directo a la lección y sus notas del profesor — haz clic aquí para repasar cada lección antes de hacer el DST' }
   ]
 },
 
 /* ---------------------------------------------------------- 2060 */
 {
   id: 'c2060', kind: 'course', bit: 4, num: 'Curso · [2060]', emoji: '🎮', color: '#F97316',
-  title: 'GameDev Creator Lab',
+  title: 'Creación digital: Nivel intermedio',
   desc: 'Arcade Remix: Impulso Neón — primeras 4 lecciones transformando una plantilla gris en el juego publicado del estudiante.',
   meta: 'Termina con el DST final',
   chips: ['👦 10–12', '⏱ 90 min', '📚 40 lecciones'],
-  objective: 'Estar listo para impartir las primeras 4 lecciones de GameDev Creator Lab, donde los estudiantes remezclan una plantilla runner en MakeCode Arcade y publican una beta en Kodland Sparks.',
-  finalDst: { url: 'https://docs.google.com/forms/d/e/1FAIpQLSdNUpFux4fn7NKFvXH1-MkxbAEZr6yoZfWmxEp3uin6l6PhXA/viewform', desc: 'Un último paso: el DST final de GameDev Creator Lab verifica que estás listo para dar estas lecciones con un grupo real.' },
+  objective: 'Estar listo para impartir las primeras 4 lecciones de Creación digital: Nivel intermedio, donde los estudiantes remezclan una plantilla runner en MakeCode Arcade y publican una beta en Kodland Sparks.',
+  finalDst: { url: 'https://docs.google.com/forms/d/e/1FAIpQLSdNUpFux4fn7NKFvXH1-MkxbAEZr6yoZfWmxEp3uin6l6PhXA/viewform', desc: 'Un último paso: el DST final de Creación digital: Nivel intermedio verifica que estás listo para dar estas lecciones con un grupo real.' },
   cards: [
     { type: 'metabar', items: [
       { ic: '👦', k: 'Edad', v: '10–12' }, { ic: '⏱', k: 'Lección', v: '90 min' },
@@ -839,25 +839,25 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '🔍', t: 'Repasa las lecciones antes del DST' },
     { type: 'text', p: 'Antes de hacer el DST, abre el curso en Back Office y recorre las cuatro lecciones a tu propio ritmo: ahí están todas las tarjetas de actividad y las notas del profesor. Nada de esto tiene tiempo límite, así que tómate el que necesites.' },
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2060', t: 'Abrir el curso en Back Office', d: '[2060] GameDev Creator Lab — ve directo a la lección y sus notas del profesor — haz clic aquí para repasar cada lección antes de hacer el DST' }
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2060', t: 'Abrir el curso en Back Office', d: '[2060] Creación digital: Nivel intermedio — ve directo a la lección y sus notas del profesor — haz clic aquí para repasar cada lección antes de hacer el DST' }
   ]
 },
 
 /* ---------------------------------------------------------- 2059 */
 {
   id: 'c2059', kind: 'course', bit: 2, num: 'Curso · [2059]', emoji: '💻', color: '#2563EB',
-  title: 'Coding Lab',
+  title: 'Creación digital: Nivel avanzado',
   desc: 'El estudio digital — primeras 4 lecciones: prototipo generado con IA, estructura de archivos, personalización visual y lógica del juego.',
   meta: 'Termina con el DST final',
   chips: ['🧑 12–17', '⏱ 90 min', '📚 40 lecciones'],
-  objective: 'Estar listo para impartir las primeras 4 lecciones de Coding Lab, donde los estudiantes actúan como directores creativos orquestando la IA para construir y refinar un juego de navegador.',
-  finalDst: { url: 'https://docs.google.com/forms/d/e/1FAIpQLScpx4Z-zXeY9lZX_Cv0DJU4DOb16TP9tI8YQ0JTRC6wD7Aofw/viewform', desc: 'Un último paso: el DST final de Coding Lab verifica que estás listo para dar estas lecciones con un grupo real.' },
+  objective: 'Estar listo para impartir las primeras 4 lecciones de Creación digital: Nivel avanzado, donde los estudiantes actúan como directores creativos orquestando la IA para construir y refinar un juego de navegador.',
+  finalDst: { url: 'https://docs.google.com/forms/d/e/1FAIpQLScpx4Z-zXeY9lZX_Cv0DJU4DOb16TP9tI8YQ0JTRC6wD7Aofw/viewform', desc: 'Un último paso: el DST final de Creación digital: Nivel avanzado verifica que estás listo para dar estas lecciones con un grupo real.' },
   cards: [
     { type: 'metabar', items: [
       { ic: '🧑', k: 'Edad', v: '12–17' }, { ic: '⏱', k: 'Lección', v: '90 min' },
       { ic: '📚', k: 'Programa', v: '40 lecciones' }, { ic: '🌎', k: 'Región', v: 'LatAm' }
     ]},
-    { type: 'text', h: 'Storytelling', ic: '🎭', p: 'Los estudiantes entran al estudio digital <strong>"Coding Lab"</strong> con el rol de <strong>desarrollador junior</strong>. Cada módulo es un nuevo encargo real: construir un juego, un sitio interactivo, un servicio digital.' },
+    { type: 'text', h: 'Storytelling', ic: '🎭', p: 'Los estudiantes entran al estudio digital <strong>"Creación digital: Nivel avanzado"</strong> con el rol de <strong>desarrollador junior</strong>. Cada módulo es un nuevo encargo real: construir un juego, un sitio interactivo, un servicio digital.' },
     { type: 'ba',
       beforeLbl: 'Curso Python anterior',
       before: 'Inductivo: sintaxis y teoría → proyecto desde cero. La IA se mencionaba solo esporádicamente.',
@@ -914,7 +914,7 @@ courses: [
     { type: 'divider' },
     { type: 'h', ic: '🔍', t: 'Repasa las lecciones antes del DST' },
     { type: 'text', p: 'Antes de hacer el DST, abre el curso en Back Office y recorre las cuatro lecciones a tu propio ritmo: ahí están todas las tarjetas de actividad y las notas del profesor. Nada de esto tiene tiempo límite, así que tómate el que necesites.' },
-    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2059', t: 'Abrir el curso en Back Office', d: '[2059] Coding Lab — ve directo a la lección y sus notas del profesor — haz clic aquí para repasar cada lección antes de hacer el DST' }
+    { type: 'link', ic: '📘', href: 'https://bo.kodland.org/courses/2059', t: 'Abrir el curso en Back Office', d: '[2059] Creación digital: Nivel avanzado — ve directo a la lección y sus notas del profesor — haz clic aquí para repasar cada lección antes de hacer el DST' }
   ]
 }
 ]
