@@ -42,6 +42,9 @@ ui: {
   reviewed: '✓ Revisado',
   resetProgress: 'Reiniciar mi progreso y empezar de nuevo',
   resetConfirm: '¿Reiniciar tu progreso en este idioma? Todos los módulos vuelven a quedar bloqueados y se borran tus puntajes. Esto no se puede deshacer.',
+  syncButton: 'Actualizar mi progreso',
+  syncConfirm: '¿Reemplazar lo que ves aquí con la última versión guardada de tu progreso? Usa esto si algo se ve mal (por ejemplo, un curso marcado como revisado sin estarlo).',
+  syncEmpty: 'Todavía no hay progreso guardado en el servidor para tu cuenta.',
   goal: 'Objetivo',
 
   qType: { mcq: 'Opción múltiple', multi: 'Selecciona todas', match: 'Relacionar', open: 'Respuesta escrita' },

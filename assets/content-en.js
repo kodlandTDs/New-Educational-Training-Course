@@ -42,6 +42,9 @@ ui: {
   reviewed: '✓ Reviewed',
   resetProgress: 'Reset my progress and start again',
   resetConfirm: 'Reset your progress for this language? Every module goes back to locked and your scores are cleared. This cannot be undone.',
+  syncButton: 'Refresh my progress',
+  syncConfirm: 'Replace what you see here with the latest saved version of your progress? Use this if something looks wrong, like a course marked as reviewed when it was not.',
+  syncEmpty: 'No saved progress was found on the server for your account yet.',
   goal: 'Goal',
 
   qType: { mcq: 'Multiple choice', multi: 'Select all that apply', match: 'Matching', open: 'Written answer' },
