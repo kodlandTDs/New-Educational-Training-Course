@@ -23,12 +23,51 @@
      as before. Nothing here is required for the app to function. */
   var PROGRESS_API = 'https://script.google.com/macros/s/AKfycbyAlP2Dhlael51Sg7OChYKBATpp-Prh_vdu243i_KD3mBBsED6ER3emCik8NinO4b1WzA/exec';
 
+  /* Apps Script Web Apps run into a well-known browser limitation: a
+     plain fetch() GET can be blocked by CORS even though the server
+     side works fine (confirmed via curl). JSONP sidesteps this
+     entirely by loading the response through a <script> tag instead
+     of fetch() — script tags were never subject to CORS in the first
+     place. Only used for reads; writes (POST) don't need this since
+     the browser is allowed to *send* a simple POST even when it would
+     be blocked from *reading* the response. */
+  var jsonpCounter_ = 0;
   function fetchServerProgress_(email, cb) {
     if (!PROGRESS_API || PROGRESS_API.indexOf('PASTE_') === 0) { cb(null); return; }
-    var url = PROGRESS_API + '?email=' + encodeURIComponent(email);
-    fetch(url).then(function (r) { return r.json(); })
-      .then(function (data) { cb(data && data.progress ? data.progress : null); })
-      .catch(function () { cb(null); });
+    var cbName = 'klPbJsonp_' + (jsonpCounter_++) + '_' + Date.now();
+    var script = document.createElement('script');
+    var done = false;
+
+    function cleanup() {
+      delete window[cbName];
+      if (script.parentNode) script.parentNode.removeChild(script);
+    }
+
+    window[cbName] = function (data) {
+      if (done) return;
+      done = true;
+      cleanup();
+      cb(data && data.progress ? data.progress : null);
+    };
+
+    script.onerror = function () {
+      if (done) return;
+      done = true;
+      cleanup();
+      cb(null);
+    };
+    /* Safety net in case the callback never fires for any reason
+       (e.g. the Apps Script response is malformed) — don't leave the
+       tutor waiting forever. */
+    setTimeout(function () {
+      if (done) return;
+      done = true;
+      cleanup();
+      cb(null);
+    }, 8000);
+
+    script.src = PROGRESS_API + '?email=' + encodeURIComponent(email) + '&callback=' + cbName;
+    document.head.appendChild(script);
   }
 
   function pushServerProgress_(email, progress) {
@@ -110,6 +149,27 @@
     if (!confirm(T.resetConfirm)) return;
     clearProgress();
     goHome();
+  };
+
+  /* Force this browser to match the server exactly — no merge. Unlike
+     the passive login sync (which only ever adds, never removes, to
+     protect real progress from network hiccups), this is an explicit,
+     tutor-initiated action for one specific situation: their browser
+     is showing something wrong (e.g. a course marked "Reviewed" that
+     shouldn't be) because of stale/incorrect data cached from before
+     a fix was made server-side. Replacing local with server here is
+     safe precisely because the tutor asked for it and confirmed it. */
+  window.syncFromServer = function () {
+    if (!session) return;
+    if (!confirm(T.syncConfirm)) return;
+    fetchServerProgress_(session.email, function (serverProgress) {
+      if (!serverProgress) {
+        alert(T.syncEmpty);
+        return;
+      }
+      saveProgress(serverProgress);
+      goHome();
+    });
   };
   function isPassed(id) { var p = getProgress(); return !!(p[id] && p[id].passed); }
   function getScore(id) { var p = getProgress(); return (p[id] && p[id].score) || 0; }
@@ -202,7 +262,12 @@
       if (serverProgress) {
         var merged = mergeProgressObjects_(getProgress(), serverProgress);
         saveProgress(merged);
-        pushServerProgress_(email, merged); // sync back so both sides agree
+        /* Read-only sync: we do NOT push this merge back to the server.
+           Pushing here would let a browser with stale/incorrect local
+           progress (e.g. from before a server-side correction) silently
+           re-contaminate the server the moment its tutor logs back in.
+           The server is only ever updated by setResult(), i.e. a real
+           quiz pass or course review happening right now. */
       }
       goHome();
     });
@@ -306,8 +371,11 @@
       h += '</div>';
     }
     if (done) {
-      h += '<div class="reset-row"><button class="reset-btn" onclick="resetProgress()">' +
-        T.resetProgress + '</button></div>';
+      h += '<div class="reset-row">' +
+        '<button class="reset-btn" onclick="syncFromServer()">' + T.syncButton + '</button>' +
+        ' · ' +
+        '<button class="reset-btn" onclick="resetProgress()">' + T.resetProgress + '</button>' +
+        '</div>';
     }
     $('mgrid').innerHTML = h;
     markOrphans();
@@ -949,7 +1017,10 @@
         if (serverProgress) {
           var merged = mergeProgressObjects_(getProgress(), serverProgress);
           saveProgress(merged);
-          pushServerProgress_(session.email, merged);
+          /* Read-only sync — see the comment in tryLogin(). We never
+             write this merged result back to the server on a passive
+             page load/login; only a real quiz pass or course review
+             (setResult) is allowed to update the server. */
           renderHome(); // re-paint in case the server had newer info
         }
       });
