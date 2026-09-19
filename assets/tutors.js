@@ -22,7 +22,7 @@ window.TUTORS = {
   "b6af54b":8,
   "ba140e55":14,
   "c8a78521":6,
-  "fa7a0db8":8,
+  "fa7a0db8":14,
   "f9cfb86e":6,
   "d9ddaa24":6,
   "780311f4":8,
